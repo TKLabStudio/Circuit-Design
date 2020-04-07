@@ -1,0 +1,59 @@
+#include <regx52.h>
+#define RS P1_0
+#define RW P1_1
+#define E P1_2
+void deplay(unsigned int t)
+{	while(t>0)	t--;}
+void main()
+{
+	char lcd1='A';
+	char lcd2='a';
+	deplay(2000);
+	
+	RS=0;RW=0;E=1;
+	P0=0X30;deplay(100);
+	E=0;deplay(100);
+	
+	RS=0;RW=0;E=1;
+	P0=0X30;deplay(100);
+	E=0;deplay(100);
+	
+	RS=0;RW=0;E=1;
+	P0=0X38;deplay(100);
+	E=0;deplay(100);
+
+	RS=0;RW=0;E=1;
+	P0=0X08;deplay(100);
+	E=0;deplay(100);
+	
+	RS=0;RW=0;E=1;
+	P0=0X01;deplay(100);
+	E=0;deplay(100);
+
+	RS=0;RW=0;E=1;
+	P0=0X06;deplay(100);
+	E=0;deplay(100);
+	
+	RS=0;RW=0;E=1;
+	P0=0X0C;deplay(100);
+	E=0;deplay(100);
+	
+	RS=0;RW=0;E=1;
+	P0=0X80;deplay(100);
+	E=0;deplay(100);
+	
+	RS=1;RW=0;E=1;
+	P0=lcd1;
+	deplay(100);
+	E=0;deplay(100);
+	
+	RS=0;RW=0;E=1;
+	P0=0Xc5;deplay(100);
+	E=0;deplay(100);
+	
+	RS=1;RW=0;E=1;
+	P0=lcd2;
+	deplay(100);
+	E=0;deplay(100);
+	while(1);
+}

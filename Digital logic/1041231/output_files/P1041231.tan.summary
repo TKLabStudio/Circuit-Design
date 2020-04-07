@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 59.078 ns
+From           : 74393m:inst2|9
+To             : led
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 68.51 MHz ( period = 14.596 ns )
+From           : div20m:inst|74390:inst9|6
+To             : div20m:inst|74390:inst9|3
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : div20m:inst|74390:inst|5
+To             : div20m:inst|74390:inst|5
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 8
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 8
+
+--------------------------------------------------------------------------------------
+

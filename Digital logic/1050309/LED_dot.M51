@@ -1,0 +1,95 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/15/2016  23:52:19  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE LED_dot.obj TO LED_dot RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  LED_dot.obj (LED_DOT)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  LED_dot (LED_DOT)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0025H     UNIT         ?PR?MAIN?LED_DOT
+            CODE    0825H     0011H     UNIT         ?PR?_DEPLAY?LED_DOT
+            CODE    0836H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0842H     0008H     UNIT         ?CO?LED_DOT
+
+
+
+OVERLAY MAP OF MODULE:   LED_dot (LED_DOT)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?LED_DOT
+
+?PR?MAIN?LED_DOT
+  +--> ?CO?LED_DOT
+  +--> ?PR?_DEPLAY?LED_DOT
+
+
+
+SYMBOL TABLE OF MODULE:  LED_dot (LED_DOT)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LED_DOT
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  C:0825H         PUBLIC        _deplay
+  C:0800H         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/15/2016  23:52:19  PAGE 2
+
+
+  C:0842H         PUBLIC        font
+  -------         PROC          _DEPLAY
+  D:0006H         SYMBOL        t
+  C:0825H         LINE#         3
+  C:0825H         LINE#         4
+  -------         ENDPROC       _DEPLAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0005H         SYMBOL        i
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:0800H         LINE#         5
+  C:0800H         LINE#         6
+  C:0800H         LINE#         8
+  C:0800H         LINE#         9
+  C:0800H         LINE#         10
+  C:080AH         LINE#         11
+  C:080AH         LINE#         12
+  C:080DH         LINE#         13
+  C:080FH         LINE#         14
+  C:0817H         LINE#         15
+  C:081EH         LINE#         16
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        LED_DOT
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 003EH BYTE ( 3%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=77
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

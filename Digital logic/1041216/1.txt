@@ -1,0 +1,20 @@
+#include <regx52.h>
+#define LED P0
+#define SEG7 P2
+#define DIPSW P3
+code wtf[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90,0x86};
+void deplay(int t)
+{while(t>0) t--; }
+
+int main()
+{
+	unsigned int i;
+	DIPSW=0xff;
+	while(1)
+	{
+		LED=~DIPSW;
+		if (DIPSW>9) i=10;
+		else i=DIPSW;
+		SEG7=wtf[i];
+	}
+}

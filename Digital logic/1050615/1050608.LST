@@ -1,0 +1,53 @@
+C51 COMPILER V9.50.0.0   1050608                                                           06/15/2016 09:38:13 PAGE 1   
+
+
+C51 COMPILER V9.50.0.0, COMPILATION OF MODULE 1050608
+OBJECT MODULE PLACED IN 1050608.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE 1050608.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include<regx51.h>
+   2          #define led P0
+   3          #define sw P2
+   4          bit flag;
+   5          void main()
+   6          {
+   7   1        sw=0xff;
+   8   1        SCON=0x90;
+   9   1        PCON=0X80;
+  10   1        EA=ES=1;
+  11   1        while(1)
+  12   1          {
+  13   2            SBUF=sw;
+  14   2            flag=0;
+  15   2            while(flag==0);
+  16   2          }
+  17   1      }
+  18           void uart() interrupt 4
+  19          {
+  20   1        if(TI==1)
+  21   1        {
+  22   2          TI=0;
+  23   2          flag=1;;
+  24   2        }
+  25   1        else
+  26   1        {
+  27   2          led=SBUF;
+  28   2          RI=0;
+  29   2        }
+  30   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     37    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

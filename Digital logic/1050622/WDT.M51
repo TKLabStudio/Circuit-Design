@@ -1,0 +1,125 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        06/22/2016  09:25:54  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE WDT.obj TO WDT RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  WDT.obj (WDT)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  WDT (WDT)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         ?DT?WDT
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0055H     UNIT         ?PR?MAIN?WDT
+            CODE    0855H     0024H     UNIT         ?PR?_DELAY?WDT
+            CODE    0879H     0014H     UNIT         ?CO?WDT
+            CODE    088DH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   WDT (WDT)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?WDT
+
+?PR?MAIN?WDT
+  +--> ?CO?WDT
+  +--> ?PR?_DELAY?WDT
+
+
+
+SYMBOL TABLE OF MODULE:  WDT (WDT)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        WDT
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  C:0855H         PUBLIC        _delay
+  B:0098H.0       PUBLIC        RI
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/22/2016  09:25:54  PAGE 2
+
+
+  B:0098H.1       PUBLIC        TI
+  C:0800H         PUBLIC        main
+  C:0883H         PUBLIC        send
+  D:0099H         PUBLIC        SBUF
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  C:0879H         PUBLIC        tab
+  D:008DH         PUBLIC        TH1
+  B:0088H.6       PUBLIC        TR1
+  D:0008H         PUBLIC        i
+  D:00A6H         PUBLIC        WDTRST
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        time
+  -------         DO            
+  D:0004H         SYMBOL        cnt
+  -------         ENDDO         
+  C:0855H         LINE#         7
+  C:0855H         LINE#         8
+  C:0855H         LINE#         10
+  C:085EH         LINE#         11
+  C:085EH         LINE#         12
+  C:0862H         LINE#         13
+  C:086BH         LINE#         14
+  C:0870H         LINE#         15
+  C:0873H         LINE#         16
+  C:0876H         LINE#         17
+  C:0878H         LINE#         18
+  -------         ENDPROC       _DELAY
+  -------         PROC          MAIN
+  C:0800H         LINE#         19
+  C:0800H         LINE#         20
+  C:0800H         LINE#         21
+  C:0803H         LINE#         22
+  C:0806H         LINE#         23
+  C:0808H         LINE#         24
+  C:080BH         LINE#         25
+  C:080EH         LINE#         26
+  C:0811H         LINE#         27
+  C:0811H         LINE#         28
+  C:0811H         LINE#         29
+  C:0816H         LINE#         30
+  C:0816H         LINE#         31
+  C:0826H         LINE#         32
+  C:0829H         LINE#         33
+  C:082BH         LINE#         34
+  C:082EH         LINE#         35
+  C:0830H         LINE#         36
+  C:0839H         LINE#         37
+  C:0840H         LINE#         38
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        WDT
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 008DH BYTE ( 6%) *
+******************************************************************************
+
+Program Size: data=11.0 xdata=0 code=156
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/22/2016  09:25:54  PAGE 3
+
+
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

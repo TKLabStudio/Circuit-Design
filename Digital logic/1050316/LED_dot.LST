@@ -1,0 +1,70 @@
+C51 COMPILER V9.50.0.0   LED_DOT                                                           03/16/2016 10:23:18 PAGE 1   
+
+
+C51 COMPILER V9.50.0.0, COMPILATION OF MODULE LED_DOT
+OBJECT MODULE PLACED IN LED_dot.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE LED_dot.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          code char font[]={0,0x3c,0x24,0xff,0xff,0x24,0x3c,0,
+   3                              0xe6,0xe6,0x84,0xff,0xff,0x84,0xe6,0xe6};
+   4          code char com[]={0xfe,0xfd,0xfb,0xf7,0xef,0xdf,0xbf,0x7f};
+   5          char disp[8],t_disp[8];
+   6          void deplay(unsigned t)
+   7          { while(t>0)  t--;}
+   8          void main()
+   9          {
+  10   1        unsigned char i,j,tmp=200,sec,n=0,ptr=16;
+  11   1            for(i=0;i<8;i++)
+  12   1          {     
+  13   2            disp[i]=font[i];
+  14   2            t_disp[i]=font[i+8];
+  15   2          }
+  16   1        while(1)
+  17   1        {
+  18   2          for(i=0;i<8;i++)
+  19   2          {     
+  20   3            P0=0xff;
+  21   3            P0=com[i];
+  22   3            P1=disp[i];
+  23   3            deplay(50);
+  24   3          }
+  25   2          sec++;
+  26   2            if(sec>=tmp)
+  27   2            {
+  28   3              sec=0;
+  29   3              for(j=0;j<7;j++)
+  30   3                {   disp[j]=font[j+1];  }
+  31   3                  disp[7]=t_disp[n];
+  32   3                  n++;
+  33   3                  if(n>=8)
+  34   3                  {
+  35   4                    n=0;
+  36   4                    tmp=200;
+  37   4                        for(i=0;i<8;i++)
+  38   4                        {   t_disp[i]=font[ptr+i];  }
+  39   4                          ptr=ptr+8;
+  40   4                          if(ptr>=80)ptr=0;
+  41   4                  }
+  42   3                  else tmp=40;
+  43   3            }
+  44   2          }
+  45   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    163    ----
+   CONSTANT SIZE    =     24    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     16       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+C51 COMPILER V9.50.0.0   LED_DOT                                                           03/16/2016 10:23:18 PAGE 2   
+
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

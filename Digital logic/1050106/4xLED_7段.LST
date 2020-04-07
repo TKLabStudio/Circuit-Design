@@ -1,0 +1,65 @@
+C51 COMPILER V9.50.0.0   4XLED_7_Q                                                         01/06/2016 10:13:54 PAGE 1   
+
+
+C51 COMPILER V9.50.0.0, COMPILATION OF MODULE 4XLED_7_Q
+OBJECT MODULE PLACED IN 4xLED_7¬q.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE 4xLED_7¬q.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include <regx52.h>
+   2          code wtf[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+   3          code fxxk[]={0x7f,0xbf,0xdf,0xef};
+   4          void deplay(int t)
+   5          {while(t>0) t--; }
+   6          
+   7          int main()
+   8          {
+   9   1        int time,i,hour,min,sec;
+  10   1        char disp[4];
+  11   1        while(1)
+  12   1        {
+  13   2          P0=0XFF;
+  14   2          P1=disp[i];
+  15   2          P0=fxxk[i];
+  16   2          i++;
+  17   2          if(i>=4) i=0;
+  18   2          deplay(100);
+  19   2          time++;
+  20   2      
+  21   2          if(time>=1000)
+  22   2          {
+  23   3            time=0; sec++;
+  24   3            if(sec>=60)
+  25   3            {
+  26   4              sec=0; min++;
+  27   4              if(min>=60)
+  28   4              { 
+  29   5                min=0; hour++;
+  30   5                  if(hour>=24)
+  31   5                    hour=0;
+  32   5              }
+  33   4            }
+  34   3          }
+  35   2            disp[0]=~wtf[hour/10];
+  36   2            disp[1]=~wtf[hour%10];
+  37   2            disp[2]=~wtf[min/10];
+  38   2            disp[3]=~wtf[min%10];
+  39   2          if(time>500)
+  40   2            disp[3]=~wtf[min%10]+0x80;
+  41   2        }     
+  42   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    335    ----
+   CONSTANT SIZE    =     28    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      12
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

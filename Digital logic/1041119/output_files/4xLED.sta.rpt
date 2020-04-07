@@ -1,0 +1,1661 @@
+TimeQuest Timing Analyzer report for 4xLED
+Thu Nov 19 12:10:33 2015
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'DIV20M:inst13|74390:inst15|7'
+ 12. Setup: 'DIV20M:inst13|74390:inst|7'
+ 13. Setup: 'DIV20M:inst13|74390:inst9|34'
+ 14. Setup: 'DIV20M:inst13|74390:inst11|34'
+ 15. Setup: 'DIV20M:inst13|74390:inst9|7'
+ 16. Setup: 'DIV20M:inst13|74390:inst11|7'
+ 17. Setup: 'DIV20M:inst13|74390:inst|34'
+ 18. Setup: 'DIV20M:inst13|74390:inst13|7'
+ 19. Setup: 'DIV20M:inst13|74390:inst|33'
+ 20. Setup: 'DIV20M:inst13|74390:inst13|6'
+ 21. Setup: 'DIV20M:inst13|74390:inst9|33'
+ 22. Setup: 'DIV20M:inst13|74390:inst|6'
+ 23. Setup: 'DIV20M:inst13|74390:inst11|33'
+ 24. Setup: 'DIV20M:inst13|74390:inst11|6'
+ 25. Setup: 'DIV20M:inst13|74390:inst9|6'
+ 26. Setup: 'DIV20M:inst13|74390:inst11|31'
+ 27. Setup: 'DIV20M:inst13|74390:inst|31'
+ 28. Setup: 'DIV20M:inst13|74390:inst9|3'
+ 29. Setup: 'DIV20M:inst13|74390:inst9|31'
+ 30. Setup: 'DIV20M:inst13|74390:inst|3'
+ 31. Setup: 'DIV20M:inst13|74390:inst13|3'
+ 32. Setup: 'DIV20M:inst13|74390:inst11|3'
+ 33. Setup: 'clk40M'
+ 34. Hold: 'DIV20M:inst13|74390:inst11|7'
+ 35. Hold: 'clk40M'
+ 36. Hold: 'DIV20M:inst13|74390:inst11|3'
+ 37. Hold: 'DIV20M:inst13|74390:inst11|34'
+ 38. Hold: 'DIV20M:inst13|74390:inst9|7'
+ 39. Hold: 'DIV20M:inst13|74390:inst13|3'
+ 40. Hold: 'DIV20M:inst13|74390:inst9|34'
+ 41. Hold: 'DIV20M:inst13|74390:inst13|7'
+ 42. Hold: 'DIV20M:inst13|74390:inst9|31'
+ 43. Hold: 'DIV20M:inst13|74390:inst|3'
+ 44. Hold: 'DIV20M:inst13|74390:inst|31'
+ 45. Hold: 'DIV20M:inst13|74390:inst|7'
+ 46. Hold: 'DIV20M:inst13|74390:inst9|3'
+ 47. Hold: 'DIV20M:inst13|74390:inst11|31'
+ 48. Hold: 'DIV20M:inst13|74390:inst|34'
+ 49. Hold: 'DIV20M:inst13|74390:inst11|33'
+ 50. Hold: 'DIV20M:inst13|74390:inst11|6'
+ 51. Hold: 'DIV20M:inst13|74390:inst9|6'
+ 52. Hold: 'DIV20M:inst13|74390:inst9|33'
+ 53. Hold: 'DIV20M:inst13|74390:inst|6'
+ 54. Hold: 'DIV20M:inst13|74390:inst13|6'
+ 55. Hold: 'DIV20M:inst13|74390:inst|33'
+ 56. Hold: 'DIV20M:inst13|74390:inst15|7'
+ 57. Minimum Pulse Width: 'clk40M'
+ 58. Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|3'
+ 59. Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|31'
+ 60. Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|33'
+ 61. Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|34'
+ 62. Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|6'
+ 63. Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|7'
+ 64. Minimum Pulse Width: 'DIV20M:inst13|74390:inst13|3'
+ 65. Minimum Pulse Width: 'DIV20M:inst13|74390:inst13|6'
+ 66. Minimum Pulse Width: 'DIV20M:inst13|74390:inst13|7'
+ 67. Minimum Pulse Width: 'DIV20M:inst13|74390:inst15|7'
+ 68. Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|3'
+ 69. Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|31'
+ 70. Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|33'
+ 71. Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|34'
+ 72. Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|6'
+ 73. Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|7'
+ 74. Minimum Pulse Width: 'DIV20M:inst13|74390:inst|3'
+ 75. Minimum Pulse Width: 'DIV20M:inst13|74390:inst|31'
+ 76. Minimum Pulse Width: 'DIV20M:inst13|74390:inst|33'
+ 77. Minimum Pulse Width: 'DIV20M:inst13|74390:inst|34'
+ 78. Minimum Pulse Width: 'DIV20M:inst13|74390:inst|6'
+ 79. Minimum Pulse Width: 'DIV20M:inst13|74390:inst|7'
+ 80. Clock to Output Times
+ 81. Minimum Clock to Output Times
+ 82. Setup Transfers
+ 83. Hold Transfers
+ 84. Report TCCS
+ 85. Report RSKM
+ 86. Unconstrained Paths
+ 87. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                       ;
++--------------------+--------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version ;
+; Revision Name      ; 4xLED                                                              ;
+; Device Family      ; MAX II                                                             ;
+; Device Name        ; EPM570T144C5                                                       ;
+; Timing Models      ; Final                                                              ;
+; Delay Model        ; Slow Model                                                         ;
+; Rise/Fall Delays   ; Unavailable                                                        ;
++--------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                       ;
++-------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------+
+; Clock Name                    ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                           ;
++-------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------+
+; clk40M                        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk40M }                        ;
+; DIV20M:inst13|74390:inst9|3   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst9|3 }   ;
+; DIV20M:inst13|74390:inst9|6   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst9|6 }   ;
+; DIV20M:inst13|74390:inst9|7   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst9|7 }   ;
+; DIV20M:inst13|74390:inst9|31  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst9|31 }  ;
+; DIV20M:inst13|74390:inst9|33  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst9|33 }  ;
+; DIV20M:inst13|74390:inst9|34  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst9|34 }  ;
+; DIV20M:inst13|74390:inst11|3  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst11|3 }  ;
+; DIV20M:inst13|74390:inst11|6  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst11|6 }  ;
+; DIV20M:inst13|74390:inst11|7  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst11|7 }  ;
+; DIV20M:inst13|74390:inst11|31 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst11|31 } ;
+; DIV20M:inst13|74390:inst11|33 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst11|33 } ;
+; DIV20M:inst13|74390:inst11|34 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst11|34 } ;
+; DIV20M:inst13|74390:inst13|3  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst13|3 }  ;
+; DIV20M:inst13|74390:inst13|6  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst13|6 }  ;
+; DIV20M:inst13|74390:inst13|7  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst13|7 }  ;
+; DIV20M:inst13|74390:inst15|7  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst15|7 }  ;
+; DIV20M:inst13|74390:inst|3    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst|3 }    ;
+; DIV20M:inst13|74390:inst|6    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst|6 }    ;
+; DIV20M:inst13|74390:inst|7    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst|7 }    ;
+; DIV20M:inst13|74390:inst|31   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst|31 }   ;
+; DIV20M:inst13|74390:inst|33   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst|33 }   ;
+; DIV20M:inst13|74390:inst|34   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV20M:inst13|74390:inst|34 }   ;
++-------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------+
+
+
++---------------------------------------------------------------------+
+; Fmax Summary                                                        ;
++------------+-----------------+-------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                    ; Note ;
++------------+-----------------+-------------------------------+------+
+; 348.07 MHz ; 348.07 MHz      ; DIV20M:inst13|74390:inst15|7  ;      ;
+; 398.25 MHz ; 398.25 MHz      ; DIV20M:inst13|74390:inst11|7  ;      ;
+; 450.05 MHz ; 450.05 MHz      ; DIV20M:inst13|74390:inst|33   ;      ;
+; 451.47 MHz ; 451.47 MHz      ; DIV20M:inst13|74390:inst13|6  ;      ;
+; 455.79 MHz ; 455.79 MHz      ; DIV20M:inst13|74390:inst9|33  ;      ;
+; 455.79 MHz ; 455.79 MHz      ; DIV20M:inst13|74390:inst|6    ;      ;
+; 456.0 MHz  ; 456.0 MHz       ; DIV20M:inst13|74390:inst11|33 ;      ;
+; 456.0 MHz  ; 456.0 MHz       ; DIV20M:inst13|74390:inst11|6  ;      ;
+; 456.0 MHz  ; 456.0 MHz       ; DIV20M:inst13|74390:inst9|6   ;      ;
++------------+-----------------+-------------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------------------------+
+; Setup Summary                                          ;
++-------------------------------+--------+---------------+
+; Clock                         ; Slack  ; End Point TNS ;
++-------------------------------+--------+---------------+
+; DIV20M:inst13|74390:inst15|7  ; -1.873 ; -13.532       ;
+; DIV20M:inst13|74390:inst|7    ; -1.563 ; -1.563        ;
+; DIV20M:inst13|74390:inst9|34  ; -1.558 ; -1.558        ;
+; DIV20M:inst13|74390:inst11|34 ; -1.535 ; -1.535        ;
+; DIV20M:inst13|74390:inst9|7   ; -1.535 ; -1.535        ;
+; DIV20M:inst13|74390:inst11|7  ; -1.511 ; -2.724        ;
+; DIV20M:inst13|74390:inst|34   ; -1.275 ; -1.275        ;
+; DIV20M:inst13|74390:inst13|7  ; -1.244 ; -1.244        ;
+; DIV20M:inst13|74390:inst|33   ; -1.222 ; -1.222        ;
+; DIV20M:inst13|74390:inst13|6  ; -1.215 ; -1.215        ;
+; DIV20M:inst13|74390:inst9|33  ; -1.194 ; -1.194        ;
+; DIV20M:inst13|74390:inst|6    ; -1.194 ; -1.194        ;
+; DIV20M:inst13|74390:inst11|33 ; -1.193 ; -1.193        ;
+; DIV20M:inst13|74390:inst11|6  ; -1.193 ; -1.193        ;
+; DIV20M:inst13|74390:inst9|6   ; -1.193 ; -1.193        ;
+; DIV20M:inst13|74390:inst11|31 ; 0.560  ; 0.000         ;
+; DIV20M:inst13|74390:inst|31   ; 1.122  ; 0.000         ;
+; DIV20M:inst13|74390:inst9|3   ; 1.292  ; 0.000         ;
+; DIV20M:inst13|74390:inst9|31  ; 1.351  ; 0.000         ;
+; DIV20M:inst13|74390:inst|3    ; 1.456  ; 0.000         ;
+; DIV20M:inst13|74390:inst13|3  ; 1.720  ; 0.000         ;
+; DIV20M:inst13|74390:inst11|3  ; 2.131  ; 0.000         ;
+; clk40M                        ; 2.932  ; 0.000         ;
++-------------------------------+--------+---------------+
+
+
++--------------------------------------------------------+
+; Hold Summary                                           ;
++-------------------------------+--------+---------------+
+; Clock                         ; Slack  ; End Point TNS ;
++-------------------------------+--------+---------------+
+; DIV20M:inst13|74390:inst11|7  ; -3.548 ; -4.980        ;
+; clk40M                        ; -2.986 ; -2.986        ;
+; DIV20M:inst13|74390:inst11|3  ; -2.203 ; -4.388        ;
+; DIV20M:inst13|74390:inst11|34 ; -2.168 ; -2.602        ;
+; DIV20M:inst13|74390:inst9|7   ; -2.168 ; -2.602        ;
+; DIV20M:inst13|74390:inst13|3  ; -1.830 ; -3.604        ;
+; DIV20M:inst13|74390:inst9|34  ; -1.792 ; -2.420        ;
+; DIV20M:inst13|74390:inst13|7  ; -1.790 ; -2.244        ;
+; DIV20M:inst13|74390:inst9|31  ; -1.768 ; -3.173        ;
+; DIV20M:inst13|74390:inst|3    ; -1.671 ; -3.181        ;
+; DIV20M:inst13|74390:inst|31   ; -1.544 ; -2.720        ;
+; DIV20M:inst13|74390:inst|7    ; -1.533 ; -2.162        ;
+; DIV20M:inst13|74390:inst9|3   ; -1.413 ; -2.759        ;
+; DIV20M:inst13|74390:inst11|31 ; -1.413 ; -2.027        ;
+; DIV20M:inst13|74390:inst|34   ; -1.119 ; -1.427        ;
+; DIV20M:inst13|74390:inst11|33 ; 1.639  ; 0.000         ;
+; DIV20M:inst13|74390:inst11|6  ; 1.639  ; 0.000         ;
+; DIV20M:inst13|74390:inst9|6   ; 1.639  ; 0.000         ;
+; DIV20M:inst13|74390:inst9|33  ; 1.640  ; 0.000         ;
+; DIV20M:inst13|74390:inst|6    ; 1.640  ; 0.000         ;
+; DIV20M:inst13|74390:inst13|6  ; 1.661  ; 0.000         ;
+; DIV20M:inst13|74390:inst|33   ; 1.668  ; 0.000         ;
+; DIV20M:inst13|74390:inst15|7  ; 1.679  ; 0.000         ;
++-------------------------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++--------------------------------------------------------+
+; Minimum Pulse Width Summary                            ;
++-------------------------------+--------+---------------+
+; Clock                         ; Slack  ; End Point TNS ;
++-------------------------------+--------+---------------+
+; clk40M                        ; -2.289 ; -2.289        ;
+; DIV20M:inst13|74390:inst11|3  ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst11|31 ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst11|33 ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst11|34 ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst11|6  ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst11|7  ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst13|3  ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst13|6  ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst13|7  ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst15|7  ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst9|3   ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst9|31  ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst9|33  ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst9|34  ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst9|6   ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst9|7   ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst|3    ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst|31   ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst|33   ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst|34   ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst|6    ; 0.234  ; 0.000         ;
+; DIV20M:inst13|74390:inst|7    ; 0.234  ; 0.000         ;
++-------------------------------+--------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst15|7'                                                                                                           ;
++--------+----------------+----------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node      ; To Node        ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------+----------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.873 ; 74393m:inst1|1 ; 74393m:inst1|9 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.540      ;
+; -1.871 ; 74393m:inst1|1 ; 74393m:inst1|5 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.538      ;
+; -1.832 ; 74393m:inst|1  ; 74393m:inst|5  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.499      ;
+; -1.832 ; 74393m:inst|1  ; 74393m:inst|9  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.499      ;
+; -1.662 ; 74393m:inst1|9 ; 74393m:inst1|9 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.329      ;
+; -1.661 ; 74393m:inst|9  ; 74393m:inst|9  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.328      ;
+; -1.550 ; 74393m:inst1|1 ; 74393m:inst1|3 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.217      ;
+; -1.545 ; 74393m:inst1|1 ; 74393m:inst1|1 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.212      ;
+; -1.519 ; 74393m:inst1|5 ; 74393m:inst1|9 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.186      ;
+; -1.517 ; 74393m:inst|1  ; 74393m:inst|3  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.184      ;
+; -1.514 ; 74393m:inst1|5 ; 74393m:inst1|5 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.181      ;
+; -1.512 ; 74393m:inst|1  ; 74393m:inst|1  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.179      ;
+; -1.481 ; 74393m:inst|5  ; 74393m:inst|9  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.148      ;
+; -1.471 ; 74393m:inst|5  ; 74393m:inst|5  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 2.138      ;
+; -1.261 ; 74393m:inst1|3 ; 74393m:inst1|5 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 1.928      ;
+; -1.259 ; 74393m:inst1|3 ; 74393m:inst1|9 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 1.926      ;
+; -1.258 ; 74393m:inst1|3 ; 74393m:inst1|3 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 1.925      ;
+; -1.241 ; 74393m:inst|3  ; 74393m:inst|5  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 1.908      ;
+; -1.234 ; 74393m:inst|3  ; 74393m:inst|9  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 1.901      ;
+; -1.233 ; 74393m:inst|3  ; 74393m:inst|3  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 1.000        ; 0.000      ; 1.900      ;
++--------+----------------+----------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst|7'                                                                                                                                 ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; Slack  ; From Node                  ; To Node                    ; Launch Clock               ; Latch Clock                ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; -1.563 ; DIV20M:inst13|74390:inst|5 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|7 ; 1.000        ; 0.014      ; 2.244      ;
+; 0.365  ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|7 ; 0.500        ; 2.172      ; 2.350      ;
+; 0.575  ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|7 ; 0.500        ; 2.172      ; 2.140      ;
+; 0.865  ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|7 ; 1.000        ; 2.172      ; 2.350      ;
+; 1.075  ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|7 ; 1.000        ; 2.172      ; 2.140      ;
+; 1.479  ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|7 ; 0.500        ; 3.076      ; 2.140      ;
+; 1.979  ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|7 ; 1.000        ; 3.076      ; 2.140      ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst9|34'                                                                                                                                       ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.558 ; DIV20M:inst13|74390:inst9|32 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|34 ; 1.000        ; 0.018      ; 2.243      ;
+; 0.364  ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|34 ; 0.500        ; 2.172      ; 2.351      ;
+; 0.574  ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|34 ; 0.500        ; 2.172      ; 2.141      ;
+; 0.864  ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|34 ; 1.000        ; 2.172      ; 2.351      ;
+; 1.074  ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|34 ; 1.000        ; 2.172      ; 2.141      ;
+; 1.738  ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|34 ; 0.500        ; 3.076      ; 1.881      ;
+; 2.238  ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|34 ; 1.000        ; 3.076      ; 1.881      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst11|34'                                                                                                                                          ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                       ; Launch Clock                  ; Latch Clock                   ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; -1.535 ; DIV20M:inst13|74390:inst11|32 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; 1.000        ; 0.052      ; 2.254      ;
+; 0.277  ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|34 ; 0.500        ; 2.188      ; 2.454      ;
+; 0.380  ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; 0.500        ; 2.188      ; 2.351      ;
+; 0.777  ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|34 ; 1.000        ; 2.188      ; 2.454      ;
+; 0.880  ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; 1.000        ; 2.188      ; 2.351      ;
+; 2.114  ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; 0.500        ; 3.452      ; 1.881      ;
+; 2.614  ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; 1.000        ; 3.452      ; 1.881      ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst9|7'                                                                                                                                    ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -1.535 ; DIV20M:inst13|74390:inst9|5 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|7 ; 1.000        ; 0.052      ; 2.254      ;
+; 0.277  ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|7 ; 0.500        ; 2.188      ; 2.454      ;
+; 0.380  ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|7 ; 0.500        ; 2.188      ; 2.351      ;
+; 0.777  ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|7 ; 1.000        ; 2.188      ; 2.454      ;
+; 0.880  ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|7 ; 1.000        ; 2.188      ; 2.351      ;
+; 2.114  ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|7 ; 0.500        ; 3.452      ; 1.881      ;
+; 2.614  ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|7 ; 1.000        ; 3.452      ; 1.881      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst11|7'                                                                                                                                           ;
++--------+--------------------------------+--------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                      ; To Node                        ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------+--------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.511 ; 4xLED_mod:inst3|74393m:inst8|3 ; 4xLED_mod:inst3|74393m:inst8|3 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; 1.000        ; 0.000      ; 2.178      ;
+; -1.222 ; 4xLED_mod:inst3|74393m:inst8|1 ; 4xLED_mod:inst3|74393m:inst8|3 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; 1.000        ; 0.000      ; 1.889      ;
+; -1.213 ; 4xLED_mod:inst3|74393m:inst8|1 ; 4xLED_mod:inst3|74393m:inst8|1 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; 1.000        ; 0.000      ; 1.880      ;
+; 1.378  ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|7 ; 0.500        ; 2.696      ; 1.861      ;
+; 1.697  ; DIV20M:inst13|74390:inst11|5   ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|7 ; 1.000        ; 3.311      ; 2.281      ;
+; 1.878  ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|7 ; 1.000        ; 2.696      ; 1.861      ;
+; 3.195  ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|7 ; 0.500        ; 5.485      ; 2.833      ;
+; 3.494  ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|3 ; DIV20M:inst13|74390:inst11|7 ; 0.500        ; 5.485      ; 2.534      ;
+; 3.695  ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|7 ; 1.000        ; 5.485      ; 2.833      ;
+; 3.994  ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|3 ; DIV20M:inst13|74390:inst11|7 ; 1.000        ; 5.485      ; 2.534      ;
++--------+--------------------------------+--------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst|34'                                                                                                                                    ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -1.275 ; DIV20M:inst13|74390:inst|32 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|34 ; 1.000        ; -0.047     ; 1.895      ;
+; 0.146  ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|34 ; 0.500        ; 2.163      ; 2.560      ;
+; 0.254  ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|34 ; 0.500        ; 2.163      ; 2.452      ;
+; 0.646  ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|34 ; 1.000        ; 2.163      ; 2.560      ;
+; 0.754  ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|34 ; 1.000        ; 2.163      ; 2.452      ;
+; 1.065  ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|34 ; 0.500        ; 3.055      ; 2.533      ;
+; 1.565  ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|34 ; 1.000        ; 3.055      ; 2.533      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst13|7'                                                                                                                                       ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.244 ; DIV20M:inst13|74390:inst13|5 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|7 ; 1.000        ; -0.027     ; 1.884      ;
+; 0.163  ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|7 ; 0.500        ; 2.186      ; 2.566      ;
+; 0.400  ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|7 ; 0.500        ; 2.186      ; 2.329      ;
+; 0.663  ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|7 ; 1.000        ; 2.186      ; 2.566      ;
+; 0.900  ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|7 ; 1.000        ; 2.186      ; 2.329      ;
+; 1.736  ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|7 ; 0.500        ; 3.054      ; 1.861      ;
+; 2.236  ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|7 ; 1.000        ; 3.054      ; 1.861      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst|33'                                                                                                                                    ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -1.222 ; DIV20M:inst13|74390:inst|32 ; DIV20M:inst13|74390:inst|32 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; 1.000        ; 0.000      ; 1.889      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst13|6'                                                                                                                                       ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.215 ; DIV20M:inst13|74390:inst13|5 ; DIV20M:inst13|74390:inst13|5 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; 1.000        ; 0.000      ; 1.882      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst9|33'                                                                                                                                       ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.194 ; DIV20M:inst13|74390:inst9|32 ; DIV20M:inst13|74390:inst9|32 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; 1.000        ; 0.000      ; 1.861      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst|6'                                                                                                                                 ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; Slack  ; From Node                  ; To Node                    ; Launch Clock               ; Latch Clock                ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; -1.194 ; DIV20M:inst13|74390:inst|5 ; DIV20M:inst13|74390:inst|5 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|6 ; 1.000        ; 0.000      ; 1.861      ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst11|33'                                                                                                                                          ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                       ; Launch Clock                  ; Latch Clock                   ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; -1.193 ; DIV20M:inst13|74390:inst11|32 ; DIV20M:inst13|74390:inst11|32 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; 1.000        ; 0.000      ; 1.860      ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst11|6'                                                                                                                                       ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.193 ; DIV20M:inst13|74390:inst11|5 ; DIV20M:inst13|74390:inst11|5 ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|6 ; 1.000        ; 0.000      ; 1.860      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst9|6'                                                                                                                                    ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -1.193 ; DIV20M:inst13|74390:inst9|5 ; DIV20M:inst13|74390:inst9|5 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|6 ; 1.000        ; 0.000      ; 1.860      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst11|31'                                                                                                                                         ;
++-------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                       ; Launch Clock                  ; Latch Clock                   ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; 0.560 ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst11|31 ; 0.500        ; 2.157      ; 2.140      ;
+; 1.060 ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst11|31 ; 1.000        ; 2.157      ; 2.140      ;
+; 1.359 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|31 ; 0.500        ; 2.697      ; 1.881      ;
+; 1.859 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|31 ; 1.000        ; 2.697      ; 1.881      ;
++-------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst|31'                                                                                                                                   ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; 1.122 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|31 ; 0.500        ; 3.112      ; 2.533      ;
+; 1.490 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst|31 ; 0.500        ; 2.808      ; 1.861      ;
+; 1.622 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|31 ; 1.000        ; 3.112      ; 2.533      ;
+; 1.990 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst|31 ; 1.000        ; 2.808      ; 1.861      ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst9|3'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+; 1.292 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|3 ; 0.500        ; 2.869      ; 2.120      ;
+; 1.359 ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|3 ; 0.500        ; 2.697      ; 1.881      ;
+; 1.792 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|3 ; 1.000        ; 2.869      ; 2.120      ;
+; 1.859 ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|3 ; 1.000        ; 2.697      ; 1.881      ;
++-------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst9|31'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 1.351 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst9|31 ; 0.500        ; 2.690      ; 1.882      ;
+; 1.714 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|31 ; 0.500        ; 3.052      ; 1.881      ;
+; 1.851 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst9|31 ; 1.000        ; 2.690      ; 1.882      ;
+; 2.214 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|31 ; 1.000        ; 3.052      ; 1.881      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst|3'                                                                                                                                   ;
++-------+-----------------------------+-----------------------------+-----------------------------+----------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+----------------------------+--------------+------------+------------+
+; 1.456 ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|3 ; 0.500        ; 3.053      ; 2.140      ;
+; 1.617 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|3 ; 0.500        ; 3.215      ; 2.141      ;
+; 1.956 ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|3 ; 1.000        ; 3.053      ; 2.140      ;
+; 2.117 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|3 ; 1.000        ; 3.215      ; 2.141      ;
++-------+-----------------------------+-----------------------------+-----------------------------+----------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst13|3'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 1.720 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst13|3 ; 0.500        ; 3.038      ; 1.861      ;
+; 1.776 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|3 ; 0.500        ; 3.094      ; 1.861      ;
+; 2.220 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst13|3 ; 1.000        ; 3.038      ; 1.861      ;
+; 2.276 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|3 ; 1.000        ; 3.094      ; 1.861      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DIV20M:inst13|74390:inst11|3'                                                                                                                                         ;
++-------+-------------------------------+-------------------------------+-------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                       ; Launch Clock                  ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+-------------------------------+-------------------------------+------------------------------+--------------+------------+------------+
+; 2.131 ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|3 ; 0.500        ; 3.449      ; 1.861      ;
+; 2.149 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|3 ; 0.500        ; 3.467      ; 1.861      ;
+; 2.631 ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|3 ; 1.000        ; 3.449      ; 1.861      ;
+; 2.649 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|3 ; 1.000        ; 3.467      ; 1.861      ;
++-------+-------------------------------+-------------------------------+-------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk40M'                                                                                                                                     ;
++-------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+; Slack ; From Node                  ; To Node                    ; Launch Clock               ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+; 2.932 ; DIV20M:inst13|74390:inst|7 ; DIV20M:inst13|74390:inst|7 ; DIV20M:inst13|74390:inst|7 ; clk40M      ; 0.500        ; 4.509      ; 2.120      ;
+; 3.432 ; DIV20M:inst13|74390:inst|7 ; DIV20M:inst13|74390:inst|7 ; DIV20M:inst13|74390:inst|7 ; clk40M      ; 1.000        ; 4.509      ; 2.120      ;
++-------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst11|7'                                                                                                                                            ;
++--------+--------------------------------+--------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                      ; To Node                        ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------+--------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -3.548 ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|3 ; DIV20M:inst13|74390:inst11|7 ; 0.000        ; 5.485      ; 2.534      ;
+; -3.249 ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|7 ; 0.000        ; 5.485      ; 2.833      ;
+; -3.048 ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|3 ; DIV20M:inst13|74390:inst11|7 ; -0.500       ; 5.485      ; 2.534      ;
+; -2.749 ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|7 ; -0.500       ; 5.485      ; 2.833      ;
+; -1.432 ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|7 ; 0.000        ; 2.696      ; 1.861      ;
+; -1.251 ; DIV20M:inst13|74390:inst11|5   ; DIV20M:inst13|74390:inst11|3   ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|7 ; 0.000        ; 3.311      ; 2.281      ;
+; -0.932 ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|6   ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|7 ; -0.500       ; 2.696      ; 1.861      ;
+; 1.659  ; 4xLED_mod:inst3|74393m:inst8|1 ; 4xLED_mod:inst3|74393m:inst8|1 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; 0.000        ; 0.000      ; 1.880      ;
+; 1.668  ; 4xLED_mod:inst3|74393m:inst8|1 ; 4xLED_mod:inst3|74393m:inst8|3 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; 0.000        ; 0.000      ; 1.889      ;
+; 1.957  ; 4xLED_mod:inst3|74393m:inst8|3 ; 4xLED_mod:inst3|74393m:inst8|3 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; 0.000        ; 0.000      ; 2.178      ;
++--------+--------------------------------+--------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk40M'                                                                                                                                       ;
++--------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                  ; To Node                    ; Launch Clock               ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+; -2.986 ; DIV20M:inst13|74390:inst|7 ; DIV20M:inst13|74390:inst|7 ; DIV20M:inst13|74390:inst|7 ; clk40M      ; 0.000        ; 4.509      ; 2.120      ;
+; -2.486 ; DIV20M:inst13|74390:inst|7 ; DIV20M:inst13|74390:inst|7 ; DIV20M:inst13|74390:inst|7 ; clk40M      ; -0.500       ; 4.509      ; 2.120      ;
++--------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst11|3'                                                                                                                                           ;
++--------+-------------------------------+-------------------------------+-------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                       ; Launch Clock                  ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+-------------------------------+-------------------------------+------------------------------+--------------+------------+------------+
+; -2.203 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|3 ; 0.000        ; 3.467      ; 1.861      ;
+; -2.185 ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|3 ; 0.000        ; 3.449      ; 1.861      ;
+; -1.703 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|3 ; -0.500       ; 3.467      ; 1.861      ;
+; -1.685 ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|3 ; -0.500       ; 3.449      ; 1.861      ;
++--------+-------------------------------+-------------------------------+-------------------------------+------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst11|34'                                                                                                                                           ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                       ; Launch Clock                  ; Latch Clock                   ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; -2.168 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; 0.000        ; 3.452      ; 1.881      ;
+; -1.668 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; -0.500       ; 3.452      ; 1.881      ;
+; -0.434 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; 0.000        ; 2.188      ; 2.351      ;
+; -0.331 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|34 ; 0.000        ; 2.188      ; 2.454      ;
+; 0.066  ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; -0.500       ; 2.188      ; 2.351      ;
+; 0.169  ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|34 ; -0.500       ; 2.188      ; 2.454      ;
+; 1.981  ; DIV20M:inst13|74390:inst11|32 ; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; 0.000        ; 0.052      ; 2.254      ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst9|7'                                                                                                                                     ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -2.168 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|7 ; 0.000        ; 3.452      ; 1.881      ;
+; -1.668 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|7 ; -0.500       ; 3.452      ; 1.881      ;
+; -0.434 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|7 ; 0.000        ; 2.188      ; 2.351      ;
+; -0.331 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|7 ; 0.000        ; 2.188      ; 2.454      ;
+; 0.066  ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|7 ; -0.500       ; 2.188      ; 2.351      ;
+; 0.169  ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|7 ; -0.500       ; 2.188      ; 2.454      ;
+; 1.981  ; DIV20M:inst13|74390:inst9|5 ; DIV20M:inst13|74390:inst9|3 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|7 ; 0.000        ; 0.052      ; 2.254      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst13|3'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.830 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|3 ; 0.000        ; 3.094      ; 1.861      ;
+; -1.774 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst13|3 ; 0.000        ; 3.038      ; 1.861      ;
+; -1.330 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|3 ; -0.500       ; 3.094      ; 1.861      ;
+; -1.274 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst13|3 ; -0.500       ; 3.038      ; 1.861      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst9|34'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.792 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|34 ; 0.000        ; 3.076      ; 1.881      ;
+; -1.292 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|34 ; -0.500       ; 3.076      ; 1.881      ;
+; -0.628 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|34 ; 0.000        ; 2.172      ; 2.141      ;
+; -0.418 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|34 ; 0.000        ; 2.172      ; 2.351      ;
+; -0.128 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|34 ; -0.500       ; 2.172      ; 2.141      ;
+; 0.082  ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|34 ; -0.500       ; 2.172      ; 2.351      ;
+; 2.004  ; DIV20M:inst13|74390:inst9|32 ; DIV20M:inst13|74390:inst9|31 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|34 ; 0.000        ; 0.018      ; 2.243      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst13|7'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.790 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|7 ; 0.000        ; 3.054      ; 1.861      ;
+; -1.290 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|7 ; -0.500       ; 3.054      ; 1.861      ;
+; -0.454 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|7 ; 0.000        ; 2.186      ; 2.329      ;
+; -0.217 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|7 ; 0.000        ; 2.186      ; 2.566      ;
+; 0.046  ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|7 ; -0.500       ; 2.186      ; 2.329      ;
+; 0.283  ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|7 ; -0.500       ; 2.186      ; 2.566      ;
+; 1.690  ; DIV20M:inst13|74390:inst13|5 ; DIV20M:inst13|74390:inst13|3 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|7 ; 0.000        ; -0.027     ; 1.884      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst9|31'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.768 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|31 ; 0.000        ; 3.052      ; 1.881      ;
+; -1.405 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst9|31 ; 0.000        ; 2.690      ; 1.882      ;
+; -1.268 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|31 ; -0.500       ; 3.052      ; 1.881      ;
+; -0.905 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst11|7 ; DIV20M:inst13|74390:inst9|31 ; -0.500       ; 2.690      ; 1.882      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst|3'                                                                                                                                     ;
++--------+-----------------------------+-----------------------------+-----------------------------+----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+----------------------------+--------------+------------+------------+
+; -1.671 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|3 ; 0.000        ; 3.215      ; 2.141      ;
+; -1.510 ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|3 ; 0.000        ; 3.053      ; 2.140      ;
+; -1.171 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|34 ; DIV20M:inst13|74390:inst|3 ; -0.500       ; 3.215      ; 2.141      ;
+; -1.010 ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|6  ; DIV20M:inst13|74390:inst|3 ; -0.500       ; 3.053      ; 2.140      ;
++--------+-----------------------------+-----------------------------+-----------------------------+----------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst|31'                                                                                                                                     ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -1.544 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst|31 ; 0.000        ; 2.808      ; 1.861      ;
+; -1.176 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|31 ; 0.000        ; 3.112      ; 2.533      ;
+; -1.044 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst9|7 ; DIV20M:inst13|74390:inst|31 ; -0.500       ; 2.808      ; 1.861      ;
+; -0.676 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|31 ; -0.500       ; 3.112      ; 2.533      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst|7'                                                                                                                                  ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; Slack  ; From Node                  ; To Node                    ; Launch Clock               ; Latch Clock                ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; -1.533 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|7 ; 0.000        ; 3.076      ; 2.140      ;
+; -1.033 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|7 ; -0.500       ; 3.076      ; 2.140      ;
+; -0.629 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|7 ; 0.000        ; 2.172      ; 2.140      ;
+; -0.419 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|7 ; 0.000        ; 2.172      ; 2.350      ;
+; -0.129 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|7 ; -0.500       ; 2.172      ; 2.140      ;
+; 0.081  ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|7 ; -0.500       ; 2.172      ; 2.350      ;
+; 2.009  ; DIV20M:inst13|74390:inst|5 ; DIV20M:inst13|74390:inst|3 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|7 ; 0.000        ; 0.014      ; 2.244      ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst9|3'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+; -1.413 ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|3 ; 0.000        ; 2.697      ; 1.881      ;
+; -1.346 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|3 ; 0.000        ; 2.869      ; 2.120      ;
+; -0.913 ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|6  ; DIV20M:inst13|74390:inst9|3 ; -0.500       ; 2.697      ; 1.881      ;
+; -0.846 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|34 ; DIV20M:inst13|74390:inst9|3 ; -0.500       ; 2.869      ; 2.120      ;
++--------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst11|31'                                                                                                                                           ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                       ; Launch Clock                  ; Latch Clock                   ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; -1.413 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|31 ; 0.000        ; 2.697      ; 1.881      ;
+; -0.913 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|31 ; -0.500       ; 2.697      ; 1.881      ;
+; -0.614 ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst11|31 ; 0.000        ; 2.157      ; 2.140      ;
+; -0.114 ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst11|31 ; -0.500       ; 2.157      ; 2.140      ;
++--------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst|34'                                                                                                                                     ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -1.119 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|34 ; 0.000        ; 3.055      ; 2.533      ;
+; -0.619 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|34 ; -0.500       ; 3.055      ; 2.533      ;
+; -0.308 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|34 ; 0.000        ; 2.163      ; 2.452      ;
+; -0.200 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|34 ; 0.000        ; 2.163      ; 2.560      ;
+; 0.192  ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|34 ; -0.500       ; 2.163      ; 2.452      ;
+; 0.300  ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|34 ; -0.500       ; 2.163      ; 2.560      ;
+; 1.721  ; DIV20M:inst13|74390:inst|32 ; DIV20M:inst13|74390:inst|31 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|34 ; 0.000        ; -0.047     ; 1.895      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst11|33'                                                                                                                                          ;
++-------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                       ; Launch Clock                  ; Latch Clock                   ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+; 1.639 ; DIV20M:inst13|74390:inst11|32 ; DIV20M:inst13|74390:inst11|32 ; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; 0.000        ; 0.000      ; 1.860      ;
++-------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst11|6'                                                                                                                                       ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 1.639 ; DIV20M:inst13|74390:inst11|5 ; DIV20M:inst13|74390:inst11|5 ; DIV20M:inst13|74390:inst11|6 ; DIV20M:inst13|74390:inst11|6 ; 0.000        ; 0.000      ; 1.860      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst9|6'                                                                                                                                    ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; 1.639 ; DIV20M:inst13|74390:inst9|5 ; DIV20M:inst13|74390:inst9|5 ; DIV20M:inst13|74390:inst9|6 ; DIV20M:inst13|74390:inst9|6 ; 0.000        ; 0.000      ; 1.860      ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst9|33'                                                                                                                                       ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 1.640 ; DIV20M:inst13|74390:inst9|32 ; DIV20M:inst13|74390:inst9|32 ; DIV20M:inst13|74390:inst9|33 ; DIV20M:inst13|74390:inst9|33 ; 0.000        ; 0.000      ; 1.861      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst|6'                                                                                                                                 ;
++-------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; Slack ; From Node                  ; To Node                    ; Launch Clock               ; Latch Clock                ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; 1.640 ; DIV20M:inst13|74390:inst|5 ; DIV20M:inst13|74390:inst|5 ; DIV20M:inst13|74390:inst|6 ; DIV20M:inst13|74390:inst|6 ; 0.000        ; 0.000      ; 1.861      ;
++-------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst13|6'                                                                                                                                       ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 1.661 ; DIV20M:inst13|74390:inst13|5 ; DIV20M:inst13|74390:inst13|5 ; DIV20M:inst13|74390:inst13|6 ; DIV20M:inst13|74390:inst13|6 ; 0.000        ; 0.000      ; 1.882      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst|33'                                                                                                                                    ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; 1.668 ; DIV20M:inst13|74390:inst|32 ; DIV20M:inst13|74390:inst|32 ; DIV20M:inst13|74390:inst|33 ; DIV20M:inst13|74390:inst|33 ; 0.000        ; 0.000      ; 1.889      ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DIV20M:inst13|74390:inst15|7'                                                                                                           ;
++-------+----------------+----------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node      ; To Node        ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------+----------------+------------------------------+------------------------------+--------------+------------+------------+
+; 1.679 ; 74393m:inst|3  ; 74393m:inst|3  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 1.900      ;
+; 1.680 ; 74393m:inst|3  ; 74393m:inst|9  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 1.901      ;
+; 1.687 ; 74393m:inst|3  ; 74393m:inst|5  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 1.908      ;
+; 1.704 ; 74393m:inst1|3 ; 74393m:inst1|3 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 1.925      ;
+; 1.705 ; 74393m:inst1|3 ; 74393m:inst1|9 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 1.926      ;
+; 1.707 ; 74393m:inst1|3 ; 74393m:inst1|5 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 1.928      ;
+; 1.917 ; 74393m:inst|5  ; 74393m:inst|5  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.138      ;
+; 1.927 ; 74393m:inst|5  ; 74393m:inst|9  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.148      ;
+; 1.958 ; 74393m:inst|1  ; 74393m:inst|1  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.179      ;
+; 1.960 ; 74393m:inst1|5 ; 74393m:inst1|5 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.181      ;
+; 1.963 ; 74393m:inst|1  ; 74393m:inst|3  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.184      ;
+; 1.965 ; 74393m:inst1|5 ; 74393m:inst1|9 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.186      ;
+; 1.991 ; 74393m:inst1|1 ; 74393m:inst1|1 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.212      ;
+; 1.996 ; 74393m:inst1|1 ; 74393m:inst1|3 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.217      ;
+; 2.107 ; 74393m:inst|9  ; 74393m:inst|9  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.328      ;
+; 2.108 ; 74393m:inst1|9 ; 74393m:inst1|9 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.329      ;
+; 2.278 ; 74393m:inst|1  ; 74393m:inst|5  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.499      ;
+; 2.278 ; 74393m:inst|1  ; 74393m:inst|9  ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.499      ;
+; 2.317 ; 74393m:inst1|1 ; 74393m:inst1|5 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.538      ;
+; 2.319 ; 74393m:inst1|1 ; 74393m:inst1|9 ; DIV20M:inst13|74390:inst15|7 ; DIV20M:inst13|74390:inst15|7 ; 0.000        ; 0.000      ; 2.540      ;
++-------+----------------+----------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'clk40M'                                                                                ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target                     ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------+
+; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; clk40M ; Rise       ; clk40M                     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk40M ; Fall       ; DIV20M:inst13|74390:inst|7 ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk40M ; Fall       ; DIV20M:inst13|74390:inst|7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk40M ; Rise       ; clk40M|combout             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk40M ; Rise       ; clk40M|combout             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk40M ; Rise       ; inst13|inst|7|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk40M ; Rise       ; inst13|inst|7|clk          ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|3'                                                                                  ;
++-------+--------------+----------------+------------------+------------------------------+------------+-------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                        ; Clock Edge ; Target                        ;
++-------+--------------+----------------+------------------+------------------------------+------------+-------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|3 ; Fall       ; DIV20M:inst13|74390:inst11|34 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|3 ; Fall       ; DIV20M:inst13|74390:inst11|34 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|3 ; Rise       ; DIV20M:inst13|74390:inst11|6  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|3 ; Rise       ; DIV20M:inst13|74390:inst11|6  ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|3 ; Rise       ; inst13|inst11|20|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|3 ; Rise       ; inst13|inst11|20|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|3 ; Rise       ; inst13|inst11|20|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|3 ; Rise       ; inst13|inst11|20|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|3 ; Rise       ; inst13|inst11|34|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|3 ; Rise       ; inst13|inst11|34|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|3 ; Rise       ; inst13|inst11|3|regout        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|3 ; Rise       ; inst13|inst11|3|regout        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|3 ; Rise       ; inst13|inst11|6|clk           ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|3 ; Rise       ; inst13|inst11|6|clk           ;
++-------+--------------+----------------+------------------+------------------------------+------------+-------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|31'                                                                                  ;
++-------+--------------+----------------+------------------+-------------------------------+------------+-------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                         ; Clock Edge ; Target                        ;
++-------+--------------+----------------+------------------+-------------------------------+------------+-------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|31 ; Rise       ; DIV20M:inst13|74390:inst11|33 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|31 ; Rise       ; DIV20M:inst13|74390:inst11|33 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|31 ; Fall       ; DIV20M:inst13|74390:inst13|7  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|31 ; Fall       ; DIV20M:inst13|74390:inst13|7  ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|31 ; Rise       ; inst13|inst11|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|31 ; Rise       ; inst13|inst11|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|31 ; Rise       ; inst13|inst11|29|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|31 ; Rise       ; inst13|inst11|29|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|31 ; Rise       ; inst13|inst11|31|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|31 ; Rise       ; inst13|inst11|31|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|31 ; Rise       ; inst13|inst11|33|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|31 ; Rise       ; inst13|inst11|33|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|31 ; Rise       ; inst13|inst13|7|clk           ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|31 ; Rise       ; inst13|inst13|7|clk           ;
++-------+--------------+----------------+------------------+-------------------------------+------------+-------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|33'                                                                                  ;
++-------+--------------+----------------+------------------+-------------------------------+------------+-------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                         ; Clock Edge ; Target                        ;
++-------+--------------+----------------+------------------+-------------------------------+------------+-------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|33 ; Fall       ; DIV20M:inst13|74390:inst11|32 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|33 ; Fall       ; DIV20M:inst13|74390:inst11|32 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|33 ; Rise       ; inst13|inst11|32|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|33 ; Rise       ; inst13|inst11|32|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|33 ; Rise       ; inst13|inst11|33|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|33 ; Rise       ; inst13|inst11|33|regout       ;
++-------+--------------+----------------+------------------+-------------------------------+------------+-------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|34'                                                                                  ;
++-------+--------------+----------------+------------------+-------------------------------+------------+-------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                         ; Clock Edge ; Target                        ;
++-------+--------------+----------------+------------------+-------------------------------+------------+-------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|34 ; Fall       ; DIV20M:inst13|74390:inst11|31 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|34 ; Fall       ; DIV20M:inst13|74390:inst11|31 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|34 ; Rise       ; DIV20M:inst13|74390:inst11|33 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|34 ; Rise       ; DIV20M:inst13|74390:inst11|33 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|34 ; Rise       ; inst13|inst11|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|34 ; Rise       ; inst13|inst11|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|34 ; Rise       ; inst13|inst11|29|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|34 ; Rise       ; inst13|inst11|29|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|34 ; Rise       ; inst13|inst11|31|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|34 ; Rise       ; inst13|inst11|31|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|34 ; Rise       ; inst13|inst11|33|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|34 ; Rise       ; inst13|inst11|33|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|34 ; Rise       ; inst13|inst11|34|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|34 ; Rise       ; inst13|inst11|34|regout       ;
++-------+--------------+----------------+------------------+-------------------------------+------------+-------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|6'                                                                                 ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                        ; Clock Edge ; Target                       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|6 ; Fall       ; DIV20M:inst13|74390:inst11|5 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|6 ; Fall       ; DIV20M:inst13|74390:inst11|5 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|6 ; Rise       ; inst13|inst11|5|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|6 ; Rise       ; inst13|inst11|5|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|6 ; Rise       ; inst13|inst11|6|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|6 ; Rise       ; inst13|inst11|6|regout       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst11|7'                                                                                   ;
++-------+--------------+----------------+------------------+------------------------------+------------+--------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                        ; Clock Edge ; Target                         ;
++-------+--------------+----------------+------------------+------------------------------+------------+--------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|7 ; Fall       ; 4xLED_mod:inst3|74393m:inst8|1 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|7 ; Fall       ; 4xLED_mod:inst3|74393m:inst8|1 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|7 ; Fall       ; 4xLED_mod:inst3|74393m:inst8|3 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|7 ; Fall       ; 4xLED_mod:inst3|74393m:inst8|3 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|7 ; Fall       ; DIV20M:inst13|74390:inst11|3   ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|7 ; Fall       ; DIV20M:inst13|74390:inst11|3   ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst11|7 ; Rise       ; DIV20M:inst13|74390:inst11|6   ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|7 ; Rise       ; DIV20M:inst13|74390:inst11|6   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst13|inst11|20|combout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst13|inst11|20|combout       ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst13|inst11|20|datad         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst13|inst11|20|datad         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst13|inst11|3|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst13|inst11|3|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst13|inst11|6|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst13|inst11|6|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst13|inst11|7|regout         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst13|inst11|7|regout         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst3|inst8|1|clk              ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst3|inst8|1|clk              ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst3|inst8|3|clk              ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst11|7 ; Rise       ; inst3|inst8|3|clk              ;
++-------+--------------+----------------+------------------+------------------------------+------------+--------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst13|3'                                                                                 ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                        ; Clock Edge ; Target                       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst13|3 ; Rise       ; DIV20M:inst13|74390:inst13|6 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|3 ; Rise       ; DIV20M:inst13|74390:inst13|6 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst13|3 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|3 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|3 ; Rise       ; inst13|inst13|20|combout     ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|3 ; Rise       ; inst13|inst13|20|combout     ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|3 ; Rise       ; inst13|inst13|20|datad       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|3 ; Rise       ; inst13|inst13|20|datad       ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|3 ; Rise       ; inst13|inst13|3|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|3 ; Rise       ; inst13|inst13|3|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|3 ; Rise       ; inst13|inst13|6|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|3 ; Rise       ; inst13|inst13|6|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|3 ; Rise       ; inst13|inst15|7|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|3 ; Rise       ; inst13|inst15|7|clk          ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst13|6'                                                                                 ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                        ; Clock Edge ; Target                       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst13|6 ; Fall       ; DIV20M:inst13|74390:inst13|5 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|6 ; Fall       ; DIV20M:inst13|74390:inst13|5 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|6 ; Rise       ; inst13|inst13|5|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|6 ; Rise       ; inst13|inst13|5|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|6 ; Rise       ; inst13|inst13|6|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|6 ; Rise       ; inst13|inst13|6|regout       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst13|7'                                                                                 ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                        ; Clock Edge ; Target                       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst13|7 ; Fall       ; DIV20M:inst13|74390:inst13|3 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|7 ; Fall       ; DIV20M:inst13|74390:inst13|3 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst13|7 ; Rise       ; DIV20M:inst13|74390:inst13|6 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|7 ; Rise       ; DIV20M:inst13|74390:inst13|6 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|7 ; Rise       ; inst13|inst13|20|combout     ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|7 ; Rise       ; inst13|inst13|20|combout     ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|7 ; Rise       ; inst13|inst13|20|datac       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|7 ; Rise       ; inst13|inst13|20|datac       ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|7 ; Rise       ; inst13|inst13|3|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|7 ; Rise       ; inst13|inst13|3|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|7 ; Rise       ; inst13|inst13|6|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|7 ; Rise       ; inst13|inst13|6|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst13|7 ; Rise       ; inst13|inst13|7|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst13|7 ; Rise       ; inst13|inst13|7|regout       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst15|7'                                                                           ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                        ; Clock Edge ; Target                 ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst1|1         ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst1|1         ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst1|3         ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst1|3         ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst1|5         ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst1|5         ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst1|9         ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst1|9         ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst|1          ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst|1          ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst|3          ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst|3          ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst|5          ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst|5          ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst|9          ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Fall       ; 74393m:inst|9          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst13|inst15|7|regout ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst13|inst15|7|regout ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst1|1|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst1|1|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst1|3|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst1|3|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst1|5|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst1|5|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst1|9|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst1|9|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst|1|clk             ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst|1|clk             ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst|3|clk             ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst|3|clk             ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst|5|clk             ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst|5|clk             ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst|9|clk             ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst15|7 ; Rise       ; inst|9|clk             ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|3'                                                                                 ;
++-------+--------------+----------------+------------------+-----------------------------+------------+------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                       ; Clock Edge ; Target                       ;
++-------+--------------+----------------+------------------+-----------------------------+------------+------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst9|3 ; Fall       ; DIV20M:inst13|74390:inst9|34 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|3 ; Fall       ; DIV20M:inst13|74390:inst9|34 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst9|3 ; Rise       ; DIV20M:inst13|74390:inst9|6  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|3 ; Rise       ; DIV20M:inst13|74390:inst9|6  ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|3 ; Rise       ; inst13|inst9|20|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|3 ; Rise       ; inst13|inst9|20|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|3 ; Rise       ; inst13|inst9|20|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|3 ; Rise       ; inst13|inst9|20|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|3 ; Rise       ; inst13|inst9|34|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|3 ; Rise       ; inst13|inst9|34|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|3 ; Rise       ; inst13|inst9|3|regout        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|3 ; Rise       ; inst13|inst9|3|regout        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|3 ; Rise       ; inst13|inst9|6|clk           ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|3 ; Rise       ; inst13|inst9|6|clk           ;
++-------+--------------+----------------+------------------+-----------------------------+------------+------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|31'                                                                                 ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                        ; Clock Edge ; Target                       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst9|31 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|31 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst9|31 ; Rise       ; DIV20M:inst13|74390:inst9|33 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|31 ; Rise       ; DIV20M:inst13|74390:inst9|33 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|31 ; Rise       ; inst13|inst11|7|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|31 ; Rise       ; inst13|inst11|7|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|31 ; Rise       ; inst13|inst9|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|31 ; Rise       ; inst13|inst9|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|31 ; Rise       ; inst13|inst9|29|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|31 ; Rise       ; inst13|inst9|29|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|31 ; Rise       ; inst13|inst9|31|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|31 ; Rise       ; inst13|inst9|31|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|31 ; Rise       ; inst13|inst9|33|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|31 ; Rise       ; inst13|inst9|33|clk          ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|33'                                                                                 ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                        ; Clock Edge ; Target                       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst9|33 ; Fall       ; DIV20M:inst13|74390:inst9|32 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|33 ; Fall       ; DIV20M:inst13|74390:inst9|32 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|33 ; Rise       ; inst13|inst9|32|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|33 ; Rise       ; inst13|inst9|32|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|33 ; Rise       ; inst13|inst9|33|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|33 ; Rise       ; inst13|inst9|33|regout       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|34'                                                                                 ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                        ; Clock Edge ; Target                       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst9|34 ; Fall       ; DIV20M:inst13|74390:inst9|31 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|34 ; Fall       ; DIV20M:inst13|74390:inst9|31 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst9|34 ; Rise       ; DIV20M:inst13|74390:inst9|33 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|34 ; Rise       ; DIV20M:inst13|74390:inst9|33 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|34 ; Rise       ; inst13|inst9|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|34 ; Rise       ; inst13|inst9|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|34 ; Rise       ; inst13|inst9|29|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|34 ; Rise       ; inst13|inst9|29|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|34 ; Rise       ; inst13|inst9|31|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|34 ; Rise       ; inst13|inst9|31|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|34 ; Rise       ; inst13|inst9|33|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|34 ; Rise       ; inst13|inst9|33|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|34 ; Rise       ; inst13|inst9|34|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|34 ; Rise       ; inst13|inst9|34|regout       ;
++-------+--------------+----------------+------------------+------------------------------+------------+------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|6'                                                                                ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                       ; Clock Edge ; Target                      ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst9|6 ; Fall       ; DIV20M:inst13|74390:inst9|5 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|6 ; Fall       ; DIV20M:inst13|74390:inst9|5 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|6 ; Rise       ; inst13|inst9|5|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|6 ; Rise       ; inst13|inst9|5|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|6 ; Rise       ; inst13|inst9|6|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|6 ; Rise       ; inst13|inst9|6|regout       ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst9|7'                                                                                ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                       ; Clock Edge ; Target                      ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst9|7 ; Fall       ; DIV20M:inst13|74390:inst9|3 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|7 ; Fall       ; DIV20M:inst13|74390:inst9|3 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst9|7 ; Rise       ; DIV20M:inst13|74390:inst9|6 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|7 ; Rise       ; DIV20M:inst13|74390:inst9|6 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|7 ; Rise       ; inst13|inst9|20|combout     ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|7 ; Rise       ; inst13|inst9|20|combout     ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|7 ; Rise       ; inst13|inst9|20|datac       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|7 ; Rise       ; inst13|inst9|20|datac       ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|7 ; Rise       ; inst13|inst9|3|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|7 ; Rise       ; inst13|inst9|3|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|7 ; Rise       ; inst13|inst9|6|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|7 ; Rise       ; inst13|inst9|6|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst9|7 ; Rise       ; inst13|inst9|7|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst9|7 ; Rise       ; inst13|inst9|7|regout       ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst|3'                                                                                ;
++-------+--------------+----------------+------------------+----------------------------+------------+-----------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                      ; Clock Edge ; Target                      ;
++-------+--------------+----------------+------------------+----------------------------+------------+-----------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst|3 ; Fall       ; DIV20M:inst13|74390:inst|34 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|3 ; Fall       ; DIV20M:inst13|74390:inst|34 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst|3 ; Rise       ; DIV20M:inst13|74390:inst|6  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|3 ; Rise       ; DIV20M:inst13|74390:inst|6  ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|3 ; Rise       ; inst13|inst|20|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|3 ; Rise       ; inst13|inst|20|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|3 ; Rise       ; inst13|inst|20|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|3 ; Rise       ; inst13|inst|20|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|3 ; Rise       ; inst13|inst|34|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|3 ; Rise       ; inst13|inst|34|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|3 ; Rise       ; inst13|inst|3|regout        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|3 ; Rise       ; inst13|inst|3|regout        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|3 ; Rise       ; inst13|inst|6|clk           ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|3 ; Rise       ; inst13|inst|6|clk           ;
++-------+--------------+----------------+------------------+----------------------------+------------+-----------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst|31'                                                                                ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                       ; Clock Edge ; Target                      ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst|31 ; Fall       ; DIV20M:inst13|74390:inst9|7 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|31 ; Fall       ; DIV20M:inst13|74390:inst9|7 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst|31 ; Rise       ; DIV20M:inst13|74390:inst|33 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|31 ; Rise       ; DIV20M:inst13|74390:inst|33 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|31 ; Rise       ; inst13|inst9|7|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|31 ; Rise       ; inst13|inst9|7|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|31 ; Rise       ; inst13|inst|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|31 ; Rise       ; inst13|inst|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|31 ; Rise       ; inst13|inst|29|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|31 ; Rise       ; inst13|inst|29|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|31 ; Rise       ; inst13|inst|31|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|31 ; Rise       ; inst13|inst|31|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|31 ; Rise       ; inst13|inst|33|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|31 ; Rise       ; inst13|inst|33|clk          ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst|33'                                                                                ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                       ; Clock Edge ; Target                      ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst|33 ; Fall       ; DIV20M:inst13|74390:inst|32 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|33 ; Fall       ; DIV20M:inst13|74390:inst|32 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|33 ; Rise       ; inst13|inst|32|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|33 ; Rise       ; inst13|inst|32|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|33 ; Rise       ; inst13|inst|33|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|33 ; Rise       ; inst13|inst|33|regout       ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst|34'                                                                                ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                       ; Clock Edge ; Target                      ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst|34 ; Fall       ; DIV20M:inst13|74390:inst|31 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|34 ; Fall       ; DIV20M:inst13|74390:inst|31 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst|34 ; Rise       ; DIV20M:inst13|74390:inst|33 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|34 ; Rise       ; DIV20M:inst13|74390:inst|33 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|34 ; Rise       ; inst13|inst|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|34 ; Rise       ; inst13|inst|29|combout      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|34 ; Rise       ; inst13|inst|29|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|34 ; Rise       ; inst13|inst|29|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|34 ; Rise       ; inst13|inst|31|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|34 ; Rise       ; inst13|inst|31|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|34 ; Rise       ; inst13|inst|33|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|34 ; Rise       ; inst13|inst|33|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|34 ; Rise       ; inst13|inst|34|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|34 ; Rise       ; inst13|inst|34|regout       ;
++-------+--------------+----------------+------------------+-----------------------------+------------+-----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst|6'                                                                               ;
++-------+--------------+----------------+------------------+----------------------------+------------+----------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                      ; Clock Edge ; Target                     ;
++-------+--------------+----------------+------------------+----------------------------+------------+----------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst|6 ; Fall       ; DIV20M:inst13|74390:inst|5 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|6 ; Fall       ; DIV20M:inst13|74390:inst|5 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|6 ; Rise       ; inst13|inst|5|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|6 ; Rise       ; inst13|inst|5|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|6 ; Rise       ; inst13|inst|6|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|6 ; Rise       ; inst13|inst|6|regout       ;
++-------+--------------+----------------+------------------+----------------------------+------------+----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DIV20M:inst13|74390:inst|7'                                                                               ;
++-------+--------------+----------------+------------------+----------------------------+------------+----------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                      ; Clock Edge ; Target                     ;
++-------+--------------+----------------+------------------+----------------------------+------------+----------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst|7 ; Fall       ; DIV20M:inst13|74390:inst|3 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|7 ; Fall       ; DIV20M:inst13|74390:inst|3 ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DIV20M:inst13|74390:inst|7 ; Rise       ; DIV20M:inst13|74390:inst|6 ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|7 ; Rise       ; DIV20M:inst13|74390:inst|6 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|7 ; Rise       ; inst13|inst|20|combout     ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|7 ; Rise       ; inst13|inst|20|combout     ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|7 ; Rise       ; inst13|inst|20|datad       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|7 ; Rise       ; inst13|inst|20|datad       ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|7 ; Rise       ; inst13|inst|3|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|7 ; Rise       ; inst13|inst|3|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|7 ; Rise       ; inst13|inst|6|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|7 ; Rise       ; inst13|inst|6|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; DIV20M:inst13|74390:inst|7 ; Rise       ; inst13|inst|7|regout       ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; DIV20M:inst13|74390:inst|7 ; Rise       ; inst13|inst|7|regout       ;
++-------+--------------+----------------+------------------+----------------------------+------------+----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                  ;
++-----------+------------------------------+--------+--------+------------+------------------------------+
+; Data Port ; Clock Port                   ; Rise   ; Fall   ; Clock Edge ; Clock Reference              ;
++-----------+------------------------------+--------+--------+------------+------------------------------+
+; a         ; DIV20M:inst13|74390:inst11|7 ; 18.536 ; 18.536 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; b         ; DIV20M:inst13|74390:inst11|7 ; 18.527 ; 18.527 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; c         ; DIV20M:inst13|74390:inst11|7 ; 19.076 ; 19.076 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; d         ; DIV20M:inst13|74390:inst11|7 ; 19.061 ; 19.061 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; e         ; DIV20M:inst13|74390:inst11|7 ; 18.600 ; 18.600 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; f         ; DIV20M:inst13|74390:inst11|7 ; 18.610 ; 18.610 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; g         ; DIV20M:inst13|74390:inst11|7 ; 18.728 ; 18.728 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; y0        ; DIV20M:inst13|74390:inst11|7 ; 11.815 ; 11.815 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; y1        ; DIV20M:inst13|74390:inst11|7 ; 10.735 ; 10.735 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; y2        ; DIV20M:inst13|74390:inst11|7 ; 11.819 ; 11.819 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; y3        ; DIV20M:inst13|74390:inst11|7 ; 13.469 ; 13.469 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; a         ; DIV20M:inst13|74390:inst15|7 ; 18.710 ; 18.710 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; b         ; DIV20M:inst13|74390:inst15|7 ; 18.712 ; 18.712 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; c         ; DIV20M:inst13|74390:inst15|7 ; 19.265 ; 19.265 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; d         ; DIV20M:inst13|74390:inst15|7 ; 19.255 ; 19.255 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; e         ; DIV20M:inst13|74390:inst15|7 ; 18.793 ; 18.793 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; f         ; DIV20M:inst13|74390:inst15|7 ; 18.804 ; 18.804 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; g         ; DIV20M:inst13|74390:inst15|7 ; 18.891 ; 18.891 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
++-----------+------------------------------+--------+--------+------------+------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                          ;
++-----------+------------------------------+--------+--------+------------+------------------------------+
+; Data Port ; Clock Port                   ; Rise   ; Fall   ; Clock Edge ; Clock Reference              ;
++-----------+------------------------------+--------+--------+------------+------------------------------+
+; a         ; DIV20M:inst13|74390:inst11|7 ; 14.653 ; 14.653 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; b         ; DIV20M:inst13|74390:inst11|7 ; 14.655 ; 14.655 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; c         ; DIV20M:inst13|74390:inst11|7 ; 15.208 ; 15.208 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; d         ; DIV20M:inst13|74390:inst11|7 ; 15.198 ; 15.198 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; e         ; DIV20M:inst13|74390:inst11|7 ; 14.736 ; 14.736 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; f         ; DIV20M:inst13|74390:inst11|7 ; 14.747 ; 14.747 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; g         ; DIV20M:inst13|74390:inst11|7 ; 14.845 ; 14.845 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; y0        ; DIV20M:inst13|74390:inst11|7 ; 11.736 ; 11.736 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; y1        ; DIV20M:inst13|74390:inst11|7 ; 10.649 ; 10.649 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; y2        ; DIV20M:inst13|74390:inst11|7 ; 11.735 ; 11.735 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; y3        ; DIV20M:inst13|74390:inst11|7 ; 12.622 ; 12.622 ; Fall       ; DIV20M:inst13|74390:inst11|7 ;
+; a         ; DIV20M:inst13|74390:inst15|7 ; 13.020 ; 13.020 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; b         ; DIV20M:inst13|74390:inst15|7 ; 13.022 ; 13.022 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; c         ; DIV20M:inst13|74390:inst15|7 ; 13.575 ; 13.575 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; d         ; DIV20M:inst13|74390:inst15|7 ; 13.565 ; 13.565 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; e         ; DIV20M:inst13|74390:inst15|7 ; 13.103 ; 13.103 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; f         ; DIV20M:inst13|74390:inst15|7 ; 13.114 ; 13.114 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
+; g         ; DIV20M:inst13|74390:inst15|7 ; 13.212 ; 13.212 ; Fall       ; DIV20M:inst13|74390:inst15|7 ;
++-----------+------------------------------+--------+--------+------------+------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                           ;
++-------------------------------+-------------------------------+----------+----------+----------+----------+
+; From Clock                    ; To Clock                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------+-------------------------------+----------+----------+----------+----------+
+; DIV20M:inst13|74390:inst|7    ; clk40M                        ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst9|6   ; DIV20M:inst13|74390:inst9|3   ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst9|34  ; DIV20M:inst13|74390:inst9|3   ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst9|6   ; DIV20M:inst13|74390:inst9|6   ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst9|3   ; DIV20M:inst13|74390:inst9|7   ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst9|6   ; DIV20M:inst13|74390:inst9|7   ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst9|33  ; DIV20M:inst13|74390:inst9|31  ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst11|7  ; DIV20M:inst13|74390:inst9|31  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst9|33  ; DIV20M:inst13|74390:inst9|33  ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst9|31  ; DIV20M:inst13|74390:inst9|34  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst9|33  ; DIV20M:inst13|74390:inst9|34  ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|3  ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|3  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|6  ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst11|3  ; DIV20M:inst13|74390:inst11|7  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|7  ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst11|7  ; DIV20M:inst13|74390:inst11|7  ; 0        ; 0        ; 0        ; 3        ;
+; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|31 ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst11|31 ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|34 ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst13|6  ; DIV20M:inst13|74390:inst13|3  ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst15|7  ; DIV20M:inst13|74390:inst13|3  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst13|6  ; DIV20M:inst13|74390:inst13|6  ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst13|3  ; DIV20M:inst13|74390:inst13|7  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst13|6  ; DIV20M:inst13|74390:inst13|7  ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst15|7  ; DIV20M:inst13|74390:inst15|7  ; 0        ; 0        ; 0        ; 20       ;
+; DIV20M:inst13|74390:inst|6    ; DIV20M:inst13|74390:inst|3    ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst|34   ; DIV20M:inst13|74390:inst|3    ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst|6    ; DIV20M:inst13|74390:inst|6    ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst|3    ; DIV20M:inst13|74390:inst|7    ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst|6    ; DIV20M:inst13|74390:inst|7    ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst9|7   ; DIV20M:inst13|74390:inst|31   ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst|33   ; DIV20M:inst13|74390:inst|31   ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst|33   ; DIV20M:inst13|74390:inst|33   ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst|31   ; DIV20M:inst13|74390:inst|34   ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst|33   ; DIV20M:inst13|74390:inst|34   ; 1        ; 1        ; 1        ; 2        ;
++-------------------------------+-------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                            ;
++-------------------------------+-------------------------------+----------+----------+----------+----------+
+; From Clock                    ; To Clock                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------+-------------------------------+----------+----------+----------+----------+
+; DIV20M:inst13|74390:inst|7    ; clk40M                        ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst9|6   ; DIV20M:inst13|74390:inst9|3   ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst9|34  ; DIV20M:inst13|74390:inst9|3   ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst9|6   ; DIV20M:inst13|74390:inst9|6   ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst9|3   ; DIV20M:inst13|74390:inst9|7   ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst9|6   ; DIV20M:inst13|74390:inst9|7   ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst9|33  ; DIV20M:inst13|74390:inst9|31  ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst11|7  ; DIV20M:inst13|74390:inst9|31  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst9|33  ; DIV20M:inst13|74390:inst9|33  ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst9|31  ; DIV20M:inst13|74390:inst9|34  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst9|33  ; DIV20M:inst13|74390:inst9|34  ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|3  ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst11|34 ; DIV20M:inst13|74390:inst11|3  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|6  ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst11|3  ; DIV20M:inst13|74390:inst11|7  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst11|6  ; DIV20M:inst13|74390:inst11|7  ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst11|7  ; DIV20M:inst13|74390:inst11|7  ; 0        ; 0        ; 0        ; 3        ;
+; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|31 ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst13|7  ; DIV20M:inst13|74390:inst11|31 ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|33 ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst11|31 ; DIV20M:inst13|74390:inst11|34 ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst11|33 ; DIV20M:inst13|74390:inst11|34 ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst13|6  ; DIV20M:inst13|74390:inst13|3  ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst15|7  ; DIV20M:inst13|74390:inst13|3  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst13|6  ; DIV20M:inst13|74390:inst13|6  ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst13|3  ; DIV20M:inst13|74390:inst13|7  ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst13|6  ; DIV20M:inst13|74390:inst13|7  ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst15|7  ; DIV20M:inst13|74390:inst15|7  ; 0        ; 0        ; 0        ; 20       ;
+; DIV20M:inst13|74390:inst|6    ; DIV20M:inst13|74390:inst|3    ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst|34   ; DIV20M:inst13|74390:inst|3    ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst|6    ; DIV20M:inst13|74390:inst|6    ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst|3    ; DIV20M:inst13|74390:inst|7    ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst|6    ; DIV20M:inst13|74390:inst|7    ; 1        ; 1        ; 1        ; 2        ;
+; DIV20M:inst13|74390:inst9|7   ; DIV20M:inst13|74390:inst|31   ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst|33   ; DIV20M:inst13|74390:inst|31   ; 1        ; 1        ; 0        ; 0        ;
+; DIV20M:inst13|74390:inst|33   ; DIV20M:inst13|74390:inst|33   ; 0        ; 0        ; 0        ; 1        ;
+; DIV20M:inst13|74390:inst|31   ; DIV20M:inst13|74390:inst|34   ; 0        ; 0        ; 1        ; 1        ;
+; DIV20M:inst13|74390:inst|33   ; DIV20M:inst13|74390:inst|34   ; 1        ; 1        ; 1        ; 2        ;
++-------------------------------+-------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 8     ; 8    ;
+; Unconstrained Output Ports      ; 11    ; 11   ;
+; Unconstrained Output Port Paths ; 78    ; 78   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Thu Nov 19 12:10:31 2015
+Info: Command: quartus_sta 4xLED -c 4xLED
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: '4xLED.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst11|7 DIV20M:inst13|74390:inst11|7
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst9|31 DIV20M:inst13|74390:inst9|31
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst15|7 DIV20M:inst13|74390:inst15|7
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst13|3 DIV20M:inst13|74390:inst13|3
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst9|34 DIV20M:inst13|74390:inst9|34
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst13|7 DIV20M:inst13|74390:inst13|7
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst9|33 DIV20M:inst13|74390:inst9|33
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst9|3 DIV20M:inst13|74390:inst9|3
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst13|6 DIV20M:inst13|74390:inst13|6
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst11|31 DIV20M:inst13|74390:inst11|31
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst9|7 DIV20M:inst13|74390:inst9|7
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst11|34 DIV20M:inst13|74390:inst11|34
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst9|6 DIV20M:inst13|74390:inst9|6
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst|31 DIV20M:inst13|74390:inst|31
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst11|33 DIV20M:inst13|74390:inst11|33
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst11|3 DIV20M:inst13|74390:inst11|3
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst|34 DIV20M:inst13|74390:inst|34
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst|33 DIV20M:inst13|74390:inst|33
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst|3 DIV20M:inst13|74390:inst|3
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst11|6 DIV20M:inst13|74390:inst11|6
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst|7 DIV20M:inst13|74390:inst|7
+    Info (332105): create_clock -period 1.000 -name DIV20M:inst13|74390:inst|6 DIV20M:inst13|74390:inst|6
+    Info (332105): create_clock -period 1.000 -name clk40M clk40M
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.873
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.873       -13.532 DIV20M:inst13|74390:inst15|7 
+    Info (332119):    -1.563        -1.563 DIV20M:inst13|74390:inst|7 
+    Info (332119):    -1.558        -1.558 DIV20M:inst13|74390:inst9|34 
+    Info (332119):    -1.535        -1.535 DIV20M:inst13|74390:inst11|34 
+    Info (332119):    -1.535        -1.535 DIV20M:inst13|74390:inst9|7 
+    Info (332119):    -1.511        -2.724 DIV20M:inst13|74390:inst11|7 
+    Info (332119):    -1.275        -1.275 DIV20M:inst13|74390:inst|34 
+    Info (332119):    -1.244        -1.244 DIV20M:inst13|74390:inst13|7 
+    Info (332119):    -1.222        -1.222 DIV20M:inst13|74390:inst|33 
+    Info (332119):    -1.215        -1.215 DIV20M:inst13|74390:inst13|6 
+    Info (332119):    -1.194        -1.194 DIV20M:inst13|74390:inst9|33 
+    Info (332119):    -1.194        -1.194 DIV20M:inst13|74390:inst|6 
+    Info (332119):    -1.193        -1.193 DIV20M:inst13|74390:inst11|33 
+    Info (332119):    -1.193        -1.193 DIV20M:inst13|74390:inst11|6 
+    Info (332119):    -1.193        -1.193 DIV20M:inst13|74390:inst9|6 
+    Info (332119):     0.560         0.000 DIV20M:inst13|74390:inst11|31 
+    Info (332119):     1.122         0.000 DIV20M:inst13|74390:inst|31 
+    Info (332119):     1.292         0.000 DIV20M:inst13|74390:inst9|3 
+    Info (332119):     1.351         0.000 DIV20M:inst13|74390:inst9|31 
+    Info (332119):     1.456         0.000 DIV20M:inst13|74390:inst|3 
+    Info (332119):     1.720         0.000 DIV20M:inst13|74390:inst13|3 
+    Info (332119):     2.131         0.000 DIV20M:inst13|74390:inst11|3 
+    Info (332119):     2.932         0.000 clk40M 
+Info (332146): Worst-case hold slack is -3.548
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.548        -4.980 DIV20M:inst13|74390:inst11|7 
+    Info (332119):    -2.986        -2.986 clk40M 
+    Info (332119):    -2.203        -4.388 DIV20M:inst13|74390:inst11|3 
+    Info (332119):    -2.168        -2.602 DIV20M:inst13|74390:inst11|34 
+    Info (332119):    -2.168        -2.602 DIV20M:inst13|74390:inst9|7 
+    Info (332119):    -1.830        -3.604 DIV20M:inst13|74390:inst13|3 
+    Info (332119):    -1.792        -2.420 DIV20M:inst13|74390:inst9|34 
+    Info (332119):    -1.790        -2.244 DIV20M:inst13|74390:inst13|7 
+    Info (332119):    -1.768        -3.173 DIV20M:inst13|74390:inst9|31 
+    Info (332119):    -1.671        -3.181 DIV20M:inst13|74390:inst|3 
+    Info (332119):    -1.544        -2.720 DIV20M:inst13|74390:inst|31 
+    Info (332119):    -1.533        -2.162 DIV20M:inst13|74390:inst|7 
+    Info (332119):    -1.413        -2.759 DIV20M:inst13|74390:inst9|3 
+    Info (332119):    -1.413        -2.027 DIV20M:inst13|74390:inst11|31 
+    Info (332119):    -1.119        -1.427 DIV20M:inst13|74390:inst|34 
+    Info (332119):     1.639         0.000 DIV20M:inst13|74390:inst11|33 
+    Info (332119):     1.639         0.000 DIV20M:inst13|74390:inst11|6 
+    Info (332119):     1.639         0.000 DIV20M:inst13|74390:inst9|6 
+    Info (332119):     1.640         0.000 DIV20M:inst13|74390:inst9|33 
+    Info (332119):     1.640         0.000 DIV20M:inst13|74390:inst|6 
+    Info (332119):     1.661         0.000 DIV20M:inst13|74390:inst13|6 
+    Info (332119):     1.668         0.000 DIV20M:inst13|74390:inst|33 
+    Info (332119):     1.679         0.000 DIV20M:inst13|74390:inst15|7 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.289        -2.289 clk40M 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst11|3 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst11|31 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst11|33 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst11|34 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst11|6 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst11|7 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst13|3 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst13|6 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst13|7 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst15|7 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst9|3 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst9|31 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst9|33 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst9|34 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst9|6 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst9|7 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst|3 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst|31 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst|33 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst|34 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst|6 
+    Info (332119):     0.234         0.000 DIV20M:inst13|74390:inst|7 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 417 megabytes
+    Info: Processing ended: Thu Nov 19 12:10:33 2015
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

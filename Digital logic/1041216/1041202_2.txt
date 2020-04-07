@@ -1,0 +1,39 @@
+							   #include <regx52.h>
+code wtf[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90,0x5f,0x7c,0x58,0x5e,0x79,0x7f};
+code fxxk[]={0x7f,0xbf,0xdf,0xef};
+void deplay(int t)
+{while(t>0) t--; }
+
+int main()
+{
+	unsigned int i,j;
+	char disp[]={8,9,5,2};
+	char disp1[]={2,0,1,5};
+	while(1)
+	{
+	  for(j=0;j<20;j++)
+		{
+		for(i=0;i<4;i++)
+		{
+			P0=fxxk[i];
+			P1=~wtf[disp[i]];
+			deplay(400);
+		}
+		}
+		P0=0XFF;
+		deplay(32000);
+
+		for(j=0;j<20;j++)
+		{
+		for(i=0;i<4;i++)
+		{
+			P0=fxxk[i];
+			P1=~wtf[disp1[i]];
+			deplay(400);
+		}
+		}
+		P0=0XFF;
+		deplay(32000);
+
+	}
+}

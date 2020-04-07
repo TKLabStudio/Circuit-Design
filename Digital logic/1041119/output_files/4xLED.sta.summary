@@ -1,0 +1,281 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'DIV20M:inst13|74390:inst15|7'
+Slack : -1.873
+TNS   : -13.532
+
+Type  : Setup 'DIV20M:inst13|74390:inst|7'
+Slack : -1.563
+TNS   : -1.563
+
+Type  : Setup 'DIV20M:inst13|74390:inst9|34'
+Slack : -1.558
+TNS   : -1.558
+
+Type  : Setup 'DIV20M:inst13|74390:inst11|34'
+Slack : -1.535
+TNS   : -1.535
+
+Type  : Setup 'DIV20M:inst13|74390:inst9|7'
+Slack : -1.535
+TNS   : -1.535
+
+Type  : Setup 'DIV20M:inst13|74390:inst11|7'
+Slack : -1.511
+TNS   : -2.724
+
+Type  : Setup 'DIV20M:inst13|74390:inst|34'
+Slack : -1.275
+TNS   : -1.275
+
+Type  : Setup 'DIV20M:inst13|74390:inst13|7'
+Slack : -1.244
+TNS   : -1.244
+
+Type  : Setup 'DIV20M:inst13|74390:inst|33'
+Slack : -1.222
+TNS   : -1.222
+
+Type  : Setup 'DIV20M:inst13|74390:inst13|6'
+Slack : -1.215
+TNS   : -1.215
+
+Type  : Setup 'DIV20M:inst13|74390:inst9|33'
+Slack : -1.194
+TNS   : -1.194
+
+Type  : Setup 'DIV20M:inst13|74390:inst|6'
+Slack : -1.194
+TNS   : -1.194
+
+Type  : Setup 'DIV20M:inst13|74390:inst11|33'
+Slack : -1.193
+TNS   : -1.193
+
+Type  : Setup 'DIV20M:inst13|74390:inst11|6'
+Slack : -1.193
+TNS   : -1.193
+
+Type  : Setup 'DIV20M:inst13|74390:inst9|6'
+Slack : -1.193
+TNS   : -1.193
+
+Type  : Setup 'DIV20M:inst13|74390:inst11|31'
+Slack : 0.560
+TNS   : 0.000
+
+Type  : Setup 'DIV20M:inst13|74390:inst|31'
+Slack : 1.122
+TNS   : 0.000
+
+Type  : Setup 'DIV20M:inst13|74390:inst9|3'
+Slack : 1.292
+TNS   : 0.000
+
+Type  : Setup 'DIV20M:inst13|74390:inst9|31'
+Slack : 1.351
+TNS   : 0.000
+
+Type  : Setup 'DIV20M:inst13|74390:inst|3'
+Slack : 1.456
+TNS   : 0.000
+
+Type  : Setup 'DIV20M:inst13|74390:inst13|3'
+Slack : 1.720
+TNS   : 0.000
+
+Type  : Setup 'DIV20M:inst13|74390:inst11|3'
+Slack : 2.131
+TNS   : 0.000
+
+Type  : Setup 'clk40M'
+Slack : 2.932
+TNS   : 0.000
+
+Type  : Hold 'DIV20M:inst13|74390:inst11|7'
+Slack : -3.548
+TNS   : -4.980
+
+Type  : Hold 'clk40M'
+Slack : -2.986
+TNS   : -2.986
+
+Type  : Hold 'DIV20M:inst13|74390:inst11|3'
+Slack : -2.203
+TNS   : -4.388
+
+Type  : Hold 'DIV20M:inst13|74390:inst11|34'
+Slack : -2.168
+TNS   : -2.602
+
+Type  : Hold 'DIV20M:inst13|74390:inst9|7'
+Slack : -2.168
+TNS   : -2.602
+
+Type  : Hold 'DIV20M:inst13|74390:inst13|3'
+Slack : -1.830
+TNS   : -3.604
+
+Type  : Hold 'DIV20M:inst13|74390:inst9|34'
+Slack : -1.792
+TNS   : -2.420
+
+Type  : Hold 'DIV20M:inst13|74390:inst13|7'
+Slack : -1.790
+TNS   : -2.244
+
+Type  : Hold 'DIV20M:inst13|74390:inst9|31'
+Slack : -1.768
+TNS   : -3.173
+
+Type  : Hold 'DIV20M:inst13|74390:inst|3'
+Slack : -1.671
+TNS   : -3.181
+
+Type  : Hold 'DIV20M:inst13|74390:inst|31'
+Slack : -1.544
+TNS   : -2.720
+
+Type  : Hold 'DIV20M:inst13|74390:inst|7'
+Slack : -1.533
+TNS   : -2.162
+
+Type  : Hold 'DIV20M:inst13|74390:inst9|3'
+Slack : -1.413
+TNS   : -2.759
+
+Type  : Hold 'DIV20M:inst13|74390:inst11|31'
+Slack : -1.413
+TNS   : -2.027
+
+Type  : Hold 'DIV20M:inst13|74390:inst|34'
+Slack : -1.119
+TNS   : -1.427
+
+Type  : Hold 'DIV20M:inst13|74390:inst11|33'
+Slack : 1.639
+TNS   : 0.000
+
+Type  : Hold 'DIV20M:inst13|74390:inst11|6'
+Slack : 1.639
+TNS   : 0.000
+
+Type  : Hold 'DIV20M:inst13|74390:inst9|6'
+Slack : 1.639
+TNS   : 0.000
+
+Type  : Hold 'DIV20M:inst13|74390:inst9|33'
+Slack : 1.640
+TNS   : 0.000
+
+Type  : Hold 'DIV20M:inst13|74390:inst|6'
+Slack : 1.640
+TNS   : 0.000
+
+Type  : Hold 'DIV20M:inst13|74390:inst13|6'
+Slack : 1.661
+TNS   : 0.000
+
+Type  : Hold 'DIV20M:inst13|74390:inst|33'
+Slack : 1.668
+TNS   : 0.000
+
+Type  : Hold 'DIV20M:inst13|74390:inst15|7'
+Slack : 1.679
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk40M'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst11|3'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst11|31'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst11|33'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst11|34'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst11|6'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst11|7'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst13|3'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst13|6'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst13|7'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst15|7'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst9|3'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst9|31'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst9|33'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst9|34'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst9|6'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst9|7'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst|3'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst|31'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst|33'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst|34'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst|6'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'DIV20M:inst13|74390:inst|7'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

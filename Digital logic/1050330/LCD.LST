@@ -1,0 +1,85 @@
+C51 COMPILER V9.50.0.0   LCD                                                               03/30/2016 10:15:37 PAGE 1   
+
+
+C51 COMPILER V9.50.0.0, COMPILATION OF MODULE LCD
+OBJECT MODULE PLACED IN LCD.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE LCD.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include <regx52.h>
+   2          #define RS P1_0
+   3          #define RW P1_1
+   4          #define E P1_2
+   5          code char str1[]={"FUCK YOU"};
+   6          code char str2[]={"Sick MY Dick"};
+   7          void deplay(unsigned int t)
+   8          { while(t>0)  t--;}
+   9          
+  10          void wc(char lcd)
+  11          {
+  12   1        RS=0;RW=0;E=1;
+  13   1        P0=lcd;
+  14   1        deplay(100);
+  15   1        E=0;deplay(100);
+  16   1      }
+  17          void wd(char lcd)
+  18          {
+  19   1        RS=1;RW=0;E=1;
+  20   1        P0=lcd;
+  21   1        deplay(100);
+  22   1        E=0;deplay(100);
+  23   1      }
+  24          void init()
+  25          {
+  26   1        deplay(2000);
+  27   1        wc(0x30);
+  28   1        wc(0x30);
+  29   1        wc(0x38);
+  30   1        wc(0x08);
+  31   1        wc(0x01);
+  32   1        wc(0x06);
+  33   1        wc(0x0c);
+  34   1      }
+  35          void dp(char row,word)
+  36          {
+  37   1        char cp;
+  38   1        row--,word--;
+  39   1        cp=0x80+(row*0x40+word);
+  40   1        wc(cp);
+  41   1      }
+  42          
+  43          void ds(char *ptr)
+  44          {
+  45   1        while(*ptr!=0)
+  46   1        {
+  47   2          wd(*ptr);
+  48   2          ptr++;
+  49   2        }
+  50   1      }
+  51          
+  52          void main()
+  53          {
+  54   1        init();
+  55   1        dp(1,1);
+C51 COMPILER V9.50.0.0   LCD                                                               03/30/2016 10:15:37 PAGE 2   
+
+  56   1        ds(str1);
+  57   1        dp(2,1);
+  58   1        ds(str2);
+  59   1        while(1);
+  60   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    168    ----
+   CONSTANT SIZE    =     22    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

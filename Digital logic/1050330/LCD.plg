@@ -1,0 +1,144 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\User\Desktop\1050330\LCD.uvproj
+Project File Date:  03/30/2016
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+Target has no object modules
+Target not created
+Rebuild target 'Target 1'
+compiling LCD.c...
+linking...
+Program Size: data=9.0 xdata=0 code=179
+creating hex file from "LCD"...
+"LCD" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LCD.c...
+LCD.c(11): error C244: 'P1_0': can't initialize, bad type or class
+LCD.c(11): error C132: 'P1_0': not in formal parameter list
+LCD.c(11): error C244: 'P1_1': can't initialize, bad type or class
+LCD.c(11): error C132: 'P1_1': not in formal parameter list
+LCD.c(11): error C244: 'P1_2': can't initialize, bad type or class
+LCD.c(11): error C132: 'P1_2': not in formal parameter list
+LCD.c(12): error C244: 'P0': can't initialize, bad type or class
+LCD.c(12): error C202: 'lcd': undefined identifier
+LCD.c(12): error C132: 'P0': not in formal parameter list
+LCD.c(13): error C141: syntax error near '100'
+LCD.c(13): error C132: 'deplay': not in formal parameter list
+LCD.c(14): error C244: 'P1_2': can't initialize, bad type or class
+LCD.c(14): error C132: 'P1_2': not in formal parameter list
+LCD.c(14): error C141: syntax error near '100'
+LCD.c(14): error C132: 'deplay': not in formal parameter list
+LCD.c(17): error C132: '_wc': not in formal parameter list
+LCD.c(17): error C141: syntax error near 'P1_0'
+LCD.c(17): error C136: 'P1_0': 'void' on variable
+LCD.c(17): error C244: 'P1_0': can't initialize, bad type or class
+LCD.c(17): error C136: 'P1_0': 'void' on variable
+LCD.c(17): error C132: 'P1_0': not in formal parameter list
+LCD.c(17): error C244: 'P1_1': can't initialize, bad type or class
+LCD.c(17): error C132: 'P1_1': not in formal parameter list
+LCD.c(17): error C244: 'P1_2': can't initialize, bad type or class
+LCD.c(17): error C132: 'P1_2': not in formal parameter list
+LCD.c(18): error C244: 'P0': can't initialize, bad type or class
+LCD.c(18): error C202: 'lcd': undefined identifier
+LCD.c(18): error C132: 'P0': not in formal parameter list
+LCD.c(19): error C141: syntax error near '100'
+LCD.c(19): error C132: 'deplay': not in formal parameter list
+LCD.c(20): error C244: 'P1_2': can't initialize, bad type or class
+LCD.c(20): error C132: 'P1_2': not in formal parameter list
+LCD.c(20): error C141: syntax error near '100'
+LCD.c(20): error C132: 'deplay': not in formal parameter list
+LCD.c(23): error C132: 'init': not in formal parameter list
+LCD.c(23): error C141: syntax error near '{'
+LCD.c(24): error C132: 'deplay': not in formal parameter list
+LCD.c(25): error C141: syntax error near '0x30'
+LCD.c(25): error C132: 'wc': not in formal parameter list
+LCD.c(26): error C141: syntax error near '0x30'
+LCD.c(26): error C132: 'wc': not in formal parameter list
+LCD.c(27): error C141: syntax error near '0x38'
+LCD.c(27): error C132: 'wc': not in formal parameter list
+LCD.c(28): error C141: syntax error near '0x08'
+LCD.c(28): error C132: 'wc': not in formal parameter list
+LCD.c(29): error C141: syntax error near '0x01'
+LCD.c(29): error C132: 'wc': not in formal parameter list
+LCD.c(30): error C141: syntax error near '0x06'
+LCD.c(30): error C132: 'wc': not in formal parameter list
+LCD.c(31): error C141: syntax error near '0x0c'
+LCD.c(31): error C132: 'wc': not in formal parameter list
+LCD.c(32): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling LCD.c...
+LCD.c(11): error C244: 'P1_0': can't initialize, bad type or class
+LCD.c(11): error C132: 'P1_0': not in formal parameter list
+LCD.c(11): error C244: 'P1_1': can't initialize, bad type or class
+LCD.c(11): error C132: 'P1_1': not in formal parameter list
+LCD.c(11): error C244: 'P1_2': can't initialize, bad type or class
+LCD.c(11): error C132: 'P1_2': not in formal parameter list
+LCD.c(12): error C244: 'P0': can't initialize, bad type or class
+LCD.c(12): error C202: 'lcd': undefined identifier
+LCD.c(12): error C132: 'P0': not in formal parameter list
+LCD.c(13): error C141: syntax error near '100'
+LCD.c(13): error C132: 'deplay': not in formal parameter list
+LCD.c(14): error C244: 'P1_2': can't initialize, bad type or class
+LCD.c(14): error C132: 'P1_2': not in formal parameter list
+LCD.c(14): error C141: syntax error near '100'
+LCD.c(14): error C132: 'deplay': not in formal parameter list
+LCD.c(17): error C132: '_wc': not in formal parameter list
+LCD.c(17): error C141: syntax error near 'P1_0'
+LCD.c(17): error C136: 'P1_0': 'void' on variable
+LCD.c(17): error C244: 'P1_0': can't initialize, bad type or class
+LCD.c(17): error C136: 'P1_0': 'void' on variable
+LCD.c(17): error C132: 'P1_0': not in formal parameter list
+LCD.c(17): error C244: 'P1_1': can't initialize, bad type or class
+LCD.c(17): error C132: 'P1_1': not in formal parameter list
+LCD.c(17): error C244: 'P1_2': can't initialize, bad type or class
+LCD.c(17): error C132: 'P1_2': not in formal parameter list
+LCD.c(18): error C244: 'P0': can't initialize, bad type or class
+LCD.c(18): error C202: 'lcd': undefined identifier
+LCD.c(18): error C132: 'P0': not in formal parameter list
+LCD.c(19): error C141: syntax error near '100'
+LCD.c(19): error C132: 'deplay': not in formal parameter list
+LCD.c(20): error C244: 'P1_2': can't initialize, bad type or class
+LCD.c(20): error C132: 'P1_2': not in formal parameter list
+LCD.c(20): error C141: syntax error near '100'
+LCD.c(20): error C132: 'deplay': not in formal parameter list
+LCD.c(23): error C132: 'init': not in formal parameter list
+LCD.c(23): error C141: syntax error near '{'
+LCD.c(24): error C132: 'deplay': not in formal parameter list
+LCD.c(25): error C141: syntax error near '0x30'
+LCD.c(25): error C132: 'wc': not in formal parameter list
+LCD.c(26): error C141: syntax error near '0x30'
+LCD.c(26): error C132: 'wc': not in formal parameter list
+LCD.c(27): error C141: syntax error near '0x38'
+LCD.c(27): error C132: 'wc': not in formal parameter list
+LCD.c(28): error C141: syntax error near '0x08'
+LCD.c(28): error C132: 'wc': not in formal parameter list
+LCD.c(29): error C141: syntax error near '0x01'
+LCD.c(29): error C132: 'wc': not in formal parameter list
+LCD.c(30): error C141: syntax error near '0x06'
+LCD.c(30): error C132: 'wc': not in formal parameter list
+LCD.c(31): error C141: syntax error near '0x0c'
+LCD.c(31): error C132: 'wc': not in formal parameter list
+LCD.c(32): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling LCD.c...
+LCD.c(23): error C237: '_wc': function already has a body
+Target not created
+Rebuild target 'Target 1'
+compiling LCD.c...
+linking...
+Program Size: data=9.0 xdata=0 code=212
+creating hex file from "LCD"...
+"LCD" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LCD.c...
+linking...
+Program Size: data=9.0 xdata=0 code=230
+creating hex file from "LCD"...
+"LCD" - 0 Error(s), 0 Warning(s).

@@ -1,0 +1,56 @@
+C51 COMPILER V9.50.0.0   1050608                                                           06/08/2016 10:11:29 PAGE 1   
+
+
+C51 COMPILER V9.50.0.0, COMPILATION OF MODULE 1050608
+OBJECT MODULE PLACED IN 1050608.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE 1050608.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include<regx51.h>
+   2          #define seg_7 P2
+   3          void main()
+   4          {
+   5   1        TMOD=0X20;
+   6   1        TH1=244;
+   7   1        PCON=0X80;
+   8   1        TR1=1;
+   9   1        SCON=0x50;
+  10   1        while(1)
+  11   1        {
+  12   2          RI=0;
+  13   2        while(RI==0);
+  14   2        if(SBUF==0XFE)
+  15   2          seg_7=0xf9;
+  16   2        else if(SBUF==0XFd)
+  17   2          seg_7=0xa4;
+  18   2        else if(SBUF==0XFB)
+  19   2          seg_7=0xb0;
+  20   2        else if(SBUF==0XF7)
+  21   2          seg_7=0x99;
+  22   2        else if(SBUF==0Xef)
+  23   2          seg_7=0x92;
+  24   2        else if(SBUF==0Xdf)
+  25   2          seg_7=0x82;
+  26   2        else if(SBUF==0Xbf)
+  27   2          seg_7=0xf8;
+  28   2        else if(SBUF==0X7f)
+  29   2          seg_7=0x80;
+  30   2        else
+  31   2          seg_7=0x7f;
+  32   2        }
+  33   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    104    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

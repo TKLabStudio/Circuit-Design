@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, D:/1210test/1210.bdf
+source_file = 1, D:/1210test/Block1.bdf
+source_file = 1, D:/1210test/db/1210.cbx.xml
+source_file = 1, c:/altera/13.0/quartus/libraries/others/maxplus2/74393.bdf
+source_file = 1, c:/altera/13.0/quartus/libraries/others/maxplus2/74390.bdf
+design_name = \1210\
+instance = comp, \f1HZ~I\, f1HZ, \1210\, 1
+instance = comp, \f40MHZ~I\, f40MHZ, \1210\, 1

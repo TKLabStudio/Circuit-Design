@@ -1,0 +1,56 @@
+C51 COMPILER V9.50.0.0   SPEAK                                                             05/25/2016 10:18:54 PAGE 1   
+
+
+C51 COMPILER V9.50.0.0, COMPILATION OF MODULE SPEAK
+OBJECT MODULE PLACED IN speak.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE speak.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include <regx52.h>
+   2          #define  SP P0_0
+   3          code char wtf[]={0xf9,0x7d,0xfc,0xbf};
+   4          unsigned char scale;
+   5          void deplay(unsigned int t)
+   6          { while(t>0) t--; }
+   7          
+   8          void main()
+   9          {
+  10   1        unsigned char i;
+  11   1        EA=1;ET0=1;
+  12   1        TMOD=0X01;
+  13   1        while(1)
+  14   1        {
+  15   2          TR0=1;
+  16   2            for(i=0;i<20;i++)
+  17   2              {
+  18   3              scale=0;
+  19   3              deplay(2500);
+  20   3              scale=1;
+  21   3              deplay(2500);
+  22   3              }
+  23   2            TR0=0;
+  24   2              for(i=0;i<4;i++)
+  25   2              {deplay(50000);}
+  26   2          }
+  27   1      }
+  28          void timer0() interrupt 1
+  29          {
+  30   1        TH0=wtf[scale*2];
+  31   1        TL0=wtf[scale*2+1];
+  32   1        SP=!SP;
+  33   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    125    ----
+   CONSTANT SIZE    =      4    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      1    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

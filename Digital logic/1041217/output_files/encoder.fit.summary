@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Dec 17 11:11:14 2015
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : encoder
+Top-level Entity Name : encoder
+Family : MAX II
+Device : EPM570T144C5
+Timing Models : Final
+Total logic elements : 10 / 570 ( 2 % )
+Total pins : 14 / 116 ( 12 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

@@ -1,0 +1,159 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        05/25/2016  10:18:54  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE STARTUP.obj, speak.obj TO speak RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  STARTUP.obj (?C_STARTUP)
+  speak.obj (SPEAK)
+
+
+LINK MAP OF MODULE:  speak (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0001H     UNIT         ?DT?SPEAK
+            IDATA   0009H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     0008H                  *** GAP ***
+            CODE    000BH     0003H     ABSOLUTE     
+                    000EH     07F2H                  *** GAP ***
+            CODE    0800H     0037H     UNIT         ?PR?MAIN?SPEAK
+            CODE    0837H     0035H     UNIT         ?PR?TIMER0?SPEAK
+            CODE    086CH     0011H     UNIT         ?PR?_DEPLAY?SPEAK
+            CODE    087DH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0889H     0004H     UNIT         ?CO?SPEAK
+
+
+
+OVERLAY MAP OF MODULE:   speak (?C_STARTUP)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?SPEAK
+
+?PR?MAIN?SPEAK
+  +--> ?PR?_DEPLAY?SPEAK
+
+*** NEW ROOT ***************************************************
+
+?PR?TIMER0?SPEAK
+  +--> ?CO?SPEAK
+
+
+
+SYMBOL TABLE OF MODULE:  speak (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/25/2016  10:18:54  PAGE 2
+
+
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:087DH         SEGMENT       ?C_C51STARTUP
+  I:0009H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:0880H         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:087DH         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         126
+  C:087DH         LINE#         133
+  C:087FH         LINE#         134
+  C:0880H         LINE#         135
+  C:0881H         LINE#         136
+  C:0883H         LINE#         185
+  C:0886H         LINE#         196
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        SPEAK
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:086CH         PUBLIC        _deplay
+  B:00A8H.7       PUBLIC        EA
+  D:0008H         PUBLIC        scale
+  B:0080H.0       PUBLIC        P0_0
+  C:0800H         PUBLIC        main
+  D:0089H         PUBLIC        TMOD
+  B:00A8H.1       PUBLIC        ET0
+  D:008CH         PUBLIC        TH0
+  D:008AH         PUBLIC        TL0
+  C:0889H         PUBLIC        wtf
+  C:0837H         PUBLIC        timer0
+  B:0088H.4       PUBLIC        TR0
+  -------         PROC          _DEPLAY
+  D:0006H         SYMBOL        t
+  C:086CH         LINE#         5
+  C:086CH         LINE#         6
+  -------         ENDPROC       _DEPLAY
+  -------         PROC          MAIN
+  -------         DO            
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/25/2016  10:18:54  PAGE 3
+
+
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:0800H         LINE#         8
+  C:0800H         LINE#         9
+  C:0800H         LINE#         11
+  C:0804H         LINE#         12
+  C:0807H         LINE#         13
+  C:0807H         LINE#         14
+  C:0807H         LINE#         15
+  C:0809H         LINE#         16
+  C:080BH         LINE#         17
+  C:080BH         LINE#         18
+  C:080EH         LINE#         19
+  C:0815H         LINE#         20
+  C:0818H         LINE#         21
+  C:081FH         LINE#         22
+  C:0823H         LINE#         23
+  C:0825H         LINE#         24
+  C:082DH         LINE#         25
+  -------         ENDPROC       MAIN
+  -------         PROC          TIMER0
+  C:0837H         LINE#         28
+  C:083FH         LINE#         30
+  C:0850H         LINE#         31
+  C:0861H         LINE#         32
+  C:0863H         LINE#         33
+  -------         ENDPROC       TIMER0
+  -------         ENDMOD        SPEAK
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0093H BYTE ( 7%) *
+******************************************************************************
+
+Program Size: data=10.0 xdata=0 code=147
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

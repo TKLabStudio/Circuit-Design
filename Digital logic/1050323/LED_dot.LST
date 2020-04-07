@@ -1,0 +1,56 @@
+C51 COMPILER V9.50.0.0   LED_DOT                                                           03/23/2016 10:20:20 PAGE 1   
+
+
+C51 COMPILER V9.50.0.0, COMPILATION OF MODULE LED_DOT
+OBJECT MODULE PLACED IN LED_dot.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE LED_dot.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          code char font[]={0x2c,0x7e,0x29,0x20,0x30,0x28,0x34,0x20,
+   3                            0,0x7e,0x20,0,0x68,0x3e,0x48,0,
+   4                            0,0x3c,0x24,0xff,0xff,0x24,0x3c,0,
+   5                            0xe6,0xe6,0x84,0xff,0xff,0x84,0xe6,0xe6,
+   6                            0,0x7e,0x20,0,0x6a,0x3e,0x4a,0,
+   7                            0,0,0x3e,0x40,0x40,0x20,0,0};
+   8          char disp[8];
+   9          void deplay(unsigned t)
+  10          { while(t>0)  t--;}
+  11          void main()
+  12          {
+  13   1        char i,j,sec,ptr;
+  14   1              for(i=0;i<8;i++)  disp[0]=font[0];
+  15   1        while(1)
+  16   1        {
+  17   2          for(i=7,j=1;i>=0;i--,j=j<<1)
+  18   2          {     
+  19   3            P0=0xff;
+  20   3            P0=~j;
+  21   3            P1=disp[i];
+  22   3            deplay(100);
+  23   3          }
+  24   2          sec++;
+  25   2            if(sec>=20)
+  26   2            {
+  27   3              sec=0;
+  28   3              for(i=0;i<7;i++)  disp[i]=disp[i+1];
+  29   3                  disp[7]=font[ptr--];
+  30   3                  if(ptr<=0) ptr=48;
+  31   3            }
+  32   2          }
+  33   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    138    ----
+   CONSTANT SIZE    =     48    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      8       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

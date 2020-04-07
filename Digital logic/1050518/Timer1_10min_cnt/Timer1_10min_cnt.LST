@@ -1,0 +1,74 @@
+C51 COMPILER V9.50.0.0   TIMER1_10MIN_CNT                                                  05/18/2016 10:19:40 PAGE 1   
+
+
+C51 COMPILER V9.50.0.0, COMPILATION OF MODULE TIMER1_10MIN_CNT
+OBJECT MODULE PLACED IN Timer1_10min_cnt.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE Timer1_10min_cnt.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include<reg52.h>
+   2          code char tab[]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7c,0x27,0x7f,0x67};
+   3          code char com[]={0x7f,0xbf,0xdf,0xef};
+   4          char time=10;
+   5          char num,min,sec,wtf,disp[4];
+   6          void display()
+   7          {
+   8   1        disp[0]=tab[min/10];
+   9   1        disp[1]=tab[min%10];
+  10   1        disp[2]=tab[sec/10];
+  11   1        disp[3]=tab[sec%10];
+  12   1      }
+  13          void timer0() interrupt 1
+  14          {
+  15   1        TH0=(65536-1000)/256;
+  16   1        TL0=(65536-1000)%256;
+  17   1        P0=0XFF;
+  18   1        P1=disp[wtf];
+  19   1        P0=com[wtf];
+  20   1        wtf++;
+  21   1        if(wtf>=4) wtf=0;
+  22   1      }
+  23          
+  24          void timer1() interrupt 3
+  25          {
+  26   1        TH1=(65536-50000)/256;
+  27   1        TL1=(65536-50000)%256;
+  28   1        num++;
+  29   1        if(num>=20)
+  30   1        {
+  31   2          num=0;
+  32   2          sec--;
+  33   2          if(sec<0)
+  34   2          {sec=59;min--;}
+  35   2          if((min==0)&(sec==0))
+  36   2          {TR0=0;min=time;}
+  37   2          display();
+  38   2        }
+  39   1      }
+  40          
+  41          void main()
+  42          {
+  43   1        IE=0X8A;
+  44   1        TMOD=0x11;
+  45   1        TR1=TR0=1;
+  46   1        min=time;
+  47   1        display();
+  48   1        while(1);
+  49   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    338    ----
+   CONSTANT SIZE    =     14    ----
+   XDATA SIZE       =   ----    ----
+C51 COMPILER V9.50.0.0   TIMER1_10MIN_CNT                                                  05/18/2016 10:19:40 PAGE 2   
+
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      9    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

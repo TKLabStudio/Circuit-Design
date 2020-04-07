@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Nov 12 12:12:55 2015
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : 4xLED
+Top-level Entity Name : 4xLED
+Family : MAX II
+Device : EPM570T144C5
+Timing Models : Final
+Total logic elements : 69 / 570 ( 12 % )
+Total pins : 12 / 116 ( 10 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

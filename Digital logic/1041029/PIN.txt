@@ -1,0 +1,6 @@
+to,location
+clk40M,PIN_18
+led1,PIN_73
+led2,PIN_71
+led3,PIN_69
+led4,PIN_67

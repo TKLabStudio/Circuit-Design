@@ -1,0 +1,71 @@
+C51 COMPILER V9.50.0.0   KEYPAD                                                            02/24/2016 10:14:03 PAGE 1   
+
+
+C51 COMPILER V9.50.0.0, COMPILATION OF MODULE KEYPAD
+OBJECT MODULE PLACED IN keypad.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE keypad.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include <regx52.h>
+   2          code wtf[]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x27,0x7f,0x6f,0x5f,0x7c,0x58,0x5e,0x79,0x71,0x7f};
+   3          //code wtf[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90,0xa0,0x83,0xa7,0xa1,0x86,0x8e,0x7f};
+   4          code fxxk[]={0x7f,0xbf,0xdf,0xef};
+   5          void deplay(int t)
+   6          {while(t>0) t--; }
+   7          
+   8          int main()
+   9          {
+  10   1        char key=16,disp[4];
+  11   1        int i;
+  12   1          disp[0]=wtf[0];
+  13   1          disp[1]=disp[2]=disp[3]=0x00;
+  14   1        while(1)
+  15   1        {
+  16   2          deplay(100);
+  17   2          
+  18   2          P0=0XFF;
+  19   2          P1=disp[i];
+  20   2          P0=fxxk[i];
+  21   2          i++;
+  22   2          if(i>=4) i=0;
+  23   2          
+  24   2          P3=0xf0;
+  25   2            if(P3_4==0) key=7;
+  26   2            if(P3_5==0) key=8;
+  27   2            if(P3_6==0) key=9;
+  28   2            if(P3_7==0) key=16;
+  29   2          P3=0XFD;
+  30   2            if(P3_4==0) key=4;
+  31   2            if(P3_5==0) key=5;
+  32   2            if(P3_6==0) key=6;
+  33   2            if(P3_7==0) key=16;
+  34   2          P3=0xfB;
+  35   2            if(P3_4==0) key=1;
+  36   2            if(P3_5==0) key=2;
+  37   2            if(P3_6==0) key=3;
+  38   2            if(P3_7==0) key=16;
+  39   2          P3=0xf7;
+  40   2            if(P3_4==0) key=16;
+  41   2            if(P3_5==0) key=0;
+  42   2            if(P3_6==0) key=16;
+  43   2            if(P3_7==0) key=16;
+  44   2          disp[0]=wtf[key];
+  45   2        }
+  46   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    225    ----
+   CONSTANT SIZE    =     42    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       6
+   IDATA SIZE       =   ----    ----
+C51 COMPILER V9.50.0.0   KEYPAD                                                            02/24/2016 10:14:03 PAGE 2   
+
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

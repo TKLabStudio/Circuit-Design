@@ -1,0 +1,102 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        10/07/2015  10:12:04  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE LED_for.obj TO LED_for RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  LED_for.obj (LED_FOR)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  LED_for (LED_FOR)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         _DATA_GROUP_
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     003AH     UNIT         ?PR?MAIN?LED_FOR
+            CODE    083AH     001CH     UNIT         ?CO?LED_FOR
+            CODE    0856H     0011H     UNIT         ?PR?_DEPLAY_10US?LED_FOR
+            CODE    0867H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   LED_for (LED_FOR)
+
+
+SEGMENT                            DATA_GROUP 
+  +--> CALLED SEGMENT            START    LENGTH
+------------------------------------------------
+?C_C51STARTUP                    -----    -----
+  +--> ?PR?MAIN?LED_FOR
+
+?PR?MAIN?LED_FOR                 0008H    0002H
+  +--> ?CO?LED_FOR
+  +--> ?PR?_DEPLAY_10US?LED_FOR
+
+
+
+SYMBOL TABLE OF MODULE:  LED_for (LED_FOR)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LED_FOR
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+BL51 BANKED LINKER/LOCATER V6.22                                                      10/07/2015  10:12:04  PAGE 2
+
+
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  C:0800H         PUBLIC        main
+  C:0856H         PUBLIC        _deplay_10us
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _DEPLAY_10US
+  D:0006H         SYMBOL        time
+  C:0856H         LINE#         2
+  C:0856H         LINE#         3
+  C:0856H         LINE#         4
+  C:0866H         LINE#         5
+  -------         ENDPROC       _DEPLAY_10US
+  -------         PROC          MAIN
+  -------         DO            
+  C:083AH         SYMBOL        wtf
+  D:0008H         SYMBOL        i
+  -------         ENDDO         
+  C:0800H         LINE#         6
+  C:0800H         LINE#         7
+  C:0800H         LINE#         8
+  C:0800H         LINE#         9
+  C:0800H         LINE#         12
+  C:0805H         LINE#         13
+  C:0805H         LINE#         14
+  C:081EH         LINE#         15
+  C:0825H         LINE#         16
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        LED_FOR
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0067H BYTE ( 5%) *
+******************************************************************************
+
+Program Size: data=11.0 xdata=0 code=118
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

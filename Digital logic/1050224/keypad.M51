@@ -1,0 +1,130 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        02/24/2016  10:14:03  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE keypad.obj TO keypad RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  keypad.obj (KEYPAD)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  keypad (KEYPAD)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0006H     UNIT         _DATA_GROUP_
+            IDATA   000EH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     00CEH     UNIT         ?PR?MAIN?KEYPAD
+            CODE    08CEH     002AH     UNIT         ?CO?KEYPAD
+            CODE    08F8H     0013H     UNIT         ?PR?_DEPLAY?KEYPAD
+            CODE    090BH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   keypad (KEYPAD)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?KEYPAD
+
+?PR?MAIN?KEYPAD                0008H    0006H
+  +--> ?CO?KEYPAD
+  +--> ?PR?_DEPLAY?KEYPAD
+
+
+
+SYMBOL TABLE OF MODULE:  keypad (KEYPAD)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        KEYPAD
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  C:08F8H         PUBLIC        _deplay
+BL51 BANKED LINKER/LOCATER V6.22                                                      02/24/2016  10:14:03  PAGE 2
+
+
+  D:00B0H         PUBLIC        P3
+  B:00B0H.4       PUBLIC        P3_4
+  B:00B0H.5       PUBLIC        P3_5
+  B:00B0H.6       PUBLIC        P3_6
+  B:00B0H.7       PUBLIC        P3_7
+  C:0800H         PUBLIC        main
+  C:08F0H         PUBLIC        fxxk
+  C:08CEH         PUBLIC        wtf
+  -------         PROC          _DEPLAY
+  D:0006H         SYMBOL        t
+  C:08F8H         LINE#         5
+  C:08F8H         LINE#         6
+  -------         ENDPROC       _DEPLAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0005H         SYMBOL        key
+  D:0008H         SYMBOL        disp
+  D:000CH         SYMBOL        i
+  -------         ENDDO         
+  C:0800H         LINE#         8
+  C:0800H         LINE#         9
+  C:0800H         LINE#         10
+  C:0802H         LINE#         12
+  C:080AH         LINE#         13
+  C:0811H         LINE#         14
+  C:0811H         LINE#         15
+  C:0811H         LINE#         16
+  C:0818H         LINE#         18
+  C:081BH         LINE#         19
+  C:0823H         LINE#         20
+  C:083BH         LINE#         21
+  C:0843H         LINE#         22
+  C:0853H         LINE#         24
+  C:0856H         LINE#         25
+  C:085BH         LINE#         26
+  C:0860H         LINE#         27
+  C:0865H         LINE#         28
+  C:086AH         LINE#         29
+  C:086DH         LINE#         30
+  C:0872H         LINE#         31
+  C:0877H         LINE#         32
+  C:087CH         LINE#         33
+  C:0881H         LINE#         34
+  C:0884H         LINE#         35
+  C:0889H         LINE#         36
+  C:088EH         LINE#         37
+  C:0893H         LINE#         38
+  C:0898H         LINE#         39
+  C:089BH         LINE#         40
+  C:08A0H         LINE#         41
+  C:08A5H         LINE#         42
+  C:08AAH         LINE#         43
+  C:08AFH         LINE#         44
+  C:08CBH         LINE#         45
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        KEYPAD
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      02/24/2016  10:14:03  PAGE 3
+
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 010BH BYTE (13%) *
+******************************************************************************
+
+Program Size: data=15.0 xdata=0 code=282
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

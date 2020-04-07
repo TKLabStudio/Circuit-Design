@@ -1,0 +1,92 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        12/23/2015  09:59:03  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE 1041118.obj TO 1041118 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  1041118.obj (1041118)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  1041118 (1041118)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0054H     UNIT         ?PR?MAIN?1041118
+            CODE    0854H     0013H     UNIT         ?PR?_DEPLAY?1041118
+            CODE    0867H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   1041118 (1041118)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?1041118
+
+?PR?MAIN?1041118
+  +--> ?PR?_DEPLAY?1041118
+
+
+
+SYMBOL TABLE OF MODULE:  1041118 (1041118)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        1041118
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  C:0854H         PUBLIC        _deplay
+  C:0800H         PUBLIC        main
+  -------         PROC          _DEPLAY
+  D:0006H         SYMBOL        t
+  C:0854H         LINE#         3
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/23/2015  09:59:03  PAGE 2
+
+
+  C:0854H         LINE#         4
+  -------         ENDPROC       _DEPLAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0006H         SYMBOL        a
+  D:0004H         SYMBOL        b
+  D:0004H         SYMBOL        c
+  -------         ENDDO         
+  C:0800H         LINE#         6
+  C:0800H         LINE#         7
+  C:0800H         LINE#         9
+  C:0803H         LINE#         10
+  C:0803H         LINE#         11
+  C:0813H         LINE#         12
+  C:081DH         LINE#         13
+  C:0835H         LINE#         14
+  C:083FH         LINE#         15
+  C:084AH         LINE#         16
+  C:084DH         LINE#         17
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        1041118
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0067H BYTE ( 5%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=118
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

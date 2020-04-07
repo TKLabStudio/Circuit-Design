@@ -1,0 +1,135 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/18/2015  09:11:45  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE 4xLED_7段.obj TO 4xLED_7段 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  4xLED_7段.obj (4XLED_7_Q)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?IMUL)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?SIDIV)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?UIDIV)
+
+
+LINK MAP OF MODULE:  4xLED_7段 (4XLED_7_Q)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000CH     UNIT         _DATA_GROUP_
+            IDATA   0014H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0128H     UNIT         ?PR?MAIN?4XLED_7_Q
+            CODE    0928H     009DH     UNIT         ?C?LIB_CODE
+            CODE    09C5H     001CH     UNIT         ?CO?4XLED_7_Q
+            CODE    09E1H     0013H     UNIT         ?PR?_DEPLAY?4XLED_7_Q
+            CODE    09F4H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   4xLED_7段 (4XLED_7_Q)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?4XLED_7_Q
+
+?PR?MAIN?4XLED_7_Q             0008H    000CH
+  +--> ?CO?4XLED_7_Q
+  +--> ?PR?_DEPLAY?4XLED_7_Q
+
+
+
+SYMBOL TABLE OF MODULE:  4xLED_7段 (4XLED_7_Q)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        4XLED_7_Q
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/18/2015  09:11:45  PAGE 2
+
+
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  C:09E1H         PUBLIC        _deplay
+  C:0800H         PUBLIC        main
+  C:09D9H         PUBLIC        fxxk
+  C:09C5H         PUBLIC        wtf
+  -------         PROC          _DEPLAY
+  D:0006H         SYMBOL        t
+  C:09E1H         LINE#         4
+  C:09E1H         LINE#         5
+  -------         ENDPROC       _DEPLAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        time
+  D:0002H         SYMBOL        count
+  D:000AH         SYMBOL        i
+  D:000CH         SYMBOL        t1
+  D:000EH         SYMBOL        t2
+  D:0006H         SYMBOL        hour
+  D:0002H         SYMBOL        min
+  D:0010H         SYMBOL        disp
+  -------         ENDDO         
+  C:0800H         LINE#         7
+  C:0800H         LINE#         8
+  C:0800H         LINE#         9
+  C:0805H         LINE#         11
+  C:0812H         LINE#         12
+  C:0812H         LINE#         13
+  C:0812H         LINE#         14
+  C:0815H         LINE#         15
+  C:081DH         LINE#         16
+  C:0835H         LINE#         17
+  C:083DH         LINE#         18
+  C:084DH         LINE#         19
+  C:0854H         LINE#         20
+  C:085CH         LINE#         21
+  C:0867H         LINE#         22
+  C:0867H         LINE#         23
+  C:086CH         LINE#         24
+  C:0871H         LINE#         25
+  C:087FH         LINE#         26
+  C:08B0H         LINE#         27
+  C:08E1H         LINE#         28
+  C:0903H         LINE#         29
+  C:0925H         LINE#         30
+  C:0925H         LINE#         31
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        4XLED_7_Q
+
+  -------         MODULE        ?C?IMUL
+  C:0928H         PUBLIC        ?C?IMUL
+  -------         ENDMOD        ?C?IMUL
+
+  -------         MODULE        ?C?SIDIV
+  C:093AH         PUBLIC        ?C?SIDIV
+  -------         ENDMOD        ?C?SIDIV
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/18/2015  09:11:45  PAGE 3
+
+
+
+  -------         MODULE        ?C?UIDIV
+  C:0970H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0157H BYTE (16%) *
+******************************************************************************
+
+Program Size: data=21.0 xdata=0 code=515
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

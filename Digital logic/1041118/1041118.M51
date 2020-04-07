@@ -1,0 +1,151 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/05/2015  13:34:51  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE 1041118.obj TO 1041118 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  1041118.obj (1041118)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?IMUL)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?UIDIV)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?SLDIV)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?SLCMP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?OFFXADD)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?ULDIV)
+
+
+LINK MAP OF MODULE:  1041118 (1041118)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0014H     UNIT         _DATA_GROUP_
+            IDATA   001CH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     01BDH     UNIT         ?PR?MAIN?1041118
+            CODE    01C0H     0157H     UNIT         ?C?LIB_CODE
+            CODE    0317H     0044H     UNIT         ?C?LDIV
+            CODE    035BH     0020H     UNIT         ?CO?1041118
+            CODE    037BH     0013H     UNIT         ?PR?_DEPLAY?1041118
+            CODE    038EH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   1041118 (1041118)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?1041118
+
+?PR?MAIN?1041118               0008H    0014H
+  +--> ?CO?1041118
+  +--> ?PR?_DEPLAY?1041118
+
+
+
+SYMBOL TABLE OF MODULE:  1041118 (1041118)
+
+  VALUE           TYPE          NAME
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2015  13:34:51  PAGE 2
+
+
+  ----------------------------------
+
+  -------         MODULE        1041118
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  C:037BH         PUBLIC        _deplay
+  C:0003H         PUBLIC        main
+  C:036FH         PUBLIC        fxxk
+  C:035BH         PUBLIC        wtf
+  -------         PROC          _DEPLAY
+  D:0006H         SYMBOL        t
+  C:037BH         LINE#         4
+  C:037BH         LINE#         5
+  -------         ENDPROC       _DEPLAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        time
+  D:000AH         SYMBOL        count
+  D:000CH         SYMBOL        i
+  D:000EH         SYMBOL        t1
+  D:0010H         SYMBOL        t2
+  D:0012H         SYMBOL        t3
+  D:0002H         SYMBOL        t4
+  D:0014H         SYMBOL        hour
+  D:0006H         SYMBOL        min
+  D:0002H         SYMBOL        sec
+  D:0016H         SYMBOL        disp
+  -------         ENDDO         
+  C:0003H         LINE#         7
+  C:0003H         LINE#         8
+  C:0003H         LINE#         9
+  C:0011H         LINE#         11
+  C:0036H         LINE#         12
+  C:0036H         LINE#         13
+  C:0036H         LINE#         14
+  C:0039H         LINE#         15
+  C:0041H         LINE#         16
+  C:0059H         LINE#         17
+  C:0061H         LINE#         18
+  C:006FH         LINE#         19
+  C:0076H         LINE#         20
+  C:007EH         LINE#         21
+  C:0087H         LINE#         22
+  C:0087H         LINE#         23
+  C:008CH         LINE#         24
+  C:0094H         LINE#         25
+  C:00ABH         LINE#         26
+  C:00EAH         LINE#         27
+  C:0117H         LINE#         28
+  C:0148H         LINE#         29
+  C:0179H         LINE#         30
+  C:019BH         LINE#         31
+  C:01BDH         LINE#         32
+  C:01BDH         LINE#         33
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        1041118
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2015  13:34:51  PAGE 3
+
+
+
+  -------         MODULE        ?C?IMUL
+  C:01C0H         PUBLIC        ?C?IMUL
+  -------         ENDMOD        ?C?IMUL
+
+  -------         MODULE        ?C?UIDIV
+  C:01D2H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+  -------         MODULE        ?C?SLDIV
+  C:0317H         PUBLIC        ?C?SLDIV
+  -------         ENDMOD        ?C?SLDIV
+
+  -------         MODULE        ?C?SLCMP
+  C:0227H         PUBLIC        ?C?SLCMP
+  -------         ENDMOD        ?C?SLCMP
+
+  -------         MODULE        ?C?OFFXADD
+  C:023DH         PUBLIC        ?C?OFFXADD
+  -------         ENDMOD        ?C?OFFXADD
+
+  -------         MODULE        ?C?ULDIV
+  C:0285H         PUBLIC        ?C?ULDIV
+  -------         ENDMOD        ?C?ULDIV
+
+Program Size: data=29.0 xdata=0 code=922
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

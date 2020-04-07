@@ -1,0 +1,57 @@
+C51 COMPILER V9.02   1041118                                                               07/05/2015 13:34:51 PAGE 1   
+
+
+C51 COMPILER V9.02, COMPILATION OF MODULE 1041118
+OBJECT MODULE PLACED IN 1041118.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE 1041118.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <regx52.h>
+   2          code wtf[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+   3          code fxxk[]={0x7f,0xbf,0xdf,0xef,0xf7,0xfb};
+   4          void deplay(int t)
+   5          {while(t>0) t--; }
+   6          
+   7          int main()
+   8          {
+   9   1              unsigned int time,count=0,i,t1,t2,t3,t4,hour=11,min=58,sec=58;
+  10   1              char disp[6];
+  11   1              count=((hour*3600)+(min*60)+sec);
+  12   1              while(1)
+  13   1              {
+  14   2                      P0=0XFF;
+  15   2                      P1=disp[i];
+  16   2                      P0=fxxk[i];
+  17   2                      i++;
+  18   2                      if(i>=6) i=0;
+  19   2                      deplay(100);
+  20   2                      time++;
+  21   2                      if(time>=100)
+  22   2                      {
+  23   3                              time=0;
+  24   3                              count++;
+  25   3                              if(count>=43200) count=0;
+  26   3                              disp[0]=~wtf[count/36000];t1=count%36000;
+  27   3                              disp[1]=~wtf[t1/3600];t2=count%3600;
+  28   3                              disp[2]=~wtf[t2/600];t3=count%600;
+  29   3                              disp[3]=~wtf[t3/60];t4=count%60;
+  30   3                              disp[4]=~wtf[t4/10];
+  31   3                              disp[5]=~wtf[count%10];
+  32   3                      }
+  33   2              }
+  34   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    464    ----
+   CONSTANT SIZE    =     32    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      20
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

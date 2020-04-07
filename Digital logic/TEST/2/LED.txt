@@ -1,0 +1,9 @@
+to,location
+40M,PIN_18
+A,PIN_51
+B,PIN_49
+C,PIN_45
+D,PIN_43
+E,PIN_41
+F,PIN_39
+G,PIN_37

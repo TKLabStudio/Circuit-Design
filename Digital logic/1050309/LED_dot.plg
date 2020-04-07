@@ -1,0 +1,503 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\TK\Desktop\1050309\LED_dot.uvproj
+Project File Date:  03/09/2016
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+Target has no object modules
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(11): error C141: syntax error near '=', expected ')'
+LED_dot.c(11): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(11): error C141: syntax error near '=', expected ')'
+LED_dot.c(11): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(11): error C141: syntax error near '=', expected ')'
+LED_dot.c(11): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(11): error C141: syntax error near '=', expected ')'
+LED_dot.c(11): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(1): warning C318: can't open file 'reg52x.h'
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+LED_dot.c(3): error C141: syntax error near 'void'
+LED_dot.c(4): error C141: syntax error near '{'
+LED_dot.c(6): error C141: syntax error near '{'
+LED_dot.c(8): error C141: syntax error near 'while'
+LED_dot.c(8): error C141: syntax error near '1'
+LED_dot.c(10): error C141: syntax error near '=', expected ')'
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C231: 'j': redefinition
+LED_dot.c(10): error C129: missing ';' before '<'
+Target not created
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=77
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=77
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=77
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=72
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?LED_DOT
+Program Size: data=9.0 xdata=0 code=70
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=78
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=77
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling LED_dot.c...
+linking...
+Program Size: data=9.0 xdata=0 code=77
+creating hex file from "LED_dot"...
+"LED_dot" - 0 Error(s), 0 Warning(s).

@@ -1,0 +1,376 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\User\Desktop\1050224\keypad.uvproj
+Project File Date:  02/17/2016
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(12): error C202: 'flag': undefined identifier
+keypad.c(16): error C141: syntax error near '=='
+keypad.c(16): error C141: syntax error near ')'
+keypad.c(20): error C202: 'flag': undefined identifier
+keypad.c(28): error C141: syntax error near '!='
+keypad.c(28): error C141: syntax error near ')'
+keypad.c(51): error C202: 'flag': undefined identifier
+keypad.c(53): error C141: syntax error near 'else'
+keypad.c(61): error C141: syntax error near 'void'
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(17): error C141: syntax error near '=='
+keypad.c(17): error C141: syntax error near ')'
+keypad.c(29): error C141: syntax error near '!='
+keypad.c(29): error C141: syntax error near ')'
+keypad.c(54): error C141: syntax error near 'else'
+keypad.c(62): error C141: syntax error near 'void'
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(17): error C141: syntax error near '=='
+keypad.c(17): error C141: syntax error near ')'
+keypad.c(29): error C141: syntax error near '!='
+keypad.c(29): error C141: syntax error near ')'
+keypad.c(54): error C141: syntax error near 'else'
+keypad.c(62): error C141: syntax error near 'void'
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(17): error C141: syntax error near '=='
+keypad.c(17): error C141: syntax error near ')'
+keypad.c(29): error C141: syntax error near '!='
+keypad.c(29): error C141: syntax error near ')'
+keypad.c(54): error C141: syntax error near 'else'
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(17): error C141: syntax error near '=='
+keypad.c(17): error C141: syntax error near ')'
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=17.1 xdata=0 code=530
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(28): error C202: 'scan': undefined identifier
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(28): error C202: 'scan': undefined identifier
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=497
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=479
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=497
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=493
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=493
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=485
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=493
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=485
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=493
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=482
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=481
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=482
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=482
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(48): error C141: syntax error near 'else'
+keypad.c(56): error C141: syntax error near 'void'
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=18.1 xdata=0 code=351
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=18.1 xdata=0 code=351
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=18.1 xdata=0 code=351
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(12): warning C280: 'y': unreferenced local variable
+linking...
+Program Size: data=20.1 xdata=0 code=341
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(50): error C141: syntax error near 'else', expected '('
+keypad.c(50): error C141: syntax error near 'key'
+keypad.c(51): error C141: syntax error near 'if'
+keypad.c(51): error C141: syntax error near 'key'
+keypad.c(52): error C141: syntax error near 'if'
+keypad.c(52): error C141: syntax error near 'key'
+keypad.c(53): error C141: syntax error near 'if'
+keypad.c(53): error C141: syntax error near 'key'
+keypad.c(54): error C141: syntax error near 'if'
+keypad.c(54): error C141: syntax error near 'key'
+keypad.c(55): error C141: syntax error near 'if'
+keypad.c(55): error C141: syntax error near 'key'
+keypad.c(56): error C141: syntax error near 'if'
+keypad.c(56): error C141: syntax error near 'key'
+keypad.c(57): error C141: syntax error near 'if'
+keypad.c(57): error C141: syntax error near 'key'
+keypad.c(58): error C141: syntax error near 'if'
+keypad.c(58): error C141: syntax error near 'key'
+keypad.c(59): error C141: syntax error near 'if'
+keypad.c(59): error C141: syntax error near 'key'
+keypad.c(60): error C141: syntax error near 'if'
+keypad.c(60): error C141: syntax error near 'key'
+keypad.c(61): error C141: syntax error near 'if'
+keypad.c(61): error C141: syntax error near 'key'
+keypad.c(62): error C141: syntax error near 'if'
+keypad.c(62): error C141: syntax error near 'key'
+keypad.c(63): error C141: syntax error near 'if'
+keypad.c(63): error C141: syntax error near 'key'
+keypad.c(64): error C141: syntax error near 'if'
+keypad.c(64): error C141: syntax error near 'key'
+keypad.c(65): error C141: syntax error near 'if'
+keypad.c(65): error C141: syntax error near 'key'
+keypad.c(66): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(50): error C141: syntax error near 'else', expected '('
+keypad.c(50): error C141: syntax error near 'key'
+keypad.c(51): error C141: syntax error near 'else', expected '('
+keypad.c(51): error C141: syntax error near 'key'
+keypad.c(52): error C141: syntax error near 'else', expected '('
+keypad.c(52): error C141: syntax error near 'key'
+keypad.c(53): error C141: syntax error near 'else', expected '('
+keypad.c(53): error C141: syntax error near 'key'
+keypad.c(54): error C141: syntax error near 'else', expected '('
+keypad.c(54): error C141: syntax error near 'key'
+keypad.c(55): error C141: syntax error near 'else', expected '('
+keypad.c(55): error C141: syntax error near 'key'
+keypad.c(56): error C141: syntax error near 'else', expected '('
+keypad.c(56): error C141: syntax error near 'key'
+keypad.c(57): error C141: syntax error near 'else', expected '('
+keypad.c(57): error C141: syntax error near 'key'
+keypad.c(58): error C141: syntax error near 'else', expected '('
+keypad.c(58): error C141: syntax error near 'key'
+keypad.c(59): error C141: syntax error near 'else', expected '('
+keypad.c(59): error C141: syntax error near 'key'
+keypad.c(60): error C141: syntax error near 'else', expected '('
+keypad.c(60): error C141: syntax error near 'key'
+keypad.c(61): error C141: syntax error near 'else', expected '('
+keypad.c(61): error C141: syntax error near 'key'
+keypad.c(62): error C141: syntax error near 'else', expected '('
+keypad.c(62): error C141: syntax error near 'key'
+keypad.c(63): error C141: syntax error near 'else', expected '('
+keypad.c(63): error C141: syntax error near 'key'
+keypad.c(64): error C141: syntax error near 'else', expected '('
+keypad.c(64): error C141: syntax error near 'key'
+keypad.c(65): error C141: syntax error near 'else', expected '('
+keypad.c(65): error C141: syntax error near 'key'
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(51): error C141: syntax error near 'else', expected '('
+keypad.c(51): error C141: syntax error near 'key'
+keypad.c(52): error C141: syntax error near 'else', expected '('
+keypad.c(52): error C141: syntax error near 'key'
+keypad.c(53): error C141: syntax error near 'else', expected '('
+keypad.c(53): error C141: syntax error near 'key'
+keypad.c(54): error C141: syntax error near 'else', expected '('
+keypad.c(54): error C141: syntax error near 'key'
+keypad.c(55): error C141: syntax error near 'else', expected '('
+keypad.c(55): error C141: syntax error near 'key'
+keypad.c(56): error C141: syntax error near 'else', expected '('
+keypad.c(56): error C141: syntax error near 'key'
+keypad.c(57): error C141: syntax error near 'else', expected '('
+keypad.c(57): error C141: syntax error near 'key'
+keypad.c(58): error C141: syntax error near 'else', expected '('
+keypad.c(58): error C141: syntax error near 'key'
+keypad.c(59): error C141: syntax error near 'else', expected '('
+keypad.c(59): error C141: syntax error near 'key'
+keypad.c(60): error C141: syntax error near 'else', expected '('
+keypad.c(60): error C141: syntax error near 'key'
+keypad.c(61): error C141: syntax error near 'else', expected '('
+keypad.c(61): error C141: syntax error near 'key'
+keypad.c(62): error C141: syntax error near 'else', expected '('
+keypad.c(62): error C141: syntax error near 'key'
+keypad.c(63): error C141: syntax error near 'else', expected '('
+keypad.c(63): error C141: syntax error near 'key'
+keypad.c(64): error C141: syntax error near 'else', expected '('
+keypad.c(64): error C141: syntax error near 'key'
+keypad.c(65): error C141: syntax error near 'else', expected '('
+keypad.c(65): error C141: syntax error near 'key'
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(51): error C141: syntax error near 'else', expected '('
+keypad.c(51): error C141: syntax error near 'key'
+keypad.c(52): error C141: syntax error near 'else', expected '('
+keypad.c(52): error C141: syntax error near 'key'
+keypad.c(53): error C141: syntax error near 'else', expected '('
+keypad.c(53): error C141: syntax error near 'key'
+keypad.c(54): error C141: syntax error near 'else', expected '('
+keypad.c(54): error C141: syntax error near 'key'
+keypad.c(55): error C141: syntax error near 'else', expected '('
+keypad.c(55): error C141: syntax error near 'key'
+keypad.c(56): error C141: syntax error near 'else', expected '('
+keypad.c(56): error C141: syntax error near 'key'
+keypad.c(57): error C141: syntax error near 'else', expected '('
+keypad.c(57): error C141: syntax error near 'key'
+keypad.c(58): error C141: syntax error near 'else', expected '('
+keypad.c(58): error C141: syntax error near 'key'
+keypad.c(59): error C141: syntax error near 'else', expected '('
+keypad.c(59): error C141: syntax error near 'key'
+keypad.c(60): error C141: syntax error near 'else', expected '('
+keypad.c(60): error C141: syntax error near 'key'
+keypad.c(61): error C141: syntax error near 'else', expected '('
+keypad.c(61): error C141: syntax error near 'key'
+keypad.c(62): error C141: syntax error near 'else', expected '('
+keypad.c(62): error C141: syntax error near 'key'
+keypad.c(63): error C141: syntax error near 'else', expected '('
+keypad.c(63): error C141: syntax error near 'key'
+keypad.c(64): error C141: syntax error near 'else', expected '('
+keypad.c(64): error C141: syntax error near 'key'
+keypad.c(65): error C141: syntax error near 'else', expected '('
+keypad.c(65): error C141: syntax error near 'key'
+Target not created
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(12): warning C280: 'y': unreferenced local variable
+linking...
+Program Size: data=20.1 xdata=0 code=476
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=482
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+linking...
+Program Size: data=16.1 xdata=0 code=482
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(41): warning C290: missing return value
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DEPLAY?KEYPAD
+Program Size: data=15.0 xdata=0 code=1110
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(41): warning C290: missing return value
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DEPLAY?KEYPAD
+Program Size: data=15.0 xdata=0 code=1110
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(42): warning C290: missing return value
+linking...
+Program Size: data=15.0 xdata=0 code=1116
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(42): warning C290: missing return value
+linking...
+Program Size: data=15.0 xdata=0 code=1116
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(42): warning C290: missing return value
+linking...
+Program Size: data=15.0 xdata=0 code=1116
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+compiling keypad.c...
+keypad.c(42): warning C290: missing return value
+linking...
+Program Size: data=15.0 xdata=0 code=1116
+creating hex file from "keypad"...
+"keypad" - 0 Error(s), 1 Warning(s).

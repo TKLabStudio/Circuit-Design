@@ -1,0 +1,114 @@
+Flow report for P1041231
+Thu Dec 31 16:09:02 2015
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Flow Summary                                                            ;
++---------------------------+---------------------------------------------+
+; Flow Status               ; Successful - Thu Dec 31 16:08:50 2015       ;
+; Quartus II 64-Bit Version ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
+; Revision Name             ; P1041231                                    ;
+; Top-level Entity Name     ; P1041231                                    ;
+; Family                    ; MAX II                                      ;
+; Device                    ; EPM570T144C5                                ;
+; Timing Models             ; Final                                       ;
+; Total logic elements      ; 48 / 570 ( 8 % )                            ;
+; Total pins                ; 9 / 116 ( 8 % )                             ;
+; Total virtual pins        ; 0                                           ;
+; UFM blocks                ; 0 / 1 ( 0 % )                               ;
++---------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/31/2015 16:08:39 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; P1041231            ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                  ;
++--------------------------+-----------------------------+---------------+-------------+------------+
+; Assignment Name          ; Value                       ; Default Value ; Entity Name ; Section Id ;
++--------------------------+-----------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID    ; 40585111846.145154931900744 ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP   ; 85                          ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP   ; 0                           ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY ; output_files                ; --            ; --          ; --         ;
++--------------------------+-----------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 433 MB              ; 00:00:01                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 977 MB              ; 00:00:03                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 386 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 416 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:07                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; A26              ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; A26              ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; A26              ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; A26              ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off P1041231 -c P1041231
+quartus_fit --read_settings_files=off --write_settings_files=off P1041231 -c P1041231
+quartus_asm --read_settings_files=off --write_settings_files=off P1041231 -c P1041231
+quartus_sta P1041231 -c P1041231
+
+
+

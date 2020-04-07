@@ -1,0 +1,44 @@
+#include <regx52.h>
+#define LED P0
+#define SEG7 P2
+#define PB P3_2
+#define PB1 P3_3
+code wtf[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90,0x86};
+void deplay(int t)
+{while(t>0) t--; }
+
+int main()
+{
+	char cnt;
+	PB=PB1=1;
+	SEG7=wtf[cnt];
+	while(1)
+	{
+		if(PB==0)
+		{
+		deplay(2000);
+		if(PB==1)
+		{
+		deplay(2000);
+		cnt++;
+		}
+	  }
+		
+		if(PB1==0)
+		{
+		deplay(2000);
+		if(PB1==1)
+		{
+		deplay(2000);
+		cnt--;
+		}
+	  }
+		
+		
+		if(cnt>9)
+			cnt=0;
+		if(cnt<0)
+			cnt=9;
+		SEG7=wtf[cnt];
+	}
+}

@@ -1,0 +1,41 @@
+|encoder
+EON <= 74148:inst.EON
+k5 => 74148:inst.5N
+k0 => 74148:inst.0N
+k1 => 74148:inst.1N
+k2 => 74148:inst.2N
+k3 => 74148:inst.3N
+k4 => 74148:inst.4N
+en => 74148:inst.EIN
+k6 => 74148:inst.6N
+k7 => 74148:inst.7N
+GSN <= 74148:inst.GSN
+A0 <= 74148:inst.A0N
+A1 <= 74148:inst.A1N
+A2 <= 74148:inst.A2N
+
+
+|encoder|74148:inst
+EON <= 83.DB_MAX_OUTPUT_PORT_TYPE
+1N => 83.IN0
+1N => 103.IN0
+2N => 83.IN1
+2N => 55.IN0
+3N => 83.IN2
+3N => 57.IN0
+0N => 83.IN3
+4N => 83.IN4
+4N => 62.IN0
+5N => 83.IN5
+5N => 106.IN0
+6N => 83.IN6
+6N => 104.IN0
+7N => 107.IN0
+7N => 105.IN0
+EIN => 65.IN0
+GSN <= 84.DB_MAX_OUTPUT_PORT_TYPE
+A0N <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1N <= 109.DB_MAX_OUTPUT_PORT_TYPE
+A2N <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+

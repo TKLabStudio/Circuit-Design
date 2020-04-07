@@ -1,0 +1,287 @@
+$comment
+	File created using the following command:
+		vcd file encoder.msim.vcd -direction
+$end
+$date
+	Thu Dec 17 11:18:21 2015
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module encoder_vlg_vec_tst $end
+$var reg 1 ! en $end
+$var reg 1 " k0 $end
+$var reg 1 # k1 $end
+$var reg 1 $ k2 $end
+$var reg 1 % k3 $end
+$var reg 1 & k4 $end
+$var reg 1 ' k5 $end
+$var reg 1 ( k6 $end
+$var reg 1 ) k7 $end
+$var wire 1 * A0 $end
+$var wire 1 + A1 $end
+$var wire 1 , A2 $end
+$var wire 1 - EON $end
+$var wire 1 . GSN $end
+$var wire 1 / sampler $end
+$scope module i1 $end
+$var wire 1 0 gnd $end
+$var wire 1 1 vcc $end
+$var wire 1 2 unknown $end
+$var tri1 1 3 devclrn $end
+$var tri1 1 4 devpor $end
+$var tri1 1 5 devoe $end
+$var wire 1 6 k2~combout $end
+$var wire 1 7 k3~combout $end
+$var wire 1 8 k1~combout $end
+$var wire 1 9 k0~combout $end
+$var wire 1 : inst|83~1_combout $end
+$var wire 1 ; k7~combout $end
+$var wire 1 < k4~combout $end
+$var wire 1 = k5~combout $end
+$var wire 1 > k6~combout $end
+$var wire 1 ? inst|83~0_combout $end
+$var wire 1 @ en~combout $end
+$var wire 1 A inst|83~2_combout $end
+$var wire 1 B inst|84~combout $end
+$var wire 1 C inst|8~0_combout $end
+$var wire 1 D inst|8~1_combout $end
+$var wire 1 E inst|8~2_combout $end
+$var wire 1 F inst|109~0_combout $end
+$var wire 1 G inst|109~1_combout $end
+$var wire 1 H inst|9~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1#
+1$
+1%
+1&
+1'
+1(
+1)
+1*
+1+
+1,
+1-
+0.
+x/
+00
+11
+x2
+13
+14
+15
+16
+17
+18
+09
+0:
+1;
+1<
+1=
+1>
+1?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+$end
+#10000
+1"
+0#
+19
+08
+0/
+1D
+1E
+0*
+#20000
+0$
+1#
+06
+18
+1/
+1F
+0D
+1G
+0E
+0+
+1*
+#30000
+0%
+1$
+07
+16
+0/
+1D
+1E
+0*
+#40000
+0&
+1%
+0<
+17
+1/
+0F
+0D
+0?
+1:
+0G
+0E
+1H
+1+
+1*
+0,
+#50000
+0'
+1&
+0=
+1<
+0/
+1C
+1E
+0*
+#60000
+0(
+1'
+0>
+1=
+1/
+1G
+0C
+0E
+0+
+1*
+#70000
+0)
+1(
+0;
+1>
+0/
+1C
+1E
+0*
+#80000
+0"
+1)
+09
+1;
+1/
+0:
+0G
+0C
+1?
+0E
+0H
+1+
+1*
+1,
+#90000
+1!
+0#
+1"
+1@
+08
+19
+0/
+1B
+1D
+1.
+#100000
+0$
+1#
+06
+18
+1/
+1F
+0D
+#110000
+0%
+0!
+1$
+07
+0@
+16
+0/
+1D
+1G
+0B
+1E
+0.
+0+
+0*
+#120000
+0&
+1%
+0<
+17
+1/
+0F
+0D
+0?
+1:
+0G
+0E
+1H
+1+
+1*
+0,
+#130000
+0'
+1&
+0=
+1<
+0/
+1C
+1E
+0*
+#140000
+0(
+1'
+0>
+1=
+1/
+1G
+0C
+0E
+0+
+1*
+#150000
+0)
+1(
+0;
+1>
+0/
+1C
+1E
+0*
+#160000
+1)
+1;
+1/
+0G
+0C
+1?
+0E
+0H
+1B
+1A
+1+
+1.
+1*
+1,
+0-
+#1000000

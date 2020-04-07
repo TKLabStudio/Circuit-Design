@@ -1,0 +1,22 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\User\Desktop\1050608\¶Ç°eºİ(¥bÂù¤u)\send_data.uvproj
+Project File Date:  06/08/2016
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+Target has no object modules
+Target not created
+Rebuild target 'Target 1'
+compiling send_data.c...
+send_data.c(14): error C202: 'SUBF': undefined identifier
+Target not created
+Rebuild target 'Target 1'
+compiling send_data.c...
+linking...
+Program Size: data=9.0 xdata=0 code=41
+creating hex file from "send_data"...
+"send_data" - 0 Error(s), 0 Warning(s).

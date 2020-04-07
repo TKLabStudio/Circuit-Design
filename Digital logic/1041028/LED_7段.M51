@@ -1,0 +1,112 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        10/28/2015  10:11:31  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE LED_7段.obj TO LED_7段 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  LED_7段.obj (LED_7_Q)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?SIDIV)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?UIDIV)
+
+
+LINK MAP OF MODULE:  LED_7段 (LED_7_Q)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     008BH     UNIT         ?C?LIB_CODE
+            CODE    088BH     0083H     UNIT         ?PR?MAIN?LED_7_Q
+            CODE    090EH     0014H     UNIT         ?CO?LED_7_Q
+            CODE    0922H     0013H     UNIT         ?PR?_DEPLAY?LED_7_Q
+            CODE    0935H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   LED_7段 (LED_7_Q)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?LED_7_Q
+
+?PR?MAIN?LED_7_Q
+  +--> ?CO?LED_7_Q
+  +--> ?PR?_DEPLAY?LED_7_Q
+
+
+
+SYMBOL TABLE OF MODULE:  LED_7段 (LED_7_Q)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LED_7_Q
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+BL51 BANKED LINKER/LOCATER V6.22                                                      10/28/2015  10:11:31  PAGE 2
+
+
+  C:0922H         PUBLIC        _deplay
+  D:00B0H         PUBLIC        P3
+  C:088BH         PUBLIC        main
+  C:090EH         PUBLIC        wtf
+  -------         PROC          _DEPLAY
+  D:0006H         SYMBOL        t
+  C:0922H         LINE#         5
+  C:0922H         LINE#         6
+  -------         ENDPROC       _DEPLAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0002H         SYMBOL        i
+  -------         ENDDO         
+  C:088BH         LINE#         7
+  C:088BH         LINE#         8
+  C:088BH         LINE#         10
+  C:088BH         LINE#         11
+  C:088BH         LINE#         12
+  C:088EH         LINE#         13
+  C:088EH         LINE#         14
+  C:08A1H         LINE#         15
+  C:08A1H         LINE#         16
+  C:08BAH         LINE#         17
+  C:08BDH         LINE#         18
+  C:08BDH         LINE#         19
+  C:08BFH         LINE#         20
+  C:08BFH         LINE#         21
+  C:08D8H         LINE#         22
+  C:08F9H         LINE#         23
+  C:0900H         LINE#         24
+  C:0900H         LINE#         25
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        LED_7_Q
+
+  -------         MODULE        ?C?SIDIV
+  C:0800H         PUBLIC        ?C?SIDIV
+  -------         ENDMOD        ?C?SIDIV
+
+  -------         MODULE        ?C?UIDIV
+  C:0836H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00AAH BYTE ( 8%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=324
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

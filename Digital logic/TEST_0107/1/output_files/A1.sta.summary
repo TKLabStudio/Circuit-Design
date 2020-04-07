@@ -1,0 +1,89 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup '20M:inst6|74393:inst4|31'
+Slack : -3.500
+TNS   : -23.397
+
+Type  : Setup '20M:inst6|74393:inst|9'
+Slack : -1.890
+TNS   : -6.876
+
+Type  : Setup '20M:inst6|74393:inst8|9'
+Slack : -1.819
+TNS   : -6.670
+
+Type  : Setup '20M:inst6|74393:inst|31'
+Slack : -1.812
+TNS   : -6.305
+
+Type  : Setup '40MHz'
+Slack : -1.699
+TNS   : -6.184
+
+Type  : Setup '20M:inst6|74393:inst8|31'
+Slack : -1.687
+TNS   : -6.165
+
+Type  : Setup '20M:inst6|74393:inst4|9'
+Slack : -1.684
+TNS   : -6.434
+
+Type  : Hold '20M:inst6|74393:inst8|31'
+Slack : -2.016
+TNS   : -2.016
+
+Type  : Hold '40MHz'
+Slack : -1.452
+TNS   : -1.452
+
+Type  : Hold '20M:inst6|74393:inst4|9'
+Slack : -0.841
+TNS   : -0.841
+
+Type  : Hold '20M:inst6|74393:inst8|9'
+Slack : -0.570
+TNS   : -0.570
+
+Type  : Hold '20M:inst6|74393:inst|31'
+Slack : -0.339
+TNS   : -0.339
+
+Type  : Hold '20M:inst6|74393:inst|9'
+Slack : -0.018
+TNS   : -0.018
+
+Type  : Hold '20M:inst6|74393:inst4|31'
+Slack : 2.351
+TNS   : 0.000
+
+Type  : Minimum Pulse Width '40MHz'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width '20M:inst6|74393:inst4|31'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width '20M:inst6|74393:inst4|9'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width '20M:inst6|74393:inst8|31'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width '20M:inst6|74393:inst8|9'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width '20M:inst6|74393:inst|31'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width '20M:inst6|74393:inst|9'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

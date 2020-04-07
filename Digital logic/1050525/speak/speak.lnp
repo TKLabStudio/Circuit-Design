@@ -1,0 +1,4 @@
+"STARTUP.obj",
+"speak.obj" 
+TO "speak" 
+RAMSIZE(256) 

@@ -1,0 +1,106 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        06/15/2016  09:38:13  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE 1050608.obj TO 1050608 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  1050608.obj (1050608)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  1050608 (1050608)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+                    0008H     0018H                  *** GAP ***
+            BIT     0020H.0   0000H.1   UNIT         ?BI?1050608
+                    0020H.1   0000H.7                *** GAP ***
+            IDATA   0021H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     0020H                  *** GAP ***
+            CODE    0023H     0003H     ABSOLUTE     
+                    0026H     07DAH                  *** GAP ***
+            CODE    0800H     0017H     UNIT         ?PR?MAIN?1050608
+            CODE    0817H     000EH     UNIT         ?PR?UART?1050608
+            CODE    0825H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   1050608 (1050608)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?1050608
+
+
+
+SYMBOL TABLE OF MODULE:  1050608 (1050608)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        1050608
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:00A0H         PUBLIC        P2
+  B:00A8H.7       PUBLIC        EA
+  B:00A8H.4       PUBLIC        ES
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2016  09:38:13  PAGE 2
+
+
+  B:0098H.0       PUBLIC        RI
+  B:0020H.0       PUBLIC        flag
+  B:0098H.1       PUBLIC        TI
+  C:0800H         PUBLIC        main
+  D:0099H         PUBLIC        SBUF
+  D:0087H         PUBLIC        PCON
+  D:0098H         PUBLIC        SCON
+  C:0817H         PUBLIC        uart
+  -------         PROC          MAIN
+  C:0800H         LINE#         5
+  C:0800H         LINE#         6
+  C:0800H         LINE#         7
+  C:0803H         LINE#         8
+  C:0806H         LINE#         9
+  C:0809H         LINE#         10
+  C:080DH         LINE#         11
+  C:080DH         LINE#         12
+  C:080DH         LINE#         13
+  C:0810H         LINE#         14
+  C:0812H         LINE#         15
+  -------         ENDPROC       MAIN
+  -------         PROC          UART
+  C:0817H         LINE#         18
+  C:0817H         LINE#         20
+  C:081AH         LINE#         21
+  C:081AH         LINE#         22
+  C:081CH         LINE#         23
+  C:081EH         LINE#         24
+  C:081FH         LINE#         26
+  C:081FH         LINE#         27
+  C:0822H         LINE#         28
+  C:0824H         LINE#         29
+  C:0824H         LINE#         30
+  -------         ENDPROC       UART
+  -------         ENDMOD        1050608
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0028H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=9.1 xdata=0 code=55
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

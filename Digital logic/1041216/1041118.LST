@@ -1,0 +1,62 @@
+C51 COMPILER V9.50.0.0   1041118                                                           12/23/2015 10:12:06 PAGE 1   
+
+
+C51 COMPILER V9.50.0.0, COMPILATION OF MODULE 1041118
+OBJECT MODULE PLACED IN 1041118.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE 1041118.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include <regx52.h>
+   2          #define LED P0
+   3          #define DIPSW P3_0
+   4          #define DIPSW_1 P3_1
+   5          #define SEG P2
+   6          code seg7[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90,0x86};
+   7          code wtf[]={1,2,4,8,16,32,64,128};
+   8          void deplay(int t)
+   9          {while(t>0) t--; }
+  10          
+  11          int main()
+  12          {
+  13   1        signed char i;
+  14   1        int a;
+  15   1        while(1)
+  16   1        {
+  17   2          if(DIPSW==0) 
+  18   2          {
+  19   3            for(i=0;i<=9;i++)
+  20   3            {
+  21   4             if(DIPSW_1==0) a=20000;
+  22   4             else a=15000;
+  23   4              LED=~wtf[i];
+  24   4              SEG=seg7[i];
+  25   4              deplay(a);
+  26   4            }
+  27   3          }else
+  28   2          {
+  29   3            for(i=9;i>=0;i--)
+  30   3            {
+  31   4             if(DIPSW_1==0) a=20000;
+  32   4             else a=15000;
+  33   4              LED=~wtf[i];
+  34   4              SEG=seg7[i];
+  35   4              deplay(a);
+  36   4            }
+  37   3          }
+  38   2        }
+  39   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    141    ----
+   CONSTANT SIZE    =     38    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

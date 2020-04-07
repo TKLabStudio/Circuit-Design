@@ -1,0 +1,15 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+F:\1041202\1041118.uvproj
+Project File Date:  12/17/2015
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling 1041118.c...
+linking...
+Program Size: data=17.0 xdata=0 code=202
+creating hex file from "1041118"...
+"1041118" - 0 Error(s), 0 Warning(s).
