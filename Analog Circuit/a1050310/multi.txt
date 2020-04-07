@@ -1,0 +1,19 @@
+module a1050310(
+	input clk,
+	output [6:0]seg,
+	output reg [3:0]com
+);
+reg[24:0] dly;
+always @(posedge clk) dly<=dly+1'b1;
+reg[1:0] scan;
+always @(posedge dly[14]) scan<=scan+1'b1;
+reg [3:0] i;
+always@(*)
+	case(scan)
+		2'd0:begin i<=4'd0;com=4'b0111;	end
+		2'd1:begin i<=4'd1;com=4'b1011;	end
+		2'd2:begin i<=4'd2;com=4'b1101;	end
+		2'd3:begin i<=4'd3;com=4'b1110;	end
+	endcase
+seg7 u1(i,seg);
+endmodule

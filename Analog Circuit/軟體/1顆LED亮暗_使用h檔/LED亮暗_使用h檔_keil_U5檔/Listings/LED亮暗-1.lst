@@ -1,0 +1,38 @@
+C51 COMPILER V9.51   LED_G_T_1                                                             09/05/2015 05:07:11 PAGE 1   
+
+
+C51 COMPILER V9.51, COMPILATION OF MODULE LED_G_T_1
+OBJECT MODULE PLACED IN .\Objects\LED«G·t-1.obj
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE LED«G·t-1.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\LED«G·t-1.lst) TABS(
+                    -2) OBJECT(.\Objects\LED«G·t-1.obj)
+
+line level    source
+
+   1          #include<regx52.h>
+   2          #include<delay.h>
+   3          /*void delay_10us(unsigned int time)
+   4          {while(time>0)
+   5            {time--;}
+   6          } */
+   7          void main (void)
+   8          { while(1)
+   9   1        { P0_7=0;
+  10   2          delay_10us(50000);
+  11   2          P0_7=1;
+  12   2          delay_10us(50000);
+  13   2        } 
+  14   1      } 
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     20    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,45 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'k20'
+Slack : -11.700
+TNS   : -66.600
+
+Type  : Setup 'P19'
+Slack : -9.900
+TNS   : -55.800
+
+Type  : Setup 'clk4m'
+Slack : -9.000
+TNS   : -144.000
+
+Type  : Hold 'clk4m'
+Slack : 0.600
+TNS   : 0.000
+
+Type  : Hold 'P19'
+Slack : 4.500
+TNS   : 0.000
+
+Type  : Hold 'k20'
+Slack : 5.800
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk4m'
+Slack : -3.500
+TNS   : -112.000
+
+Type  : Minimum Pulse Width 'k20'
+Slack : -3.500
+TNS   : -84.000
+
+Type  : Minimum Pulse Width 'P19'
+Slack : -3.500
+TNS   : -42.000
+
+Type  : Minimum Pulse Width 'lpm_counter:dly_rtl_0|dffs[15]'
+Slack : -3.500
+TNS   : -28.000
+
+------------------------------------------------------------

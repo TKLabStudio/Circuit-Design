@@ -1,0 +1,91 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/05/2015  05:07:11  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE .\Objects\LED«G·t-1.obj, .\Objects\delay_10us.obj TO .\Objects\LED«G·t-1 PRINT (.\Listings\LED«
+>> G·t-1.m51)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\LED«G·t-1.obj (LED_G_T_1)
+  .\Objects\delay_10us.obj (DELAY_10US)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\LED«G·t-1 (LED_G_T_1)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0014H     UNIT         ?PR?MAIN?LED_G_T_1
+            CODE    0814H     0011H     UNIT         ?PR?_DELAY_10US?DELAY_10US
+            CODE    0825H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\LED«G·t-1 (LED_G_T_1)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?LED_G_T_1
+
+?PR?MAIN?LED_G_T_1
+  +--> ?PR?_DELAY_10US?DELAY_10US
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\LED«G·t-1 (LED_G_T_1)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LED_G_T_1
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:0080H.7       PUBLIC        P0_7
+  C:0800H         PUBLIC        main
+  -------         PROC          MAIN
+  C:0800H         LINE#         7
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/05/2015  05:07:11  PAGE 2
+
+
+  C:0800H         LINE#         8
+  C:0800H         LINE#         9
+  C:0802H         LINE#         10
+  C:0809H         LINE#         11
+  C:080BH         LINE#         12
+  C:0812H         LINE#         13
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        LED_G_T_1
+
+  -------         MODULE        DELAY_10US
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0814H         PUBLIC        _delay_10us
+  -------         PROC          _DELAY_10US
+  D:0006H         SYMBOL        time
+  C:0814H         LINE#         3
+  C:0814H         LINE#         4
+  C:081DH         LINE#         5
+  C:0824H         LINE#         6
+  -------         ENDPROC       _DELAY_10US
+  -------         ENDMOD        DELAY_10US
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0025H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=52
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

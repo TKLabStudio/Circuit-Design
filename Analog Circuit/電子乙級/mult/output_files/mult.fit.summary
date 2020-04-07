@@ -1,0 +1,9 @@
+Fitter Status : Successful - Thu Jun 23 11:04:42 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : mult
+Top-level Entity Name : mult
+Family : MAX3000A
+Device : EPM3064ALC44-10
+Timing Models : Final
+Total macrocells : 55 / 64 ( 86 % )
+Total pins : 14 / 34 ( 41 % )

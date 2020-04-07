@@ -1,0 +1,19 @@
+module no312127(
+	input clk,
+	output a1,b1,c1,d1,e1,f1,g1,
+);
+div40m(clk,fl_19);
+wire fl_19,a,b,c,d;
+reg[3:0] cnt;
+always @(posedge fl_19)
+cnt<=cnt+1'b1;
+assign {a,b,c,d}=cnt;
+assign a1=~(d|c|b & d|c|!a & !d|!c|b|a & !d|c|!b|a)
+assign b1=~(d|b|c & !d|c|!b|!a)
+assign c1=~(d|!c|a & !d|c|b|a)
+assign d1=~(d|!b|a & d|!c|!a & d|c|b|a & !d|!c|b|a & !d|c|!b|a)
+assign e1=~(c|!b & d|!c|!a & !d|!c|b|a)
+assign f1=~(a|b & !d|c|a & d)
+assign g1=~(!d|!c|a & !d|b|a & d|!c|!a & d|!b|!a & !d|!b|a)
+
+endmodule

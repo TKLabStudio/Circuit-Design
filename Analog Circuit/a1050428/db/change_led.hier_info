@@ -1,0 +1,90 @@
+|change_led
+clk => dly[0].CLK
+clk => dly[1].CLK
+clk => dly[2].CLK
+clk => dly[3].CLK
+clk => dly[4].CLK
+clk => dly[5].CLK
+clk => dly[6].CLK
+clk => dly[7].CLK
+clk => dly[8].CLK
+clk => dly[9].CLK
+clk => dly[10].CLK
+clk => dly[11].CLK
+clk => dly[12].CLK
+clk => dly[13].CLK
+clk => dly[14].CLK
+clk => dly[15].CLK
+clk => dly[16].CLK
+clk => dly[17].CLK
+clk => dly[18].CLK
+clk => dly[19].CLK
+clk => dly[20].CLK
+clk => dly[21].CLK
+clk => dly[22].CLK
+clk => dly[23].CLK
+clk => dly[24].CLK
+clk => dly[25].CLK
+clk => dly[26].CLK
+clk => dly[27].CLK
+kuso => kuso.IN1
+kfout => kfout.IN1
+led[0] <= ledFK[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= ledFK[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= ledFK[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= ledFK[3].DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= ledFK[4].DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= ledFK[5].DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= ledFK[6].DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= ledFK[7].DB_MAX_OUTPUT_PORT_TYPE
+led[8] <= ledFK[8].DB_MAX_OUTPUT_PORT_TYPE
+led[9] <= ledFK[9].DB_MAX_OUTPUT_PORT_TYPE
+led[10] <= ledFK[10].DB_MAX_OUTPUT_PORT_TYPE
+led[11] <= ledFK[11].DB_MAX_OUTPUT_PORT_TYPE
+led[12] <= ledFK[12].DB_MAX_OUTPUT_PORT_TYPE
+led[13] <= ledFK[13].DB_MAX_OUTPUT_PORT_TYPE
+led[14] <= ledFK[14].DB_MAX_OUTPUT_PORT_TYPE
+led[15] <= ledFK[15].DB_MAX_OUTPUT_PORT_TYPE
+seg7[0] <= seg7:u4.port1
+seg7[1] <= seg7:u4.port1
+seg7[2] <= seg7:u4.port1
+seg7[3] <= seg7:u4.port1
+seg7[4] <= seg7:u4.port1
+seg7[5] <= seg7:u4.port1
+seg7[6] <= seg7:u4.port1
+
+
+|change_led|dekey:u1
+clk100 => state[0].CLK
+clk100 => state[1].CLK
+key => state.OUTPUTSELECT
+key => state.OUTPUTSELECT
+key => state.OUTPUTSELECT
+key => state.OUTPUTSELECT
+kout <= state[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|change_led|dekey:u2
+clk100 => state[0].CLK
+clk100 => state[1].CLK
+key => state.OUTPUTSELECT
+key => state.OUTPUTSELECT
+key => state.OUTPUTSELECT
+key => state.OUTPUTSELECT
+kout <= state[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|change_led|seg7:u4
+i[0] => Decoder0.IN3
+i[1] => Decoder0.IN2
+i[2] => Decoder0.IN1
+i[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

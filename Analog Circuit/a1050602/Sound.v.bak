@@ -1,0 +1,80 @@
+module Sound(
+	input clk,
+	output reg[3:0] com,
+	output reg[6:0] seg,
+	output speak
+);
+reg[23:0] dly;
+reg hz4;
+always @(posedge clk)
+	if(dly>=24'd9999999) begin hz4=1'b1;dly<=24'd0;end
+reg[1:0] div4;
+reg[15:0] div,ori;
+always@(posedge clk)
+	if(cy) dly<=ori; else div<=div+1'b1;
+assign cy=(16'd65535==dly);
+always@(posedge cy) div<=div+1'b1;
+assign speak=div[1];
+
+reg[5:0] cnt;
+reg[2;0] mid,low;
+reg[1:0] hight;
+always@(posedge hz4)
+begin
+	if(cnt>=6'd23) cnt<=6'd0;else cnt<=cnt+1'b1;
+	case(cnt)
+		6'd0:{hight,mid,low}=8'b00_001_000;
+		6'd1:{hight,mid,low}=8'b00_001_000;
+		6'd2:{hight,mid,low}=8'b00_001_000;
+		6'd3:{hight,mid,low}=8'b00_001_000;
+		6'd4:{hight,mid,low}=8'b00_001_000;
+		6'd5:{hight,mid,low}=8'b00_001_000;
+		6'd6:{hight,mid,low}=8'b00_011_000;
+		6'd7:{hight,mid,low}=8'b00_011_000;
+		6'd8:{hight,mid,low}=8'b00_010_000;
+		6'd9:{hight,mid,low}=8'b00_010_000;
+		6'd10:{hight,mid,low}=8'b00_001_000;
+		6'd11:{hight,mid,low}=8'b00_001_000;
+		6'd12:{hight,mid,low}=8'b00_011_000;
+		6'd13:{hight,mid,low}=8'b00_011_000;
+		6'd14:{hight,mid,low}=8'b00_011_000;
+		6'd15:{hight,mid,low}=8'b00_011_000;
+		6'd16:{hight,mid,low}=8'b00_011_000;
+		6'd17:{hight,mid,low}=8'b00_101_000;
+		6'd18:{hight,mid,low}=8'b00_101_000;
+		6'd19:{hight,mid,low}=8'b00_100_000;
+		6'd20:{hight,mid,low}=8'b00_100_000;
+		6'd21:{hight,mid,low}=8'b00_011_000;
+		6'd22:{hight,mid,low}=8'b00_011_000;
+		6'd23:{hight,mid,low}=8'b00_101_000;
+	endcase
+	case({hight,mid,low})
+		6'b00_000_001:ori=8'27236;
+		6'b00_000_010:ori=8'31521;
+		6'b00_000_011:ori=8'35232;
+		6'b00_000_100:ori=8'36882;
+		6'b00_000_101:ori=8'40025;
+		6'b00_000_110:ori=8'42808;
+		6'b00_000_111:ori=8'45292;
+		6'b00_001_000:ori=8'46415;
+		6'b00_010_000:ori=8'48499;
+		6'b00_011_000:ori=8'50360;
+		6'b00_100_000:ori=8'51208;
+		6'b00_101_000:ori=8'52780;
+		6'b00_110_000:ori=8'54171;
+		6'b00_111_000:ori=8'55414;
+		6'b01_000_000:ori=8'55975;
+		6'b10_000_000:ori=8'57024;
+		6'b11_000_000:ori=8'57948;
+	endcase
+end
+always@(*)
+	case(dly[14:13])
+		'd0:begin com=4'h7;i={2'b0,hight};end
+		'd0:begin com=4'hb;i={2'b0,mid};end
+		'd0:begin com=4'hd;i={2'b0,low};end
+		default:com=4'hf;
+	endcase
+endmodule
+
+	

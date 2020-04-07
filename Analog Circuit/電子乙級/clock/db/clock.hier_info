@@ -1,0 +1,42 @@
+|clock
+P19 => M24.DATAA
+P21 => k21.DATAIN
+P5 => k5.DATAIN
+P22 => P4.DATAA
+P22 => k22.DATAIN
+P7 => P8.DATAA
+P7 => P6.DATAA
+P20 => k20.DATAIN
+clr => hcnt[0]~reg0.ACLR
+clr => hcnt[1]~reg0.ACLR
+clr => hcnt[2]~reg0.ACLR
+clr => hcnt[3]~reg0.ACLR
+clr => hcnt[4]~reg0.ACLR
+clr => hcnt[5]~reg0.ACLR
+clk4m => dly[0].CLK
+clk4m => dly[1].CLK
+clk4m => dly[2].CLK
+clk4m => dly[3].CLK
+clk4m => dly[4].CLK
+clk4m => dly[5].CLK
+clk4m => dly[6].CLK
+clk4m => dly[7].CLK
+clk4m => dly[8].CLK
+clk4m => dly[9].CLK
+clk4m => dly[10].CLK
+clk4m => dly[11].CLK
+clk4m => dly[12].CLK
+clk4m => dly[13].CLK
+clk4m => dly[14].CLK
+clk4m => dly[15].CLK
+hcnt[0] <= hcnt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hcnt[1] <= hcnt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hcnt[2] <= hcnt[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hcnt[3] <= hcnt[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hcnt[4] <= hcnt[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hcnt[5] <= hcnt[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P8 <= P8.DB_MAX_OUTPUT_PORT_TYPE
+P6 <= P6.DB_MAX_OUTPUT_PORT_TYPE
+P4 <= P4.DB_MAX_OUTPUT_PORT_TYPE
+
+

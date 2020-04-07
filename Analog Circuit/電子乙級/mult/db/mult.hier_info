@@ -1,0 +1,29 @@
+|mult
+ck1 => ck1out.DATAIN
+clr => cnt[0].ACLR
+clr => cnt[1].ACLR
+clr => cnt[2].ACLR
+clr => cnt[3].ACLR
+clr => cnt[4].ACLR
+clr => cnt[5].ACLR
+clr => cnt[6].ACLR
+clr => cnt[7].ACLR
+clr => cnt[8].ACLR
+clr => cnt[9].ACLR
+clr => cnt[10].ACLR
+clr => cnt[11].ACLR
+clr => cnt[12].ACLR
+clr => cnt[13].ACLR
+clr => cnt[14].ACLR
+clr => cnt[15].ACLR
+ck2 => ck2out.DATAIN
+clk4m => ck1out.CLK
+clk4m => ck2out.CLK
+P12 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+P10 <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+P8 <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+P6 <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+P16 <= scan[1].DB_MAX_OUTPUT_PORT_TYPE
+P14 <= scan[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,4 @@
+".\Objects\LED«G·t-1.obj",
+".\Objects\delay_10us.obj" 
+TO ".\Objects\LED«G·t-1" 
+PRINT(".\Listings\LED«G·t-1.m51")

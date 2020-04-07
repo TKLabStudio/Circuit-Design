@@ -1,0 +1,30 @@
+C51 COMPILER V9.51   DELAY_10US                                                            09/05/2015 05:07:11 PAGE 1   
+
+
+C51 COMPILER V9.51, COMPILATION OF MODULE DELAY_10US
+OBJECT MODULE PLACED IN .\Objects\delay_10us.obj
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE delay_10us.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\delay_10us.lst) TAB
+                    -S(2) OBJECT(.\Objects\delay_10us.obj)
+
+line level    source
+
+   1          #include<regx51.h>
+   2          #include"delay.h"
+   3          void delay_10us(unsigned int time)
+   4          {while(time>0) 
+   5   1        {time--;}
+   6   1      } 
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     17    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

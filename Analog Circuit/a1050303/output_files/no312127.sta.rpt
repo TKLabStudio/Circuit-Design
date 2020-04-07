@@ -1,0 +1,662 @@
+TimeQuest Timing Analyzer report for no312127
+Thu Mar 10 11:57:57 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clk'
+ 12. Setup: 'div40m:comb_3|dly[24]'
+ 13. Hold: 'clk'
+ 14. Hold: 'div40m:comb_3|dly[24]'
+ 15. Minimum Pulse Width: 'clk'
+ 16. Minimum Pulse Width: 'div40m:comb_3|dly[24]'
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Setup Transfers
+ 20. Hold Transfers
+ 21. Report TCCS
+ 22. Report RSKM
+ 23. Unconstrained Paths
+ 24. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                       ;
++--------------------+--------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version ;
+; Revision Name      ; no312127                                                           ;
+; Device Family      ; MAX II                                                             ;
+; Device Name        ; EPM570T144C5                                                       ;
+; Timing Models      ; Final                                                              ;
+; Delay Model        ; Slow Model                                                         ;
+; Rise/Fall Delays   ; Unavailable                                                        ;
++--------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                       ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+; Clock Name            ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                   ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+; clk                   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                   ;
+; div40m:comb_3|dly[24] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div40m:comb_3|dly[24] } ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+
+
++-------------------------------------------------------------+
+; Fmax Summary                                                ;
++------------+-----------------+-----------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name            ; Note ;
++------------+-----------------+-----------------------+------+
+; 179.6 MHz  ; 179.6 MHz       ; clk                   ;      ;
+; 354.74 MHz ; 354.74 MHz      ; div40m:comb_3|dly[24] ;      ;
++------------+-----------------+-----------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------------------+
+; Setup Summary                                  ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; clk                   ; -4.568 ; -93.333       ;
+; div40m:comb_3|dly[24] ; -1.819 ; -6.389        ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------+
+; Hold Summary                                   ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; clk                   ; -1.826 ; -1.826        ;
+; div40m:comb_3|dly[24] ; 1.696  ; 0.000         ;
++-----------------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++------------------------------------------------+
+; Minimum Pulse Width Summary                    ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; clk                   ; -2.289 ; -2.289        ;
+; div40m:comb_3|dly[24] ; 0.234  ; 0.000         ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk'                                                                                                                 ;
++--------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+; -4.568 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.235      ;
+; -4.568 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.235      ;
+; -4.568 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.235      ;
+; -4.568 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.235      ;
+; -4.568 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.235      ;
+; -4.555 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.222      ;
+; -4.555 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.222      ;
+; -4.446 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.113      ;
+; -4.446 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.113      ;
+; -4.446 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.113      ;
+; -4.446 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.113      ;
+; -4.446 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.113      ;
+; -4.433 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.100      ;
+; -4.433 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.100      ;
+; -4.401 ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.068      ;
+; -4.401 ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.068      ;
+; -4.401 ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.068      ;
+; -4.401 ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.068      ;
+; -4.401 ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.068      ;
+; -4.388 ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.055      ;
+; -4.388 ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.055      ;
+; -4.249 ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.916      ;
+; -4.249 ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.916      ;
+; -4.249 ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.916      ;
+; -4.249 ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.916      ;
+; -4.249 ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.916      ;
+; -4.236 ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.903      ;
+; -4.236 ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.903      ;
+; -4.210 ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.877      ;
+; -4.210 ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.877      ;
+; -4.210 ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.877      ;
+; -4.210 ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.877      ;
+; -4.210 ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.877      ;
+; -4.197 ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.864      ;
+; -4.197 ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.864      ;
+; -4.190 ; div40m:comb_3|dly[6]  ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.857      ;
+; -4.190 ; div40m:comb_3|dly[6]  ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.857      ;
+; -4.190 ; div40m:comb_3|dly[6]  ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.857      ;
+; -4.190 ; div40m:comb_3|dly[6]  ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.857      ;
+; -4.190 ; div40m:comb_3|dly[6]  ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.857      ;
+; -4.177 ; div40m:comb_3|dly[6]  ; div40m:comb_3|dly[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.844      ;
+; -4.177 ; div40m:comb_3|dly[6]  ; div40m:comb_3|dly[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.844      ;
+; -4.091 ; div40m:comb_3|dly[5]  ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.758      ;
+; -4.091 ; div40m:comb_3|dly[5]  ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.758      ;
+; -4.091 ; div40m:comb_3|dly[5]  ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.758      ;
+; -4.091 ; div40m:comb_3|dly[5]  ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.758      ;
+; -4.091 ; div40m:comb_3|dly[5]  ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.758      ;
+; -4.078 ; div40m:comb_3|dly[5]  ; div40m:comb_3|dly[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.745      ;
+; -4.078 ; div40m:comb_3|dly[5]  ; div40m:comb_3|dly[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.745      ;
+; -3.973 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.640      ;
+; -3.973 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.640      ;
+; -3.973 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.640      ;
+; -3.973 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.640      ;
+; -3.973 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.640      ;
+; -3.973 ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.640      ;
+; -3.973 ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.640      ;
+; -3.973 ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.640      ;
+; -3.973 ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.640      ;
+; -3.973 ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.640      ;
+; -3.961 ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.628      ;
+; -3.961 ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.628      ;
+; -3.961 ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.628      ;
+; -3.961 ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.628      ;
+; -3.961 ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.628      ;
+; -3.960 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.627      ;
+; -3.960 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.627      ;
+; -3.960 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.627      ;
+; -3.960 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.627      ;
+; -3.960 ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.627      ;
+; -3.960 ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.627      ;
+; -3.960 ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.627      ;
+; -3.948 ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.615      ;
+; -3.948 ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.615      ;
+; -3.939 ; div40m:comb_3|dly[7]  ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.606      ;
+; -3.939 ; div40m:comb_3|dly[7]  ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.606      ;
+; -3.939 ; div40m:comb_3|dly[7]  ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.606      ;
+; -3.939 ; div40m:comb_3|dly[7]  ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.606      ;
+; -3.939 ; div40m:comb_3|dly[7]  ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.606      ;
+; -3.926 ; div40m:comb_3|dly[7]  ; div40m:comb_3|dly[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.593      ;
+; -3.926 ; div40m:comb_3|dly[7]  ; div40m:comb_3|dly[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.593      ;
+; -3.851 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.518      ;
+; -3.851 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.518      ;
+; -3.851 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.518      ;
+; -3.851 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.518      ;
+; -3.851 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.518      ;
+; -3.851 ; div40m:comb_3|dly[14] ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.518      ;
+; -3.851 ; div40m:comb_3|dly[14] ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.518      ;
+; -3.851 ; div40m:comb_3|dly[14] ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.518      ;
+; -3.851 ; div40m:comb_3|dly[14] ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.518      ;
+; -3.851 ; div40m:comb_3|dly[14] ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.518      ;
+; -3.848 ; div40m:comb_3|dly[9]  ; div40m:comb_3|dly[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.515      ;
+; -3.848 ; div40m:comb_3|dly[9]  ; div40m:comb_3|dly[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.515      ;
+; -3.848 ; div40m:comb_3|dly[9]  ; div40m:comb_3|dly[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.515      ;
+; -3.848 ; div40m:comb_3|dly[9]  ; div40m:comb_3|dly[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.515      ;
+; -3.848 ; div40m:comb_3|dly[9]  ; div40m:comb_3|dly[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.515      ;
+; -3.838 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.505      ;
+; -3.838 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.505      ;
+; -3.838 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.505      ;
+; -3.838 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.505      ;
+; -3.838 ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.505      ;
++--------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Setup: 'div40m:comb_3|dly[24]'                                                                                        ;
++--------+-----------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; -1.819 ; cnt[2]    ; cnt[3]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 1.000        ; 0.000      ; 2.486      ;
+; -1.814 ; cnt[2]    ; cnt[2]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 1.000        ; 0.000      ; 2.481      ;
+; -1.736 ; cnt[3]    ; cnt[3]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 1.000        ; 0.000      ; 2.403      ;
+; -1.518 ; cnt[1]    ; cnt[2]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 1.000        ; 0.000      ; 2.185      ;
+; -1.511 ; cnt[1]    ; cnt[3]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 1.000        ; 0.000      ; 2.178      ;
+; -1.506 ; cnt[1]    ; cnt[1]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 1.000        ; 0.000      ; 2.173      ;
+; -1.260 ; cnt[0]    ; cnt[1]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 1.000        ; 0.000      ; 1.927      ;
+; -1.259 ; cnt[0]    ; cnt[3]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 1.000        ; 0.000      ; 1.926      ;
+; -1.252 ; cnt[0]    ; cnt[2]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 1.000        ; 0.000      ; 1.919      ;
+; -1.250 ; cnt[0]    ; cnt[0]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 1.000        ; 0.000      ; 1.917      ;
++--------+-----------+---------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                                           ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; -1.826 ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; clk         ; 0.000        ; 3.681      ; 2.452      ;
+; -1.326 ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; clk         ; -0.500       ; 3.681      ; 2.452      ;
+; 1.668  ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[0]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 1.889      ;
+; 2.107  ; div40m:comb_3|dly[18] ; div40m:comb_3|dly[18] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.328      ;
+; 2.108  ; div40m:comb_3|dly[5]  ; div40m:comb_3|dly[5]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.329      ;
+; 2.116  ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[8]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.337      ;
+; 2.117  ; div40m:comb_3|dly[20] ; div40m:comb_3|dly[20] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.117  ; div40m:comb_3|dly[19] ; div40m:comb_3|dly[19] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.117  ; div40m:comb_3|dly[15] ; div40m:comb_3|dly[15] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.126  ; div40m:comb_3|dly[17] ; div40m:comb_3|dly[17] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.347      ;
+; 2.126  ; div40m:comb_3|dly[10] ; div40m:comb_3|dly[10] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.347      ;
+; 2.126  ; div40m:comb_3|dly[9]  ; div40m:comb_3|dly[9]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.347      ;
+; 2.126  ; div40m:comb_3|dly[7]  ; div40m:comb_3|dly[7]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.347      ;
+; 2.139  ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[1]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.360      ;
+; 2.212  ; div40m:comb_3|dly[21] ; div40m:comb_3|dly[21] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.433      ;
+; 2.221  ; div40m:comb_3|dly[16] ; div40m:comb_3|dly[16] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.442      ;
+; 2.221  ; div40m:comb_3|dly[11] ; div40m:comb_3|dly[11] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.442      ;
+; 2.221  ; div40m:comb_3|dly[6]  ; div40m:comb_3|dly[6]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.442      ;
+; 2.221  ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[1]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.442      ;
+; 2.230  ; div40m:comb_3|dly[23] ; div40m:comb_3|dly[23] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.451      ;
+; 2.230  ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[13] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.451      ;
+; 2.230  ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[3]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.451      ;
+; 2.231  ; div40m:comb_3|dly[22] ; div40m:comb_3|dly[22] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.452      ;
+; 2.231  ; div40m:comb_3|dly[14] ; div40m:comb_3|dly[14] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.452      ;
+; 2.231  ; div40m:comb_3|dly[12] ; div40m:comb_3|dly[12] ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.452      ;
+; 2.231  ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[4]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.452      ;
+; 2.231  ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[2]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 2.452      ;
+; 2.939  ; div40m:comb_3|dly[18] ; div40m:comb_3|dly[19] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.160      ;
+; 2.940  ; div40m:comb_3|dly[5]  ; div40m:comb_3|dly[6]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.161      ;
+; 2.948  ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[9]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.169      ;
+; 2.949  ; div40m:comb_3|dly[20] ; div40m:comb_3|dly[21] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.170      ;
+; 2.949  ; div40m:comb_3|dly[19] ; div40m:comb_3|dly[20] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.170      ;
+; 2.949  ; div40m:comb_3|dly[15] ; div40m:comb_3|dly[16] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.170      ;
+; 2.958  ; div40m:comb_3|dly[10] ; div40m:comb_3|dly[11] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.179      ;
+; 2.958  ; div40m:comb_3|dly[9]  ; div40m:comb_3|dly[10] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.179      ;
+; 2.971  ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[2]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.192      ;
+; 3.050  ; div40m:comb_3|dly[18] ; div40m:comb_3|dly[20] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.271      ;
+; 3.051  ; div40m:comb_3|dly[5]  ; div40m:comb_3|dly[7]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.272      ;
+; 3.059  ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[10] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.280      ;
+; 3.060  ; div40m:comb_3|dly[20] ; div40m:comb_3|dly[22] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.281      ;
+; 3.060  ; div40m:comb_3|dly[15] ; div40m:comb_3|dly[17] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.281      ;
+; 3.060  ; div40m:comb_3|dly[19] ; div40m:comb_3|dly[21] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.281      ;
+; 3.069  ; div40m:comb_3|dly[10] ; div40m:comb_3|dly[12] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.290      ;
+; 3.069  ; div40m:comb_3|dly[9]  ; div40m:comb_3|dly[11] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.290      ;
+; 3.152  ; div40m:comb_3|dly[21] ; div40m:comb_3|dly[22] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.373      ;
+; 3.161  ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[2]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161  ; div40m:comb_3|dly[6]  ; div40m:comb_3|dly[7]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161  ; div40m:comb_3|dly[16] ; div40m:comb_3|dly[17] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161  ; div40m:comb_3|dly[18] ; div40m:comb_3|dly[21] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161  ; div40m:comb_3|dly[11] ; div40m:comb_3|dly[12] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.382      ;
+; 3.170  ; div40m:comb_3|dly[23] ; div40m:comb_3|dly[24] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.391      ;
+; 3.170  ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[14] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.391      ;
+; 3.170  ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[4]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.391      ;
+; 3.170  ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[11] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.391      ;
+; 3.171  ; div40m:comb_3|dly[14] ; div40m:comb_3|dly[15] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.392      ;
+; 3.171  ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[5]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.392      ;
+; 3.171  ; div40m:comb_3|dly[19] ; div40m:comb_3|dly[22] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.392      ;
+; 3.180  ; div40m:comb_3|dly[9]  ; div40m:comb_3|dly[12] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.401      ;
+; 3.272  ; div40m:comb_3|dly[18] ; div40m:comb_3|dly[22] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.493      ;
+; 3.281  ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[15] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.502      ;
+; 3.281  ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[5]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.502      ;
+; 3.281  ; div40m:comb_3|dly[8]  ; div40m:comb_3|dly[12] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.502      ;
+; 3.282  ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[6]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.503      ;
+; 3.282  ; div40m:comb_3|dly[14] ; div40m:comb_3|dly[16] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.503      ;
+; 3.392  ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[6]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.613      ;
+; 3.392  ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[16] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.613      ;
+; 3.393  ; div40m:comb_3|dly[4]  ; div40m:comb_3|dly[7]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.614      ;
+; 3.393  ; div40m:comb_3|dly[14] ; div40m:comb_3|dly[17] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.614      ;
+; 3.440  ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[7]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.661      ;
+; 3.440  ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[6]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.661      ;
+; 3.440  ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[5]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.661      ;
+; 3.440  ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[4]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.661      ;
+; 3.440  ; div40m:comb_3|dly[0]  ; div40m:comb_3|dly[3]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.661      ;
+; 3.492  ; div40m:comb_3|dly[22] ; div40m:comb_3|dly[24] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.492  ; div40m:comb_3|dly[22] ; div40m:comb_3|dly[23] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.492  ; div40m:comb_3|dly[12] ; div40m:comb_3|dly[17] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.492  ; div40m:comb_3|dly[12] ; div40m:comb_3|dly[16] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.492  ; div40m:comb_3|dly[12] ; div40m:comb_3|dly[15] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.492  ; div40m:comb_3|dly[12] ; div40m:comb_3|dly[14] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.492  ; div40m:comb_3|dly[12] ; div40m:comb_3|dly[13] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.492  ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[7]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.492  ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[6]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.492  ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[5]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.492  ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[4]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.492  ; div40m:comb_3|dly[2]  ; div40m:comb_3|dly[3]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.713      ;
+; 3.503  ; div40m:comb_3|dly[3]  ; div40m:comb_3|dly[7]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.724      ;
+; 3.503  ; div40m:comb_3|dly[13] ; div40m:comb_3|dly[17] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.724      ;
+; 3.529  ; div40m:comb_3|dly[20] ; div40m:comb_3|dly[24] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.750      ;
+; 3.529  ; div40m:comb_3|dly[20] ; div40m:comb_3|dly[23] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.750      ;
+; 3.538  ; div40m:comb_3|dly[10] ; div40m:comb_3|dly[17] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.759      ;
+; 3.538  ; div40m:comb_3|dly[10] ; div40m:comb_3|dly[16] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.759      ;
+; 3.538  ; div40m:comb_3|dly[10] ; div40m:comb_3|dly[15] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.759      ;
+; 3.538  ; div40m:comb_3|dly[10] ; div40m:comb_3|dly[14] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.759      ;
+; 3.538  ; div40m:comb_3|dly[10] ; div40m:comb_3|dly[13] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.759      ;
+; 3.621  ; div40m:comb_3|dly[21] ; div40m:comb_3|dly[24] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.842      ;
+; 3.621  ; div40m:comb_3|dly[21] ; div40m:comb_3|dly[23] ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.842      ;
+; 3.630  ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[7]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.851      ;
+; 3.630  ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[6]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.851      ;
+; 3.630  ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[5]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.851      ;
+; 3.630  ; div40m:comb_3|dly[1]  ; div40m:comb_3|dly[4]  ; clk                   ; clk         ; 0.000        ; 0.000      ; 3.851      ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Hold: 'div40m:comb_3|dly[24]'                                                                                        ;
++-------+-----------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node ; To Node ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; 1.696 ; cnt[0]    ; cnt[0]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 0.000        ; 0.000      ; 1.917      ;
+; 1.698 ; cnt[0]    ; cnt[2]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 0.000        ; 0.000      ; 1.919      ;
+; 1.705 ; cnt[0]    ; cnt[3]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 0.000        ; 0.000      ; 1.926      ;
+; 1.706 ; cnt[0]    ; cnt[1]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 0.000        ; 0.000      ; 1.927      ;
+; 1.952 ; cnt[1]    ; cnt[1]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 0.000        ; 0.000      ; 2.173      ;
+; 1.957 ; cnt[1]    ; cnt[3]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 0.000        ; 0.000      ; 2.178      ;
+; 1.964 ; cnt[1]    ; cnt[2]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 0.000        ; 0.000      ; 2.185      ;
+; 2.182 ; cnt[3]    ; cnt[3]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 0.000        ; 0.000      ; 2.403      ;
+; 2.260 ; cnt[2]    ; cnt[2]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 0.000        ; 0.000      ; 2.481      ;
+; 2.265 ; cnt[2]    ; cnt[3]  ; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 0.000        ; 0.000      ; 2.486      ;
++-------+-----------+---------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'clk'                                                                             ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; clk   ; Rise       ; clk                   ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[0]  ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[0]  ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[10] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[10] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[11] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[11] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[12] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[12] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[13] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[13] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[14] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[14] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[15] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[15] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[16] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[16] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[17] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[17] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[18] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[18] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[19] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[19] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[1]  ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[1]  ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[20] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[20] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[21] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[21] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[22] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[22] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[23] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[23] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[24] ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[24] ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[2]  ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[2]  ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[3]  ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[3]  ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[4]  ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[4]  ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[5]  ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[5]  ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[6]  ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[6]  ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[7]  ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[7]  ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[8]  ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[8]  ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; div40m:comb_3|dly[9]  ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; div40m:comb_3|dly[9]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[0]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[0]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[10]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[10]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[11]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[11]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[12]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[12]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[13]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[13]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[14]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[14]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[15]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[15]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[16]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[16]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[17]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[17]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[18]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[18]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[19]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[19]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[1]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[1]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[20]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[20]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[21]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[21]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[22]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[22]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[23]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[23]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[24]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[24]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[2]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[2]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[3]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[3]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[4]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[4]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[5]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[5]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[6]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[6]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[7]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; comb_3|dly[7]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; comb_3|dly[8]|clk     ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'div40m:comb_3|dly[24]'                                                                          ;
++-------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                ;
++-------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; div40m:comb_3|dly[24] ; Rise       ; cnt[0]                ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; div40m:comb_3|dly[24] ; Rise       ; cnt[0]                ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; div40m:comb_3|dly[24] ; Rise       ; cnt[1]                ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; div40m:comb_3|dly[24] ; Rise       ; cnt[1]                ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; div40m:comb_3|dly[24] ; Rise       ; cnt[2]                ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; div40m:comb_3|dly[24] ; Rise       ; cnt[2]                ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; div40m:comb_3|dly[24] ; Rise       ; cnt[3]                ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; div40m:comb_3|dly[24] ; Rise       ; cnt[3]                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; div40m:comb_3|dly[24] ; Rise       ; cnt[0]|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; div40m:comb_3|dly[24] ; Rise       ; cnt[0]|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; div40m:comb_3|dly[24] ; Rise       ; cnt[1]|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; div40m:comb_3|dly[24] ; Rise       ; cnt[1]|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; div40m:comb_3|dly[24] ; Rise       ; cnt[2]|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; div40m:comb_3|dly[24] ; Rise       ; cnt[2]|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; div40m:comb_3|dly[24] ; Rise       ; cnt[3]|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; div40m:comb_3|dly[24] ; Rise       ; cnt[3]|clk            ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; div40m:comb_3|dly[24] ; Rise       ; comb_3|dly[24]|regout ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; div40m:comb_3|dly[24] ; Rise       ; comb_3|dly[24]|regout ;
++-------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                    ;
++-----------+-----------------------+--------+--------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise   ; Fall   ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+--------+--------+------------+-----------------------+
+; a1        ; div40m:comb_3|dly[24] ; 11.918 ; 11.918 ; Rise       ; div40m:comb_3|dly[24] ;
+; b1        ; div40m:comb_3|dly[24] ; 11.519 ; 11.519 ; Rise       ; div40m:comb_3|dly[24] ;
+; c1        ; div40m:comb_3|dly[24] ; 11.515 ; 11.515 ; Rise       ; div40m:comb_3|dly[24] ;
+; d1        ; div40m:comb_3|dly[24] ; 11.387 ; 11.387 ; Rise       ; div40m:comb_3|dly[24] ;
+; e1        ; div40m:comb_3|dly[24] ; 10.824 ; 10.824 ; Rise       ; div40m:comb_3|dly[24] ;
+; f1        ; div40m:comb_3|dly[24] ; 11.902 ; 11.902 ; Rise       ; div40m:comb_3|dly[24] ;
+; g1        ; div40m:comb_3|dly[24] ; 11.914 ; 11.914 ; Rise       ; div40m:comb_3|dly[24] ;
++-----------+-----------------------+--------+--------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                            ;
++-----------+-----------------------+--------+--------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise   ; Fall   ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+--------+--------+------------+-----------------------+
+; a1        ; div40m:comb_3|dly[24] ; 11.122 ; 11.122 ; Rise       ; div40m:comb_3|dly[24] ;
+; b1        ; div40m:comb_3|dly[24] ; 10.725 ; 10.725 ; Rise       ; div40m:comb_3|dly[24] ;
+; c1        ; div40m:comb_3|dly[24] ; 10.722 ; 10.722 ; Rise       ; div40m:comb_3|dly[24] ;
+; d1        ; div40m:comb_3|dly[24] ; 10.594 ; 10.594 ; Rise       ; div40m:comb_3|dly[24] ;
+; e1        ; div40m:comb_3|dly[24] ; 10.274 ; 10.274 ; Rise       ; div40m:comb_3|dly[24] ;
+; f1        ; div40m:comb_3|dly[24] ; 11.352 ; 11.352 ; Rise       ; div40m:comb_3|dly[24] ;
+; g1        ; div40m:comb_3|dly[24] ; 11.367 ; 11.367 ; Rise       ; div40m:comb_3|dly[24] ;
++-----------+-----------------------+--------+--------+------------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                           ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; clk                   ; clk                   ; 563      ; 0        ; 0        ; 0        ;
+; div40m:comb_3|dly[24] ; clk                   ; 1        ; 1        ; 0        ; 0        ;
+; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 10       ; 0        ; 0        ; 0        ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                            ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; clk                   ; clk                   ; 563      ; 0        ; 0        ; 0        ;
+; div40m:comb_3|dly[24] ; clk                   ; 1        ; 1        ; 0        ; 0        ;
+; div40m:comb_3|dly[24] ; div40m:comb_3|dly[24] ; 10       ; 0        ; 0        ; 0        ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 28    ; 28   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Thu Mar 10 11:57:53 2016
+Info: Command: quartus_sta no312127 -c no312127
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'no312127.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name div40m:comb_3|dly[24] div40m:comb_3|dly[24]
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -4.568
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -4.568       -93.333 clk 
+    Info (332119):    -1.819        -6.389 div40m:comb_3|dly[24] 
+Info (332146): Worst-case hold slack is -1.826
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.826        -1.826 clk 
+    Info (332119):     1.696         0.000 div40m:comb_3|dly[24] 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.289        -2.289 clk 
+    Info (332119):     0.234         0.000 div40m:comb_3|dly[24] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 415 megabytes
+    Info: Processing ended: Thu Mar 10 11:57:57 2016
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:01
+
+

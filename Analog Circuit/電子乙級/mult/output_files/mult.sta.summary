@@ -1,0 +1,33 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'ck1out'
+Slack : -18.900
+TNS   : -225.800
+
+Type  : Setup 'ck2out'
+Slack : -9.100
+TNS   : -18.100
+
+Type  : Hold 'ck1out'
+Slack : 5.800
+TNS   : 0.000
+
+Type  : Hold 'ck2out'
+Slack : 5.800
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'ck1out'
+Slack : -3.500
+TNS   : -112.000
+
+Type  : Minimum Pulse Width 'ck2out'
+Slack : -3.500
+TNS   : -14.000
+
+Type  : Minimum Pulse Width 'clk4m'
+Slack : -3.500
+TNS   : -14.000
+
+------------------------------------------------------------

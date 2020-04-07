@@ -1,0 +1,9 @@
+Analysis & Synthesis Status : Successful - Thu May 19 10:51:41 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : change_led
+Top-level Entity Name : change_led
+Family : MAX II
+Total logic elements : 248
+Total pins : 26
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

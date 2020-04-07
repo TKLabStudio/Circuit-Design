@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu May 19 10:51:49 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : change_led
+Top-level Entity Name : change_led
+Family : MAX II
+Device : EPM570T144C5
+Timing Models : Final
+Total logic elements : 248 / 570 ( 44 % )
+Total pins : 26 / 116 ( 22 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Apr 21 11:12:10 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : cnt0_9
+Top-level Entity Name : cnt0_9
+Family : MAX II
+Device : EPM570T144C5
+Timing Models : Final
+Total logic elements : 36 / 570 ( 6 % )
+Total pins : 8 / 116 ( 7 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

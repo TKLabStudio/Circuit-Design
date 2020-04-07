@@ -1,0 +1,31 @@
+module change_led(
+	input clk,kuso
+	output [15:0] led
+	);
+reg[27:0] dly;
+always@ (posedge clk) dly<=dly+1'd1;
+reg[3:0] kind;
+wire kusoout;
+dekey u1(dly[17],kuso,kusoout);
+always@ (posedge dly[17])
+	if(kind>=4'd4) kind<=4'd0;else kind<=kind+1'd1;
+reg[1:0] fcnt;
+always@ (posedge kusoout) fcnt<=fcnt+1'd1;
+reg foutt;
+always@(*)
+	case
+		2'd0:fcot=dly[23];
+		2'd0:fcot=dly[20];
+		2'd0:fcot=dly[17];
+		2'd0:fcot=dly[14];
+	endcase
+reg[15:0] ledFK;
+always@ (posedge fout)
+	case(kind)
+		4'd0:if(ledFK!=16'h0) ledFK<=16'h0;else ledFK<=16'hffff;
+		4'd1:if(ledFK!=16'h0) ledFK<=16'h8000;else ledFK<=ledFK>>1;
+	endcase
+
+assign led=~ledFK;
+endmodule
+	

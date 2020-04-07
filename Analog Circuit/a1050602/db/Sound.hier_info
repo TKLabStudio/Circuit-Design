@@ -1,0 +1,71 @@
+|Sound
+clk => div[0].CLK
+clk => div[1].CLK
+clk => div[2].CLK
+clk => div[3].CLK
+clk => div[4].CLK
+clk => div[5].CLK
+clk => div[6].CLK
+clk => div[7].CLK
+clk => div[8].CLK
+clk => div[9].CLK
+clk => div[10].CLK
+clk => div[11].CLK
+clk => div[12].CLK
+clk => div[13].CLK
+clk => div[14].CLK
+clk => div[15].CLK
+clk => dly[0].CLK
+clk => dly[1].CLK
+clk => dly[2].CLK
+clk => dly[3].CLK
+clk => dly[4].CLK
+clk => dly[5].CLK
+clk => dly[6].CLK
+clk => dly[7].CLK
+clk => dly[8].CLK
+clk => dly[9].CLK
+clk => dly[10].CLK
+clk => dly[11].CLK
+clk => dly[12].CLK
+clk => dly[13].CLK
+clk => dly[14].CLK
+clk => dly[15].CLK
+clk => dly[16].CLK
+clk => dly[17].CLK
+clk => dly[18].CLK
+clk => dly[19].CLK
+clk => dly[20].CLK
+clk => dly[21].CLK
+clk => dly[22].CLK
+clk => dly[23].CLK
+clk => hz4.CLK
+com[0] <= <VCC>
+com[1] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+com[2] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+com[3] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+seg[0] <= seg7:u1.port1
+seg[1] <= seg7:u1.port1
+seg[2] <= seg7:u1.port1
+seg[3] <= seg7:u1.port1
+seg[4] <= seg7:u1.port1
+seg[5] <= seg7:u1.port1
+seg[6] <= seg7:u1.port1
+speak <= div4[1].DB_MAX_OUTPUT_PORT_TYPE
+led <= hz4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sound|seg7:u1
+i[0] => Decoder0.IN3
+i[1] => Decoder0.IN2
+i[2] => Decoder0.IN1
+i[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

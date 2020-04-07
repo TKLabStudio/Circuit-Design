@@ -1,0 +1,9 @@
+Fitter Status : Successful - Thu Jun 23 11:30:57 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : clock
+Top-level Entity Name : clock
+Family : MAX3000A
+Device : EPM3064ALC44-10
+Timing Models : Final
+Total macrocells : 31 / 64 ( 48 % )
+Total pins : 21 / 34 ( 62 % )

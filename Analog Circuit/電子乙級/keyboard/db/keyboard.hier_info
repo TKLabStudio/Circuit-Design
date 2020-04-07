@@ -1,0 +1,31 @@
+|keyboard
+P13 => P1.IN0
+P14 => P1.IN1
+clk4m => dly[0].CLK
+clk4m => dly[1].CLK
+clk4m => dly[2].CLK
+clk4m => dly[3].CLK
+clk4m => dly[4].CLK
+clk4m => dly[5].CLK
+clk4m => dly[6].CLK
+clk4m => dly[7].CLK
+clk4m => dly[8].CLK
+clk4m => dly[9].CLK
+clk4m => dly[10].CLK
+clk4m => dly[11].CLK
+P2 => Mux0.IN1
+P4 => Mux0.IN2
+P10 => Mux0.IN3
+P18 <= P18.DB_MAX_OUTPUT_PORT_TYPE
+P16 <= P16.DB_MAX_OUTPUT_PORT_TYPE
+P19 <= P19.DB_MAX_OUTPUT_PORT_TYPE
+P15 <= P15.DB_MAX_OUTPUT_PORT_TYPE
+P7 <= P7~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P3 <= P3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P5 <= P5~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P9 <= P9~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P20 <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+P21 <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+P1 <= P1.DB_MAX_OUTPUT_PORT_TYPE
+
+

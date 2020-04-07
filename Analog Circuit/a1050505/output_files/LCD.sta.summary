@@ -1,0 +1,41 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'div40m:u1|clko'
+Slack : -12.699
+TNS   : -279.521
+
+Type  : Setup 'clk'
+Slack : -9.454
+TNS   : -363.533
+
+Type  : Setup 'lcd1602_drive:u0|cnt[15]'
+Slack : -5.436
+TNS   : -130.225
+
+Type  : Hold 'clk'
+Slack : -1.940
+TNS   : -1.940
+
+Type  : Hold 'lcd1602_drive:u0|cnt[15]'
+Slack : 1.387
+TNS   : 0.000
+
+Type  : Hold 'div40m:u1|clko'
+Slack : 2.116
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'div40m:u1|clko'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'lcd1602_drive:u0|cnt[15]'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

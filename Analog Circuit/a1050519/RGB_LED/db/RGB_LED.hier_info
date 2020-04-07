@@ -1,0 +1,116 @@
+|RGB_LED
+clk => clk.IN2
+rst => rst.IN1
+r <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+g <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+b <= LessThan2.DB_MAX_OUTPUT_PORT_TYPE
+led <= div_40M:u0.clko
+seg[0] <= seg7:u2.port1
+seg[1] <= seg7:u2.port1
+seg[2] <= seg7:u2.port1
+seg[3] <= seg7:u2.port1
+seg[4] <= seg7:u2.port1
+seg[5] <= seg7:u2.port1
+seg[6] <= seg7:u2.port1
+
+
+|RGB_LED|div_40M:u0
+clk => clko~reg0.CLK
+clk => dly[0].CLK
+clk => dly[1].CLK
+clk => dly[2].CLK
+clk => dly[3].CLK
+clk => dly[4].CLK
+clk => dly[5].CLK
+clk => dly[6].CLK
+clk => dly[7].CLK
+clk => dly[8].CLK
+clk => dly[9].CLK
+clk => dly[10].CLK
+clk => dly[11].CLK
+clk => dly[12].CLK
+clk => dly[13].CLK
+clk => dly[14].CLK
+clk => dly[15].CLK
+clk => dly[16].CLK
+clk => dly[17].CLK
+clk => dly[18].CLK
+clk => dly[19].CLK
+clk => dly[20].CLK
+clk => dly[21].CLK
+clk => dly[22].CLK
+clk => dly[23].CLK
+clk => dly[24].CLK
+clk => dly[25].CLK
+rst => dly[0].ACLR
+rst => dly[1].ACLR
+rst => dly[2].ACLR
+rst => dly[3].ACLR
+rst => dly[4].ACLR
+rst => dly[5].ACLR
+rst => dly[6].ACLR
+rst => dly[7].ACLR
+rst => dly[8].ACLR
+rst => dly[9].ACLR
+rst => dly[10].ACLR
+rst => dly[11].ACLR
+rst => dly[12].ACLR
+rst => dly[13].ACLR
+rst => dly[14].ACLR
+rst => dly[15].ACLR
+rst => dly[16].ACLR
+rst => dly[17].ACLR
+rst => dly[18].ACLR
+rst => dly[19].ACLR
+rst => dly[20].ACLR
+rst => dly[21].ACLR
+rst => dly[22].ACLR
+rst => dly[23].ACLR
+rst => dly[24].ACLR
+rst => dly[25].ACLR
+rst => clko~reg0.ACLR
+clko <= clko~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RGB_LED|div_1hz:u1
+clk => clko~reg0.CLK
+clk => dly[0].CLK
+clk => dly[1].CLK
+clk => dly[2].CLK
+clk => dly[3].CLK
+clk => dly[4].CLK
+clk => dly[5].CLK
+clk => dly[6].CLK
+clk => dly[7].CLK
+clk => dly[8].CLK
+clk => dly[9].CLK
+clk => dly[10].CLK
+rst => dly[0].ACLR
+rst => dly[1].ACLR
+rst => dly[2].ACLR
+rst => dly[3].ACLR
+rst => dly[4].ACLR
+rst => dly[5].ACLR
+rst => dly[6].ACLR
+rst => dly[7].ACLR
+rst => dly[8].ACLR
+rst => dly[9].ACLR
+rst => dly[10].ACLR
+rst => clko~reg0.ACLR
+clko <= clko~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RGB_LED|seg7:u2
+i[0] => rom.RADDR
+i[1] => rom.RADDR1
+i[2] => rom.RADDR2
+i[3] => rom.RADDR3
+seg[0] <= rom.DATAOUT
+seg[1] <= rom.DATAOUT1
+seg[2] <= rom.DATAOUT2
+seg[3] <= rom.DATAOUT3
+seg[4] <= rom.DATAOUT4
+seg[5] <= rom.DATAOUT5
+seg[6] <= rom.DATAOUT6
+
+

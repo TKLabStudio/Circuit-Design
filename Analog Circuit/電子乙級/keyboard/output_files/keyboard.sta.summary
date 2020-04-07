@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'lpm_counter:dly_rtl_0|dffs[11]'
+Slack : -9.900
+TNS   : -73.900
+
+Type  : Setup 'clk4m'
+Slack : -9.000
+TNS   : -108.000
+
+Type  : Setup 'keycnt[0]'
+Slack : -9.000
+TNS   : -35.800
+
+Type  : Setup 'keycnt[1]'
+Slack : -9.000
+TNS   : -35.800
+
+Type  : Setup 'keycnt[2]'
+Slack : -9.000
+TNS   : -35.800
+
+Type  : Setup 'keycnt[3]'
+Slack : -9.000
+TNS   : -35.800
+
+Type  : Hold 'lpm_counter:dly_rtl_0|dffs[11]'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Hold 'clk4m'
+Slack : 0.600
+TNS   : 0.000
+
+Type  : Hold 'keycnt[0]'
+Slack : 5.700
+TNS   : 0.000
+
+Type  : Hold 'keycnt[1]'
+Slack : 5.700
+TNS   : 0.000
+
+Type  : Hold 'keycnt[2]'
+Slack : 5.700
+TNS   : 0.000
+
+Type  : Hold 'keycnt[3]'
+Slack : 5.700
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk4m'
+Slack : -3.500
+TNS   : -84.000
+
+Type  : Minimum Pulse Width 'lpm_counter:dly_rtl_0|dffs[11]'
+Slack : -3.500
+TNS   : -56.000
+
+Type  : Minimum Pulse Width 'keycnt[0]'
+Slack : -3.500
+TNS   : -28.000
+
+Type  : Minimum Pulse Width 'keycnt[1]'
+Slack : -3.500
+TNS   : -28.000
+
+Type  : Minimum Pulse Width 'keycnt[2]'
+Slack : -3.500
+TNS   : -28.000
+
+Type  : Minimum Pulse Width 'keycnt[3]'
+Slack : -3.500
+TNS   : -28.000
+
+------------------------------------------------------------

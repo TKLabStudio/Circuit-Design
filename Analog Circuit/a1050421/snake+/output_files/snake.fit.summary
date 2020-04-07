@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Apr 21 11:46:26 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : snake
+Top-level Entity Name : snake
+Family : MAX II
+Device : EPM570T144C5
+Timing Models : Final
+Total logic elements : 84 / 570 ( 15 % )
+Total pins : 25 / 116 ( 22 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

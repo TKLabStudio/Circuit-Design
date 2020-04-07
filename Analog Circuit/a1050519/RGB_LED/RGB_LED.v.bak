@@ -1,0 +1,29 @@
+module RGB_LED(
+	input clk,rst,
+	output r,g,b,
+	output [6:0]seg
+);
+wire c40u,c1hz;
+div_40M u1(.clk(clk),.rst_n(rst),.clk_o(c1hz));
+div1k6 u0(clk,c40u);
+
+reg[3:0] sec;
+always @(posedge c1hz,negedge rst)
+	if(!rst) sec<=4'h0;
+	else sec<=sec+1'b1;
+reg [7:0] cnt;
+always @(posedge c40u,negedge rst)
+	if(!rst) cnt<=8'h0;
+	else cnt<=cnt+1'b1;
+
+reg [23:0] mem[15:0];
+initial $readmemh("rgb.txt",mem);
+wire [23:0] cmp=mem[sec];
+
+assign r=(cmp>=cmp[2*8+:8])?1'b0:1'b1;
+assign g=(cmp>=cmp[1*8+:8])?1'b0:1'b1;
+assign b=(cmp>=cmp[0+:8])?1'b0:1'b1;
+seg7 u1(sec,sega);
+wire [6:0]sega;
+assign seg=~sega;
+

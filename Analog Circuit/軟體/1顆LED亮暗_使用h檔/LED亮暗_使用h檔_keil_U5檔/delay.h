@@ -1,0 +1,1 @@
+void delay_10us(unsigned int time);

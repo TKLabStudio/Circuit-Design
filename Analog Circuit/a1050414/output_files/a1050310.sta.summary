@@ -1,0 +1,89 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'dly[12]'
+Slack : -13.783
+TNS   : -209.887
+
+Type  : Setup 'clk'
+Slack : -4.568
+TNS   : -93.349
+
+Type  : Setup 'dekey:u1|state[0]'
+Slack : -1.504
+TNS   : -3.004
+
+Type  : Setup 'dly[14]'
+Slack : -1.461
+TNS   : -2.701
+
+Type  : Setup 'dekey:u3|state[0]'
+Slack : -1.461
+TNS   : -1.461
+
+Type  : Setup 'dly[17]'
+Slack : -1.238
+TNS   : -7.332
+
+Type  : Setup 'dekey:u2|state[0]'
+Slack : -1.212
+TNS   : -1.212
+
+Type  : Hold 'dly[17]'
+Slack : -3.728
+TNS   : -21.284
+
+Type  : Hold 'clk'
+Slack : -1.931
+TNS   : -9.704
+
+Type  : Hold 'dly[12]'
+Slack : -1.368
+TNS   : -9.712
+
+Type  : Hold 'dekey:u2|state[0]'
+Slack : 1.658
+TNS   : 0.000
+
+Type  : Hold 'dekey:u1|state[0]'
+Slack : 1.685
+TNS   : 0.000
+
+Type  : Hold 'dly[14]'
+Slack : 1.686
+TNS   : 0.000
+
+Type  : Hold 'dekey:u3|state[0]'
+Slack : 1.907
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'dekey:u1|state[0]'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dekey:u2|state[0]'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dekey:u3|state[0]'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dly[12]'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dly[14]'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'dly[17]'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

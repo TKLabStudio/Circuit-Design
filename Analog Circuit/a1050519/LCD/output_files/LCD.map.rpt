@@ -1,0 +1,727 @@
+Analysis & Synthesis report for LCD
+Thu May 26 11:19:45 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |LCD|lcd1602_drive:u2|CS
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: lcd1602_drive:u2
+ 13. Port Connectivity Checks: "lcd1602_drive:u2"
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                   ;
++-----------------------------+--------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu May 26 11:19:45 2016            ;
+; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name               ; LCD                                              ;
+; Top-level Entity Name       ; LCD                                              ;
+; Family                      ; MAX II                                           ;
+; Total logic elements        ; 396                                              ;
+; Total pins                  ; 13                                               ;
+; Total virtual pins          ; 0                                                ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                                    ;
++-----------------------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EPM570T144C5       ;                    ;
+; Top-level entity name                                                      ; LCD                ; LCD                ;
+; Family name                                                                ; MAX II             ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                       ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------+---------+
+; LCD.v                            ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/a1050519/LCD/LCD.v           ;         ;
+; div_40m.v                        ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/User/Desktop/a1050519/LCD/div_40m.v       ;         ;
+; lcd1602_drive.v                  ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/User/Desktop/a1050519/LCD/lcd1602_drive.v ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 396   ;
+;     -- Combinational with no register       ; 256   ;
+;     -- Register only                        ; 62    ;
+;     -- Combinational with a register        ; 78    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 126   ;
+;     -- 3 input functions                    ; 9     ;
+;     -- 2 input functions                    ; 189   ;
+;     -- 1 input functions                    ; 9     ;
+;     -- 0 input functions                    ; 1     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 219   ;
+;     -- arithmetic mode                      ; 177   ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 50    ;
+;     -- asynchronous clear/load mode         ; 132   ;
+;                                             ;       ;
+; Total registers                             ; 140   ;
+; Total logic cells in carry chains           ; 185   ;
+; I/O pins                                    ; 13    ;
+; Maximum fan-out node                        ; rst   ;
+; Maximum fan-out                             ; 132   ;
+; Total fan-out                               ; 1360  ;
+; Average fan-out                             ; 3.33  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                    ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name   ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------+--------------+
+; |LCD                       ; 396 (253)   ; 140          ; 0          ; 13   ; 0            ; 256 (205)    ; 62 (24)           ; 78 (24)          ; 185 (144)       ; 0 (0)      ; |LCD                  ; work         ;
+;    |div_40M:u1|            ; 42 (42)     ; 27           ; 0          ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 27 (27)          ; 26 (26)         ; 0 (0)      ; |LCD|div_40M:u1       ; work         ;
+;    |lcd1602_drive:u2|      ; 101 (101)   ; 65           ; 0          ; 0    ; 0            ; 36 (36)      ; 38 (38)           ; 27 (27)          ; 15 (15)         ; 0 (0)      ; |LCD|lcd1602_drive:u2 ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |LCD|lcd1602_drive:u2|CS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++----------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------------+----------------+--------------+-----------+-------------+------------+-------------+---------+
+; Name           ; CS.ROW2_D ; CS.ROW2_C ; CS.ROW2_E ; CS.ROW2_F ; CS.ROW2_A ; CS.ROW2_B ; CS.ROW2_9 ; CS.ROW2_8 ; CS.ROW1_E ; CS.ROW1_D ; CS.ROW1_F ; CS.ROW2_ADDR ; CS.ROW1_B ; CS.ROW1_C ; CS.ROW1_A ; CS.ROW1_9 ; CS.ROW2_2 ; CS.ROW2_3 ; CS.ROW2_1 ; CS.ROW2_0 ; CS.ROW2_5 ; CS.ROW2_4 ; CS.ROW2_6 ; CS.ROW2_7 ; CS.ROW1_3 ; CS.ROW1_4 ; CS.ROW1_2 ; CS.ROW1_1 ; CS.ROW1_6 ; CS.ROW1_5 ; CS.ROW1_7 ; CS.ROW1_8 ; CS.CURSOR_SET2 ; CS.CURSOR_SET1 ; CS.ROW1_ADDR ; CS.ROW1_0 ; CS.DISP_OFF ; CS.CLR_SCR ; CS.DISP_SET ; CS.IDLE ;
++----------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------------+----------------+--------------+-----------+-------------+------------+-------------+---------+
+; CS.IDLE        ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 0       ;
+; CS.DISP_SET    ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 1           ; 1       ;
+; CS.CLR_SCR     ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 1          ; 0           ; 1       ;
+; CS.DISP_OFF    ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 1           ; 0          ; 0           ; 1       ;
+; CS.ROW1_0      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 1         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_ADDR   ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 1            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.CURSOR_SET1 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 1              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.CURSOR_SET2 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_8      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_7      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_5      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_6      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_1      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_2      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_4      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_3      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_7      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_6      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_4      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_5      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_0      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_1      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_3      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_2      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_9      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_A      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_C      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_B      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_ADDR   ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_F      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_D      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW1_E      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_8      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_9      ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_B      ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_A      ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_F      ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_E      ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_C      ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
+; CS.ROW2_D      ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0              ; 0              ; 0            ; 0         ; 0           ; 0          ; 0           ; 1       ;
++----------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------------+----------------+--------------+-----------+-------------+------------+-------------+---------+
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; row1[62,63]                            ; Stuck at GND due to stuck port data_in ;
+; row1[60,61]                            ; Stuck at VCC due to stuck port data_in ;
+; row1[54,55]                            ; Stuck at GND due to stuck port data_in ;
+; row1[52,53]                            ; Stuck at VCC due to stuck port data_in ;
+; row1[38,39]                            ; Stuck at GND due to stuck port data_in ;
+; row1[36,37]                            ; Stuck at VCC due to stuck port data_in ;
+; row1[30,31]                            ; Stuck at GND due to stuck port data_in ;
+; row1[28,29]                            ; Stuck at VCC due to stuck port data_in ;
+; row1[14,15]                            ; Stuck at GND due to stuck port data_in ;
+; row1[12,13]                            ; Stuck at VCC due to stuck port data_in ;
+; row1[6,7]                              ; Stuck at GND due to stuck port data_in ;
+; row1[4,5]                              ; Stuck at VCC due to stuck port data_in ;
+; lcd1602_drive:u2|CS~4                  ; Lost fanout                            ;
+; lcd1602_drive:u2|CS~5                  ; Lost fanout                            ;
+; lcd1602_drive:u2|CS~6                  ; Lost fanout                            ;
+; lcd1602_drive:u2|CS~7                  ; Lost fanout                            ;
+; lcd1602_drive:u2|CS~8                  ; Lost fanout                            ;
+; lcd1602_drive:u2|CS~9                  ; Lost fanout                            ;
+; Total Number of Removed Registers = 30 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 140   ;
+; Number of registers using Synchronous Clear  ; 50    ;
+; Number of registers using Synchronous Load   ; 24    ;
+; Number of registers using Asynchronous Clear ; 132   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 7:1                ; 24 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; Yes        ; |LCD|clock[7]              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lcd1602_drive:u2 ;
++----------------+----------+-----------------------------------+
+; Parameter Name ; Value    ; Type                              ;
++----------------+----------+-----------------------------------+
+; IDLE           ; 00000000 ; Unsigned Binary                   ;
+; DISP_SET       ; 00000001 ; Unsigned Binary                   ;
+; DISP_OFF       ; 00000011 ; Unsigned Binary                   ;
+; CLR_SCR        ; 00000010 ; Unsigned Binary                   ;
+; CURSOR_SET1    ; 00000110 ; Unsigned Binary                   ;
+; CURSOR_SET2    ; 00000111 ; Unsigned Binary                   ;
+; ROW1_ADDR      ; 00000101 ; Unsigned Binary                   ;
+; ROW1_0         ; 00000100 ; Unsigned Binary                   ;
+; ROW1_1         ; 00001100 ; Unsigned Binary                   ;
+; ROW1_2         ; 00001101 ; Unsigned Binary                   ;
+; ROW1_3         ; 00001111 ; Unsigned Binary                   ;
+; ROW1_4         ; 00001110 ; Unsigned Binary                   ;
+; ROW1_5         ; 00001010 ; Unsigned Binary                   ;
+; ROW1_6         ; 00001011 ; Unsigned Binary                   ;
+; ROW1_7         ; 00001001 ; Unsigned Binary                   ;
+; ROW1_8         ; 00001000 ; Unsigned Binary                   ;
+; ROW1_9         ; 00011000 ; Unsigned Binary                   ;
+; ROW1_A         ; 00011001 ; Unsigned Binary                   ;
+; ROW1_B         ; 00011011 ; Unsigned Binary                   ;
+; ROW1_C         ; 00011010 ; Unsigned Binary                   ;
+; ROW1_D         ; 00011110 ; Unsigned Binary                   ;
+; ROW1_E         ; 00011111 ; Unsigned Binary                   ;
+; ROW1_F         ; 00011101 ; Unsigned Binary                   ;
+; ROW2_ADDR      ; 00011100 ; Unsigned Binary                   ;
+; ROW2_0         ; 00010100 ; Unsigned Binary                   ;
+; ROW2_1         ; 00010101 ; Unsigned Binary                   ;
+; ROW2_2         ; 00010111 ; Unsigned Binary                   ;
+; ROW2_3         ; 00010110 ; Unsigned Binary                   ;
+; ROW2_4         ; 00010010 ; Unsigned Binary                   ;
+; ROW2_5         ; 00010011 ; Unsigned Binary                   ;
+; ROW2_6         ; 00010001 ; Unsigned Binary                   ;
+; ROW2_7         ; 00010000 ; Unsigned Binary                   ;
+; ROW2_8         ; 00110000 ; Unsigned Binary                   ;
+; ROW2_9         ; 00110001 ; Unsigned Binary                   ;
+; ROW2_A         ; 00110011 ; Unsigned Binary                   ;
+; ROW2_B         ; 00110010 ; Unsigned Binary                   ;
+; ROW2_C         ; 00110110 ; Unsigned Binary                   ;
+; ROW2_D         ; 00110111 ; Unsigned Binary                   ;
+; ROW2_E         ; 00110101 ; Unsigned Binary                   ;
+; ROW2_F         ; 00110100 ; Unsigned Binary                   ;
++----------------+----------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "lcd1602_drive:u2"         ;
++--------------------+-------+----------+--------------+
+; Port               ; Type  ; Severity ; Details      ;
++--------------------+-------+----------+--------------+
+; row1_val[121..120] ; Input ; Info     ; Stuck at VCC ;
+; row1_val[118..117] ; Input ; Info     ; Stuck at VCC ;
+; row1_val[115..114] ; Input ; Info     ; Stuck at VCC ;
+; row1_val[110..109] ; Input ; Info     ; Stuck at VCC ;
+; row1_val[107..104] ; Input ; Info     ; Stuck at VCC ;
+; row1_val[102..101] ; Input ; Info     ; Stuck at VCC ;
+; row1_val[97..96]   ; Input ; Info     ; Stuck at VCC ;
+; row1_val[94..93]   ; Input ; Info     ; Stuck at VCC ;
+; row1_val[89..88]   ; Input ; Info     ; Stuck at VCC ;
+; row1_val[45..43]   ; Input ; Info     ; Stuck at VCC ;
+; row1_val[21..19]   ; Input ; Info     ; Stuck at VCC ;
+; row1_val[125..122] ; Input ; Info     ; Stuck at GND ;
+; row1_val[113..111] ; Input ; Info     ; Stuck at GND ;
+; row1_val[100..98]  ; Input ; Info     ; Stuck at GND ;
+; row1_val[87..86]   ; Input ; Info     ; Stuck at GND ;
+; row1_val[84..78]   ; Input ; Info     ; Stuck at GND ;
+; row1_val[76..70]   ; Input ; Info     ; Stuck at GND ;
+; row1_val[68..64]   ; Input ; Info     ; Stuck at GND ;
+; row1_val[47..46]   ; Input ; Info     ; Stuck at GND ;
+; row1_val[23..22]   ; Input ; Info     ; Stuck at GND ;
+; row1_val[127]      ; Input ; Info     ; Stuck at GND ;
+; row1_val[126]      ; Input ; Info     ; Stuck at VCC ;
+; row1_val[119]      ; Input ; Info     ; Stuck at GND ;
+; row1_val[116]      ; Input ; Info     ; Stuck at GND ;
+; row1_val[108]      ; Input ; Info     ; Stuck at GND ;
+; row1_val[103]      ; Input ; Info     ; Stuck at GND ;
+; row1_val[95]       ; Input ; Info     ; Stuck at GND ;
+; row1_val[92]       ; Input ; Info     ; Stuck at GND ;
+; row1_val[91]       ; Input ; Info     ; Stuck at VCC ;
+; row1_val[90]       ; Input ; Info     ; Stuck at GND ;
+; row1_val[85]       ; Input ; Info     ; Stuck at VCC ;
+; row1_val[77]       ; Input ; Info     ; Stuck at VCC ;
+; row1_val[69]       ; Input ; Info     ; Stuck at VCC ;
+; row1_val[42]       ; Input ; Info     ; Stuck at GND ;
+; row1_val[41]       ; Input ; Info     ; Stuck at VCC ;
+; row1_val[40]       ; Input ; Info     ; Stuck at GND ;
+; row1_val[18]       ; Input ; Info     ; Stuck at GND ;
+; row1_val[17]       ; Input ; Info     ; Stuck at VCC ;
+; row1_val[16]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[99..96]   ; Input ; Info     ; Stuck at VCC ;
+; row2_val[91..88]   ; Input ; Info     ; Stuck at VCC ;
+; row2_val[83..81]   ; Input ; Info     ; Stuck at VCC ;
+; row2_val[75..74]   ; Input ; Info     ; Stuck at VCC ;
+; row2_val[66..64]   ; Input ; Info     ; Stuck at VCC ;
+; row2_val[59..56]   ; Input ; Info     ; Stuck at VCC ;
+; row2_val[41..40]   ; Input ; Info     ; Stuck at VCC ;
+; row2_val[33..32]   ; Input ; Info     ; Stuck at VCC ;
+; row2_val[19..16]   ; Input ; Info     ; Stuck at VCC ;
+; row2_val[127..126] ; Input ; Info     ; Stuck at GND ;
+; row2_val[124..118] ; Input ; Info     ; Stuck at GND ;
+; row2_val[116..111] ; Input ; Info     ; Stuck at GND ;
+; row2_val[105..103] ; Input ; Info     ; Stuck at GND ;
+; row2_val[101..100] ; Input ; Info     ; Stuck at GND ;
+; row2_val[93..92]   ; Input ; Info     ; Stuck at GND ;
+; row2_val[85..84]   ; Input ; Info     ; Stuck at GND ;
+; row2_val[80..78]   ; Input ; Info     ; Stuck at GND ;
+; row2_val[61..60]   ; Input ; Info     ; Stuck at GND ;
+; row2_val[51..50]   ; Input ; Info     ; Stuck at GND ;
+; row2_val[48..47]   ; Input ; Info     ; Stuck at GND ;
+; row2_val[45..44]   ; Input ; Info     ; Stuck at GND ;
+; row2_val[35..34]   ; Input ; Info     ; Stuck at GND ;
+; row2_val[29..28]   ; Input ; Info     ; Stuck at GND ;
+; row2_val[26..23]   ; Input ; Info     ; Stuck at GND ;
+; row2_val[21..20]   ; Input ; Info     ; Stuck at GND ;
+; row2_val[11..6]    ; Input ; Info     ; Stuck at GND ;
+; row2_val[4..0]     ; Input ; Info     ; Stuck at GND ;
+; row2_val[125]      ; Input ; Info     ; Stuck at VCC ;
+; row2_val[117]      ; Input ; Info     ; Stuck at VCC ;
+; row2_val[110]      ; Input ; Info     ; Stuck at VCC ;
+; row2_val[109]      ; Input ; Info     ; Stuck at GND ;
+; row2_val[108]      ; Input ; Info     ; Stuck at VCC ;
+; row2_val[107]      ; Input ; Info     ; Stuck at GND ;
+; row2_val[106]      ; Input ; Info     ; Stuck at VCC ;
+; row2_val[102]      ; Input ; Info     ; Stuck at VCC ;
+; row2_val[95]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[94]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[87]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[86]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[77]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[76]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[73]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[72]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[71]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[70]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[69]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[68]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[67]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[63]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[62]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[55]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[54]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[53]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[52]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[49]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[46]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[43]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[42]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[39]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[38]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[37]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[36]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[31]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[30]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[27]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[22]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[15]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[14]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[13]       ; Input ; Info     ; Stuck at GND ;
+; row2_val[12]       ; Input ; Info     ; Stuck at VCC ;
+; row2_val[5]        ; Input ; Info     ; Stuck at VCC ;
++--------------------+-------+----------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Thu May 26 11:19:44 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LCD -c LCD
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Warning (10229): Verilog HDL Expression warning at LCD.v(13): truncated literal to match 20 bits
+Info (12021): Found 1 design units, including 1 entities, in source file lcd.v
+    Info (12023): Found entity 1: LCD
+Info (12127): Elaborating entity "LCD" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at LCD.v(12): truncated value with size 26 to match size of target (24)
+Warning (10230): Verilog HDL assignment warning at LCD.v(24): truncated value with size 136 to match size of target (128)
+Warning (10240): Verilog HDL Always Construct warning at LCD.v(21): inferring latch(es) for variable "row1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at LCD.v(21): inferring latch(es) for variable "row2", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "row2[0]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[1]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[2]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[3]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[4]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[5]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[6]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[7]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[8]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[9]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[10]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[11]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[12]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[13]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[14]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[15]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[16]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[17]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[18]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[19]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[20]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[21]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[22]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[23]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[24]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[25]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[26]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[27]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[28]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[29]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[30]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[31]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[32]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[33]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[34]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[35]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[36]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[37]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[38]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[39]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[40]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[41]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[42]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[43]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[44]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[45]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[46]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[47]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[48]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[49]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[50]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[51]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[52]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[53]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[54]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[55]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[56]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[57]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[58]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[59]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[60]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[61]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[62]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[63]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[64]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[65]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[66]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[67]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[68]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[69]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[70]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[71]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[72]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[73]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[74]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[75]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[76]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[77]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[78]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[79]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[80]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[81]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[82]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[83]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[84]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[85]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[86]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[87]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[88]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[89]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[90]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[91]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[92]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[93]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[94]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[95]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[96]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[97]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[98]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[99]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[100]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[101]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[102]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[103]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[104]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[105]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[106]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[107]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[108]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[109]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[110]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[111]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[112]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[113]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[114]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[115]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[116]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[117]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[118]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[119]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[120]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[121]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[122]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[123]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[124]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[125]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[126]" at LCD.v(29)
+Info (10041): Inferred latch for "row2[127]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[16]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[17]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[18]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[19]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[20]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[21]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[22]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[23]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[40]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[41]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[42]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[43]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[44]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[45]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[46]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[47]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[64]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[65]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[66]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[67]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[68]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[69]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[70]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[71]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[72]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[73]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[74]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[75]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[76]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[77]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[78]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[79]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[80]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[81]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[82]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[83]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[84]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[85]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[86]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[87]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[88]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[89]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[90]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[91]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[92]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[93]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[94]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[95]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[96]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[97]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[98]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[99]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[100]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[101]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[102]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[103]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[104]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[105]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[106]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[107]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[108]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[109]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[110]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[111]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[112]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[113]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[114]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[115]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[116]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[117]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[118]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[119]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[120]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[121]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[122]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[123]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[124]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[125]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[126]" at LCD.v(29)
+Info (10041): Inferred latch for "row1[127]" at LCD.v(29)
+Warning (12125): Using design file div_40m.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: div_40M
+Info (12128): Elaborating entity "div_40M" for hierarchy "div_40M:u1"
+Warning (12125): Using design file lcd1602_drive.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: lcd1602_drive
+Info (12128): Elaborating entity "lcd1602_drive" for hierarchy "lcd1602_drive:u2"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "rw" is stuck at GND
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
+Info (21057): Implemented 409 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 396 logic cells
+Info (144001): Generated suppressed messages file C:/Users/User/Desktop/a1050519/LCD/output_files/LCD.map.smsg
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 430 megabytes
+    Info: Processing ended: Thu May 26 11:19:45 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/User/Desktop/a1050519/LCD/output_files/LCD.map.smsg.
+
+

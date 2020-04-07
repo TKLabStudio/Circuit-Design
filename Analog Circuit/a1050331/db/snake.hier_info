@@ -1,0 +1,45 @@
+|snake
+clk => dly[0].CLK
+clk => dly[1].CLK
+clk => dly[2].CLK
+clk => dly[3].CLK
+clk => dly[4].CLK
+clk => dly[5].CLK
+clk => dly[6].CLK
+clk => dly[7].CLK
+clk => dly[8].CLK
+clk => dly[9].CLK
+clk => dly[10].CLK
+clk => dly[11].CLK
+clk => dly[12].CLK
+clk => dly[13].CLK
+clk => dly[14].CLK
+clk => dly[15].CLK
+clk => dly[16].CLK
+clk => dly[17].CLK
+clk => dly[18].CLK
+clk => dly[19].CLK
+clk => dly[20].CLK
+clk => dly[21].CLK
+clk => dly[22].CLK
+clk => dly[23].CLK
+clk => dly[24].CLK
+clear => cnt[0].ACLR
+clear => cnt[1].ACLR
+clear => cnt[2].ACLR
+clear => cnt[3].ACLR
+clear => cnt[4].ACLR
+f1_19 <= dly[24].DB_MAX_OUTPUT_PORT_TYPE
+seg[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+com[0] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+com[1] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+com[2] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+com[3] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+
+

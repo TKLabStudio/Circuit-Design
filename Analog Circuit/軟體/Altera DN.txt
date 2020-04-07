@@ -1,0 +1,4 @@
+http://download.altera.com/akdlm/software/acdsinst/13.0sp1/232/ib_installers/QuartusSetupWeb-13.0.1.232.exe
+http://download.altera.com/akdlm/software/acdsinst/13.0sp1/232/ib_installers/ModelSimSetup-13.0.1.232.exe
+http://download.altera.com/akdlm/software/acdsinst/13.0sp1/232/ib_installers/cyclone_web-13.0.1.232.qdz
+http://download.altera.com/akdlm/software/acdsinst/13.0sp1/232/ib_installers/max_web-13.0.1.232.qdz

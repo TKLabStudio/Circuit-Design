@@ -1,0 +1,36 @@
+|a1050225
+clk => dly[0].CLK
+clk => dly[1].CLK
+clk => dly[2].CLK
+clk => dly[3].CLK
+clk => dly[4].CLK
+clk => dly[5].CLK
+clk => dly[6].CLK
+clk => dly[7].CLK
+clk => dly[8].CLK
+clk => dly[9].CLK
+clk => dly[10].CLK
+clk => dly[11].CLK
+clk => dly[12].CLK
+clk => dly[13].CLK
+clk => dly[14].CLK
+clk => dly[15].CLK
+clk => dly[16].CLK
+clk => dly[17].CLK
+clk => dly[18].CLK
+clk => dly[19].CLK
+clk => dly[20].CLK
+clk => dly[21].CLK
+clk => dly[22].CLK
+clk => dly[23].CLK
+clk => dly[24].CLK
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+led <= dly[24].DB_MAX_OUTPUT_PORT_TYPE
+
+
